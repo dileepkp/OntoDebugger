@@ -1,0 +1,80 @@
+set $seq = 1
+#file0:4_1_4_9 : 1
+break /home/aidb/Dropbox/testcases/rate.c:4
+commands
+ silent
+ printf "zzzfile0:4_1_4_9-%d pa:beforeStatement file0:4_1_4_9\n", $seq
+ printf "zzzfile0:4_1_4_9-%d pa:timeStamp %d\n", $seq, $seq
+ continue 
+end
+
+#file0:5_1_5_9 : 2
+break /home/aidb/Dropbox/testcases/rate.c:5
+commands
+ silent
+ printf "zzzfile0:5_1_5_9-%d pa:beforeStatement file0:5_1_5_9\n", $seq
+ printf "zzzfile0:5_1_5_9-%d pa:timeStamp %d\n", $seq, $seq
+ continue 
+end
+
+#file0:6_1_6_9 : 3
+break /home/aidb/Dropbox/testcases/rate.c:6
+commands
+ silent
+ printf "zzzfile0:6_1_6_9-%d pa:beforeStatement file0:6_1_6_9\n", $seq
+ printf "zzzfile0:6_1_6_9-%d pa:timeStamp %d\n", $seq, $seq
+ continue 
+end
+
+#file0:8_5_8_10 : 4
+break /home/aidb/Dropbox/testcases/rate.c:8
+commands
+ silent
+ printf "zzzfile0:3_1_3_5 pa:hasState file0:3_1_3_5_state-%d \n",$seq
+ printf "zzzfile0:3_1_3_5_state-%d pa:hasValue %d\n", $seq, i
+ printf "zzzfile0:3_1_3_5_state-%d pa:atProgramPoint file0:8_5_8_10-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:4_1_4_9 pa:hasState file0:4_1_4_9_state-%d \n",$seq
+ printf "zzzfile0:4_1_4_9_state-%d pa:hasValue %f\n", $seq, x[i-1]
+ printf "zzzfile0:4_1_4_9_state-%d pa:atProgramPoint file0:8_5_8_10-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:6_1_6_9 pa:hasState file0:6_1_6_9_state-%d \n",$seq
+ printf "zzzfile0:6_1_6_9_state-%d pa:hasValue %f\n", $seq, z[i-1]
+ printf "zzzfile0:6_1_6_9_state-%d pa:atProgramPoint file0:8_5_8_10-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:4_1_4_9 pa:hasState file0:4_1_4_9_state-%d \n",$seq
+ printf "zzzfile0:4_1_4_9_state-%d pa:hasValue %f\n", $seq, x[i]
+ printf "zzzfile0:4_1_4_9_state-%d pa:atProgramPoint file0:8_5_8_10-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:6_1_6_9 pa:hasState file0:6_1_6_9_state-%d \n",$seq
+ printf "zzzfile0:6_1_6_9_state-%d pa:hasValue %f\n", $seq, z[i]
+ printf "zzzfile0:6_1_6_9_state-%d pa:atProgramPoint file0:8_5_8_10-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:5_1_5_9 pa:hasState file0:5_1_5_9_state-%d \n",$seq
+ printf "zzzfile0:5_1_5_9_state-%d pa:hasValue %f\n", $seq, y[i-1]
+ printf "zzzfile0:5_1_5_9_state-%d pa:atProgramPoint file0:8_5_8_10-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:5_1_5_9 pa:hasState file0:5_1_5_9_state-%d \n",$seq
+ printf "zzzfile0:5_1_5_9_state-%d pa:hasValue %f\n", $seq, y[i]
+ printf "zzzfile0:5_1_5_9_state-%d pa:atProgramPoint file0:8_5_8_10-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:8_5_8_10-%d pa:beforeStatement file0:8_5_8_10\n", $seq
+ printf "zzzfile0:8_5_8_10-%d pa:timeStamp %d\n", $seq, $seq
+ continue 
+end
+
+#file0:9_1_9_108 : 5
+break /home/aidb/Dropbox/testcases/rate.c:9
+commands
+ silent
+ printf "zzzfile0:3_1_3_5 pa:hasState file0:3_1_3_5_state-%d \n",$seq
+ printf "zzzfile0:3_1_3_5_state-%d pa:hasValue %d\n", $seq, i
+ printf "zzzfile0:3_1_3_5_state-%d pa:atProgramPoint file0:9_1_9_108-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:9_1_9_108-%d pa:beforeStatement file0:9_1_9_108\n", $seq
+ printf "zzzfile0:9_1_9_108-%d pa:timeStamp %d\n", $seq, $seq
+ continue 
+end
+
+ignore 4 1
+run

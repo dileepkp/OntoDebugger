@@ -1,0 +1,749 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#"
+     xml:base="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#afterSpanOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#afterSpanOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#comparableSpanOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#beforeSpanOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#beforeListOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#beforeListOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#beforeSpanOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#beforeSpanOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#comparableSpanOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#comparableSpanOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#comparableSpanOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#correspondsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#correspondsTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#hasFilteredItem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#hasFilteredItem">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notEqualListOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notEqualListOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notEqualSpanOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notEqualSpanOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notEqualListOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notGreaterThanListOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notGreaterThanListOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notGreaterThanOrEqualListOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notGreaterThanOrEqualListOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notGreaterThanOrEqualSpanOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notGreaterThanOrEqualSpanOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notGreaterThanOrEqualListOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notGreaterThanSpanOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notGreaterThanSpanOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notGreaterThanListOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notLessThanListOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notLessThanListOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notLessThanOrEqualListOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notLessThanOrEqualListOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notLessThanOrEqualSpanOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notLessThanOrEqualSpanOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notLessThanOrEqualListOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notLessThanSpanOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notLessThanSpanOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notLessThanListOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notNon-EqualListOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notNon-EqualListOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notNon-EqualSpanOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notNon-EqualSpanOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#notNon-EqualListOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfrest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfrest">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#filteredItemBeginsAtTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#filteredItemBeginsAtTime"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#filteredItemEndsAtTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#filteredItemEndsAtTime"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdffirst -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdffirst"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#timestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#timestamp"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllDistinctList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllDistinctList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithoutDuplicates"/>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllDistinctSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllDistinctSpan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithoutDuplicates"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllDistinctList"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNegativeList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNegativeList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNegativeSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNegativeSpan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNegativeList"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-NegativeList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-NegativeList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-NegativeSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-NegativeSpan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-NegativeList"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-PositiveList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-PositiveList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-PositiveSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-PositiveSpan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-PositiveList"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-ZeroList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-ZeroList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithZeroElement"/>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-ZeroSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-ZeroSpan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-ZeroList"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllPositiveList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllPositiveList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllPostiveSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllPostiveSpan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllPositiveList"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllSameList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllSameList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllSameSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllSameSpan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllSameList"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithTwoDistinctElements"/>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllZeroList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllZeroList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllZeroSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllZeroSpan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Debug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Debug"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DecreasingList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DecreasingList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DecreasingSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DecreasingSpan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#IncreasingList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#IncreasingList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#IncreasingSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#IncreasingSpan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithDuplicates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithDuplicates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithNegativeElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithNegativeElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-NegativeList"/>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithNon-NegativeElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithNon-NegativeElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithNon-PositiveElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithNon-PositiveElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithNon-ZeroElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithNon-ZeroElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithPositiveElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithPositiveElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithTwoDistinctElements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithTwoDistinctElements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithZeroElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithZeroElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-ZeroList"/>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithoutDuplicates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithoutDuplicates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllDistinctList"/>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Non-DecreasingList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Non-DecreasingList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Non-DecreasingSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Non-DecreasingSpan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Non-IncreasingList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Non-IncreasingList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Non-IncreasingSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Non-IncreasingSpan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Debug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithDuplicates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithDuplicates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithNegativeElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithNegativeElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-PositiveSpan"/>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithNon-NegativeElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithNon-NegativeElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllPostiveSpan"/>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithNon-PostiveElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithNon-PostiveElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNegativeSpan"/>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithNon-ZeroElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithNon-ZeroElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllZeroSpan"/>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithPostiveElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithPostiveElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-NegativeSpan"/>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithTwoDistinctElements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithTwoDistinctElements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithZeroElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithZeroElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNon-ZeroSpan"/>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithoutDuplicates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithoutDuplicates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithDuplicates"/>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Debug"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfnil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfnil"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

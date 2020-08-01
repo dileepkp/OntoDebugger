@@ -1,0 +1,1000 @@
+ 1026  python ass4a_1.py
+ 1027  sudo pip3 install mysql-connector
+ 1028  mysql -u root -p academic_insti < academic_insti.sql
+ 1029  python ass4a_1.py
+ 1030  python3 ass4a_1.py
+ 1031  eclipse
+ 1032  sudo apt purge eclipse
+ 1033  sudo apt autoremove eclipse
+ 1034  ls -l org.eclipse.cdt-CDT_9_5_5
+ 1035  ls -l pooja
+ 1036  ./eclipse
+ 1037  ./eclipse-inst 
+ 1038  cd
+ 1039  cd .m2
+ 1040  ls
+ 1041  cd repository/
+ 1042  ls
+ 1043  cd org
+ 1044  ls
+ 1045  cd eclipse/
+ 1046  ls
+ 1047  ls -l
+ 1048  ls
+ 1049  ls -l
+ 1050  cd tycho
+ 1051  ls
+ 1052  cd ..
+ 1053  ls
+ 1054  cd org
+ 1055  ls
+ 1056  cd eclipse/
+ 1057  ls
+ 1058  cd jetty
+ 1059  cd ..
+ 1060  ls
+ 1061  ls -l
+ 1062  cd jgit
+ 1063  ls
+ 1064  cd org.eclipse.jgit
+ 1065  ls
+ 1066  cd ..
+ 1067  cd jgit/org.eclipse.jgit/4.11.0.201803080745-r/
+ 1068  ls
+ 1069  mvn clean install
+ 1070  mvn clean i
+ 1071  mvn clean install
+ 1072  mvn clinstall
+ 1073  ./install.sh
+ 1074  chmod u+x install.sh
+ 1075  ./install.sh 
+ 1076  chmod u+x install.sh
+ 1077  ./install.sh 
+ 1078  ./install.sh | wc
+ 1079  ./install.sh | wc -l
+ 1080  ls *.jar | wc -l
+ 1081  ls  | wc -l
+ 1082  ./install.sh | wc -l
+ 1083  ./install.sh
+ 1084  cd
+ 1085  cd .m2
+ 1086  cd repository/org/eclipse/cdt/
+ 1087  ls
+ 1088  ls -l
+ 1089  cd src/main
+ 1090  ls
+ 1091  cd java
+ 1092  ls -l
+ 1093  cd dileep
+ 1094  ls
+ 1095  cd bugfinderjena/
+ 1096  ls
+ 1097  ls -l
+ 1098  gdb -help
+ 1099  gdb --version
+ 1100  ls rate.c
+ 1101  gcc -g rate.c -o rate
+ 1102  gdb rate
+ 1103  gdb rate < commands
+ 1104  gdb rate -x commands
+ 1105  gdb rate -x commands >> output
+ 1106  gdb rate -x commands > output
+ 1107  gdb rate -x commands > output 2>&1
+ 1108  ls
+ 1109  gdb rate -x commands > output 
+ 1110  gdb rate -x commands |& tee output
+ 1111  gdb rate
+ 1112  gdb rate -x commands |& tee output
+ 1113  gdb rate -x commands > output
+ 1114  gdb rate -x commands 
+ 1115  gdb rate -x commands -batch
+ 1116  pdftk A=datasheet.pdf B=dc_nov18.pdf cat A1 B1 output report.pdf
+ 1117  gdb rate -x commands -batch
+ 1118  gdb rate -x commands > output
+ 1119  gdb rate -x commands |& tee output
+ 1120  gdb rate -x commands -batch > output
+ 1121  gdb rate -x commands -batch 
+ 1122  gdb
+ 1123  gdb rate -x commands -batch 
+ 1124  pdftk A=datasheet_pic.pdf B=report.pdf C=main.pdf cat A1 B2 C1-25 output dileep_report.pdf
+ 1125  ssh dileep@10.21.226.116
+ 1126  sudo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z
+ 1127  "
+ 1128  pwd
+ 1129  cd
+ 1130  gdb rate -x commands -batch 
+ 1131  cd Dropbox/pato/projects/cfg/
+ 1132  swipl --nosignals --quiet -s run.pl -- /home/aidb/Dropbox/testcases/rate.ttl is.c.txt > /home/aidb/Dropbox/testcases/rate_cfg.ttl
+ 1133  gdb rate -x commands -batch 
+ 1134  ls -l
+ 1135  ls -l
+ 1136  wc -w abstract 
+ 1137  gdb rate -x commands -batch 
+ 1138  ls -l
+ 1139  gdb -g rate.c
+ 1140  gcc -g rate.c
+ 1141  ls
+ 1142  gcc -g -o rate rate.c
+ 1143  ls
+ 1144  rm a.out
+ 1145  ls
+ 1146  run.sh /home/aidb/Dropbox/testcases/rate /home/aidb/Dropbox/testcases/rate_commands.debug 
+ 1147  ls
+ 1148  ./run.sh /home/aidb/Dropbox/testcases/rate /home/aidb/Dropbox/testcases/rate_commands.debug 
+ 1149  run.sh /home/aidb/Dropbox/testcases/rate /home/aidb/Dropbox/testcases/rate_commands.debug 
+ 1150  ./run.sh /home/aidb/Dropbox/testcases/rate /home/aidb/Dropbox/testcases/rate_commands.debug 
+ 1151  ping 10.21.229.134 -t
+ 1152  ping 10.21.229.134
+ 1153  ./run.sh 
+ 1154  ls -l
+ 1155  undodbgdb
+ 1156  undodb-gdb
+ 1157  udb
+ 1158  ./run.sh 
+ 1159  git clone https://github.com/protegeproject/swrlapi-example.git 
+ 1160  cd swrlapi-example/
+ 1161  mvn clean install
+ 1162  mvn exec:java
+ 1163  ls
+ 1164  cat README.md 
+ 1165  ls
+ 1166  cd targes
+ 1167  cd target
+ 1168  ls
+ 1169  mvn exec:java swrlapi-example-2.0.6.jar
+ 1170  ls c.owl
+ 1171  find c.owl
+ 1172  pwd
+ 1173  ./run.sh
+ 1174  ssh dileep@10.21.226.116
+ 1175  make
+ 1176  sudo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z"
+ 1177  bibtex main
+ 1178  bibtex slides_sem1
+ 1179  ./run.sh 
+ 1180  pdftk datasheet.pdf main_sem1.pdf cat output dileep_seminar1_report.pdf
+ 1181  pdftk datasheet_seminar.pdf.pdf main_sem1.pdf cat output dileep_seminar1_report.pdf
+ 1182  pdftk datasheet_seminar.pdf main_sem1.pdf cat output dileep_seminar1_report.pdf
+ 1183  bibtex main_sem1
+ 1184  pdftk datasheet_seminar.pdf main_sem1.pdf cat output dileep_seminar1_report.pdf
+ 1185  pdftk datasheet_seminar.pdf main_sem1.pdf spe.pdf cat output dileep_seminar1_report.pdf
+ 1186  pdftk A=dc1.pdf B=dc2.pdf cat B1 A1 output dc.pdf
+ 1187  pdftk campus-news2.pdf Abstract.pdf cat output combined.pdf
+ 1188  ssh dileep@10.21.226.116
+ 1189  gcc -g -o bin_tree bin_tree.c 
+ 1190  sudo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z"
+ 1191  cd
+ 1192  cd Dropbox/pato/projects/cfg/
+ 1193  swipl --nosignals --quiet -s run.pl -- /home/aidb/Dropbox/testcases/bin_tree.ttl is.c.txt > /home/aidb/Dropbox/testcases/bin_tree_cfg.ttl
+ 1194  history pdftk
+ 1195  history
+ 1196  pdftk datasheet_seminar.pdf main_sem1.pdf spe.pdf cat output dileep_seminar1_report.pdf
+ 1197  pdftk main_sem1.pdf spe.pdf cat output dileep_seminar1_report.pdf
+ 1198  ./bin_tree 
+ 1199  ./bin_tree < bin_tree_input.txt 
+ 1200  gdb ./bin_tree 
+ 1201  history
+ 1202  gbd bin_tree -x  bin_tree_commands.debug < bin_tree_input.txt 
+ 1203  gbd bin_tree -x  bin_tree_commands.debug 
+ 1204  gdb bin_tree -x  bin_tree_commands.debug < bin_tree_input.txt 
+ 1205  gdb bin_tree -x  bin_tree_commands.debug 
+ 1206  gdb bin_tree -x  bin_tree_commands.debug < bin_tree_input.txt 
+ 1207  gdb bin_tree -x  bin_tree_commands.debug 
+ 1208  gdb bin_tree -x  bin_tree_commands.debug > tempzz
+ 1209  gcc -g print_tokens.c 
+ 1210  ./a.out
+ 1211  ./a.out 0 1
+ 1212  ./a.out 0 1 < inputs/newtst148.tst
+ 1213  ./a.out 0 1 < ../inputs/newtst148.tst
+ 1214  ./a.out  < ../inputs/newtst148.tst
+ 1215  sudo apt-get install ffmpeg
+ 1216  sudo apt-get update
+ 1217  sudo apt-get purge ffmpeg
+ 1218  sudo apt-get install ffmpeg
+ 1219  ffmpeg -i stories1.mp4 -ss 00:00:00 -c copy -t 00:02:39 output.mp4
+ 1220  ffmpeg -i stories1.mp4 -ss 00:00:00 -c copy -ss 00:02:39 output.mp4
+ 1221  ffmpeg -i stories1.mp4 -ss 00:00:00 -c copy -to 00:02:39 output.mp4
+ 1222  ffmpeg -f concat -i mylist.txt -c copy combined.mp4
+ 1223  ls
+ 1224  ls output.mp4 
+ 1225  ffmpeg -f concat -i mylist.txt -c copy combined.mp4
+ 1226  ls
+ 1227  cat mylist.txt
+ 1228  ffmpeg -f concat -i mylist.txt -c copy combined.mp4
+ 1229  ls
+ 1230  ffmpeg -f concat -i mylist.txt -c copy combined
+ 1231  ls output.mp4 output.mp4 | perl -ne 'print "file $_"' | ffmpeg -f concat -i - -c copy Movie_Joined.mp4
+ 1232  ffmpeg -f concat -i mylist.txt -c copy combined.np4
+ 1233  ffmpeg -f concat -i mylist.txt -c copy combined.mp4
+ 1234  chmod u+x videosMultiply.sh 
+ 1235  ./videosMultiply.sh 
+ 1236  ls
+ 1237  ls -l
+ 1238  ./videosMultiply.sh 
+ 1239  ls -l
+ 1240  ./videosMultiply.sh 
+ 1241  chmod u+x ontodebugger.sh 
+ 1242  ./ontodebugger.sh 
+ 1243  pwd
+ 1244  ./ontodebugger.sh 
+ 1245  ./run.sh 
+ 1246  gcc -g print_tokens.c 
+ 1247  gcc -g tcas.c 
+ 1248  ./a.out  958 1 1 2597  574 4253 0  399  400 0 0 1
+ 1249  gcc -g v0/tcas.c 
+ 1250  v0/a.out  958 1 1 2597  574 4253 0  399  400 0 0 1
+ 1251  gcc -hep
+ 1252  gcc -help
+ 1253  gcc --help
+ 1254  gcc -o v2/a.out v2/tcas.c 
+ 1255  v2/a.out  958 1 1 2597  574 4253 0  399  400 0 0 1
+ 1256  v0/a.out  958 1 1 2597  574 4253 0  399  400 0 0 1
+ 1257  v1/a.out  958 1 1 2597  574 4253 0  399  400 0 0 1
+ 1258  gdb bin_tree -x  bin_tree_commands.debug > tempzz
+ 1259  gdb rate -x  rate_commands.debug > tempzz
+ 1260  gdb rate -x  rate_commands.debug 
+ 1261  gdb rate
+ 1262  gdb rate -x  rate_commands.debug 
+ 1263  gdb rate -x  bin_tree__commands.debug 
+ 1264  gdb rate -x  bin_tree_commands.debug 
+ 1265  gdb bin_tree -x  bin_tree_commands.debug 
+ 1266  ./bin_tree < bin_tree_input.txt 
+ 1267  gdb bin_tree
+ 1268  gdb bin_tree -x  bin_tree_commands.debug 
+ 1269  gcc -g tot_info.c 
+ 1270  gcc -g tot_info.c -lm
+ 1271  ./a.out
+ 1272  ./a.out < ../inputs/tst34
+ 1273  ./a.out < ../inputs/tst7
+ 1274  ./a.out < ../inputs/tst88
+ 1275  cd ../v1
+ 1276  gcc -g tot_info.c -lm
+ 1277  ./a.out < ../inputs/tst7
+ 1278  ./a.out < ../inputs/tst34
+ 1279  cd ../v0
+ 1280  ./a.out < ../inputs/tst34
+ 1281  cd ../..
+ 1282  ls
+ 1283  ls -l
+ 1284  ls
+ 1285  ls -a
+ 1286  ls -a ? cat
+ 1287  ls -a | cat
+ 1288  /home/aidb/netbeans-8.2/java/maven/bin/mvn "-Dexec.args=-classpath %classpath com.mycompany.ontodebugger.Main 1 1 " -Dexec.executable=/usr/lib/jvm/java-8-oracle/bin/java -DskipTests=true -Dmaven.test.skip org.codehaus.mojo:exec-maven-plugin:1.2.1:exec
+ 1289  ./ontodebugger.sh 
+ 1290  /home/aidb/netbeans-8.2/java/maven/bin/mvn "-Dexec.args=-classpath %classpath com.mycompany.ontodebugger.Main 1 1 " -Dexec.executable=/usr/lib/jvm/java-8-oracle/bin/java -DskipTests=true -Dmaven.test.skip org.codehaus.mojo:exec-maven-plugin:1.2.1:exec
+ 1291  ./ontodebugger.sh 
+ 1292  java -jar OntoDebugger-1.0-SNAPSHOT.jar 
+ 1293  cd ..
+ 1294  cd target/
+ 1295  java -jar OntoDebugger-1.0-SNAPSHOT.jar 
+ 1296  cd ..
+ 1297  java -jar target/OntoDebugger-1.0-SNAPSHOT.jar 
+ 1298  cd target
+ 1299  ls
+ 1300  cd ..
+ 1301  java -jar target/classes target/OntoDebugger-1.0-SNAPSHOT.jar 
+ 1302  java -jar target/OntoDebugger-1.0-SNAPSHOT.jar 
+ 1303  mvn --version
+ 1304  java -jar target/OntoDebugger-1.0-SNAPSHOT.jar 
+ 1305  java-8-oracle -jar target/OntoDebugger-1.0-SNAPSHOT.jar 
+ 1306  whereis java
+ 1307  /usr/lib/jvm/java-8-oracle/jre/bin/java -jar target/OntoDebugger-1.0-SNAPSHOT.jar 
+ 1308  cd /home/aidb/Dropbox/OntoDebugger; JAVA_HOME=/usr/lib/jvm/java-8-oracle /home/aidb/netbeans-8.2/java/maven/bin/mvn "-Dexec.args=-classpath %classpath com.mycompany.ontodebugger.Main" -Dexec.executable=/usr/lib/jvm/java-8-oracle/bin/java -DskipTests=true -Dmaven.test.skip org.codehaus.mojo:exec-maven-plugin:1.2.1:exec
+ 1309  echo $JAVA_HOME
+ 1310  mvn "-Dexec.args=-classpath %classpath com.mycompany.ontodebugger.Main" -Dexec.executable=/usr/lib/jvm/java-8-oracle/bin/java -DskipTests=true -Dmaven.test.skip org.codehaus.mojo:exec-maven-plugin:1.2.1:exec
+ 1311  mvn "-Dexec.args=-classpath %classpath com.mycompany.ontodebugger.Main 1 2" -Dexec.executable=/usr/lib/jvm/java-8-oracle/bin/java -DskipTests=true -Dmaven.test.skip org.codehaus.mojo:exec-maven-plugin:1.2.1:exec
+ 1312  gdb a.out
+ 1313  sudo apt-get install cpufrequtils
+ 1314  cd /tmp
+ 1315  wget https://github.com/mozilla/rr/releases/download/5.2.0/rr-5.2.0-Linux-$(uname -m).deb
+ 1316  sudo dpkg -i rr-5.2.0-Linux-$(uname -m).deb
+ 1317  sudo cpufreq-set -g performance
+ 1318  cd
+ 1319  sudo cpufreq-set -g performance
+ 1320  rr record a.out  958 1 1 2597  574 4253 0  399  400 0 0 1
+ 1321  gdb a.out 
+ 1322  gdb a.out  958 1 1 2597  574 4253 0  399  400 0 0 1
+ 1323  gdb a.out
+ 1324  gdb a.out
+ 1325  gcc -g tot_info.c 
+ 1326  gdb a.out
+ 1327  gcc -g tot_info.c 
+ 1328  gcc -g tot_info.c -lm
+ 1329  gdb a.out
+ 1330  gcc -g space.c
+ 1331  gcc -g space.c -lm
+ 1332  gdb a.out
+ 1333  gdb a.out ../inputs/gr27.adl
+ 1334  gdb a.out ../inputs/gr27
+ 1335  gdb a.out ../inputs/gr27.adl
+ 1336  gdb --args a.out ../inputs/gr27.adl
+ 1337  ls
+ 1338  gdb --args a.out ../inputs/gr27.adl
+ 1339  gdb --args a.out ../inputs/gr27
+ 1340  gdb --args a.out ../inputs/gr27.adl
+ 1341  gdb --args a.out ../inputs/gr27
+ 1342  man sed'
+ 1343  man sed
+ 1344  gcc -g space.c -lm
+ 1345  gdb --args a.out ../inputs/gr27
+ 1346  grep -c unitest fault-matrix 
+ 1347  grep -o -c unitest fault-matrix 
+ 1348  grep -o unitest fault-matrix 
+ 1349  grep  unitest fault-matrix 
+ 1350  grep -n unitest fault-matrix 
+ 1351  grep -n unitest112 fault-matrix 
+ 1352  grep  unitest fault-matrix | grep -n unitest112
+ 1353  cd expected_out/
+ 1354  grep total *
+ 1355  grep 2info
+ 1356  grep total *
+ 1357  grep "2info = " *
+ 1358  grep "2info = -" *
+ 1359  grep "2info = " *
+ 1360  cd ../..
+ 1361  cd space
+ 1362  grep  unitest fault-matrix | grep -n unitest1002
+ 1363  grep  unitest fault-matrix | grep -n unitest0
+ 1364  grep  unitest fault-matrix | grep -n unitest1002
+ 1365  cd ../totinfo/
+ 1366  grep  unitest fault-matrix | grep -n unitest118
+ 1367  make
+ 1368  ./sed.exe -e 's/dog/cat/' -e '/cat$/d' inputs/default.in  
+ 1369  ./sed.exe -e 's/dog/cat/' -e '/cat$/d' ../inputs/default.in  
+ 1370  ./sed.exe -e 's/dog/cat/' -e '/cat$/d' ../../inputs/default.in  
+ 1371  ./sed.exe -f 'inputs/scr/s24_0.sed' ../../inputs/default.in  
+ 1372  ./sed.exe -f '../../inputs/scr/s24_0.sed' ../../inputs/default.in  
+ 1373  find . -name "fault-matrix"
+ 1374  ls -R
+ 1375  ls -R
+ 1376  ls -R| grep "matrix"
+ 1377  find . -name "fault-matrix"
+ 1378  find . regex 'fault.*'
+ 1379  find . regex 'fault'
+ 1380  find . regex 'fault.*'
+ 1381  clear
+ 1382  find . -regex 'fault.*'
+ 1383  find  -regex 'fault.*'
+ 1384  find .  -regex 'fault.*'
+ 1385  find . -name "fault-matrix"
+ 1386  find . regex 'fault.*'
+ 1387  clear
+ 1388  find . regex 'fault.*'
+ 1389  find . -regex 'fault.*'
+ 1390  find  -regex 'fault.*'
+ 1391  find . -iname 'fault.*'
+ 1392  find  -iname 'fault.*'
+ 1393  man find
+ 1394  find  -regex '.*fault.*'
+ 1395  find .  -regex '.*fault.*'
+ 1396  clear
+ 1397  find .  -regex '.*fault.*'
+ 1398  ./run.sh 
+ 1399  %
+ 1400  make
+ 1401  ./sed.exe -e 's/dog/cat/' -e '/cat$/d' ../../inputs/default.in
+ 1402  gdb --args sed.exe -e 's/dog/cat/' -e '/cat$/d' ../../inputs/default.in
+ 1403  gcc -g sed.c
+ 1404  ./a.out --args sed.exe -e 's/dog/cat/' -e '/cat$/d' ../../inputs/default.in
+ 1405  gdb --args a.out -e 's/dog/cat/' -e '/cat$/d' ../../inputs/default.in
+ 1406  grep "unitest" fault-matrix 
+ 1407  grep -n "unitest" fault-matrix 
+ 1408  grep -n "unitest" fault-matrix | head 20
+ 1409  grep -n "unitest" fault-matrix | head -20
+ 1410  grep "unitest" fault-matrix| grep -n unitest
+ 1411  grep "unitest" fault-matrix| grep -n unitest | head -20
+ 1412  grep "unitest" fault-matrix| grep -n unitest | head -30
+ 1413  pwd
+ 1414  ./a.out ../inputs/gr27.adl
+ 1415  pwd
+ 1416  gcc -g sed_single.c
+ 1417  ./a.out ../inputs.gr27
+ 1418  ./a.out ../inputs/gr27
+ 1419  gcc -g space_single.c
+ 1420  gcc -g space_single.c -lm
+ 1421  ./a.out ../inputs/gr27
+ 1422  gcc -g space_single.c -lm
+ 1423  gdb a.out
+ 1424  gdb --args a.out ../inputs/gr27
+ 1425  gdb --args a.out /home/aidb/SIRprograms/formatted/space/inputs/gr27
+ 1426  pwd
+ 1427  cd ../inputs
+ 1428  pwd
+ 1429  cd ../v4
+ 1430  gdb --args a.out /home/aidb/SIRprograms/formatted/space/inputs/gr27
+ 1431  gdb --args a.out ../inputs/gr27
+ 1432  gcc -g -o tot_info_single tot_info_single.c 
+ 1433  gcc -g -o tot_info_single tot_info_single.c -lm
+ 1434  gdb tot_info_single 
+ 1435  cd ..
+ 1436  cd space/
+ 1437  gcc -g -o tot_info_single tot_info_single.c -lm
+ 1438  gcc -g -o space_single space_single.c -lm
+ 1439  ls
+ 1440  gdb --args space_single /home/aidb/SIRprograms/formatted/space/inputs/gr27
+ 1441  gdb --args space_single /home/aidb/SIRprograms/formatted/space/inputs/gr27.adl
+ 1442  gdb --args space_single /home/aidb/SIRprograms/formatted/space/inputs/gr27
+ 1443  gdb --args space_single gr27
+ 1444  cd ../sed
+ 1445  gcc -g -o sed sed.c
+ 1446  gcc -g -o sed_single sed_single.c.c
+ 1447  gcc -g -o sed_single sed_single.c
+ 1448  gdb --args /home/aidb/Dropbox/testcases/sed/sed_single -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1449  gcc -g -o sed_single sed_single.c
+ 1450  gcc -g -o sed sed.c
+ 1451  gcc -g -o sed_single sed_single.c
+ 1452  gdb --args /home/aidb/Dropbox/testcases/sed/sed_single -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1453  /home/aidb/Dropbox/testcases/sed/sed_single -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1454  gcc -g -o sed_single sed_single.c
+ 1455  /home/aidb/Dropbox/testcases/sed/sed_single -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1456  gdb --args /home/aidb/Dropbox/testcases/sed/sed_single -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1457  gcc -g -o sed_single sed_single.c
+ 1458  gdb --args /home/aidb/Dropbox/testcases/sed/sed_single -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1459  gcc -g -o sed_single sed_single.c
+ 1460  gdb --args /home/aidb/Dropbox/testcases/sed/sed_single -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1461  cd
+ 1462  cd Dropbox/pato/projects/cfg/
+ 1463  swipl --nosignals --quiet -s run.pl -- /home/aidb/Dropbox/testcases/sed/sed_single.ttl is.c.txt > /home/aidb/Dropbox/testcases/sed/sed_single_cfg.ttl
+ 1464  swipl --nosignals --quiet -s run.pl -- /home/aidb/Dropbox/testcases/space/space_single.ttl is.c.txt > /home/aidb/Dropbox/testcases/space/space_single_cfg.ttl
+ 1465  swipl --nosignals --quiet -s run.pl -- /home/aidb/Dropbox/testcases/tot_info/tot_info_single.ttl is.c.txt > /home/aidb/Dropbox/testcases/tot_info/tot_info_single_cfg.ttl
+ 1466  gcc bin_tree_instrumented.c 
+ 1467  gcc -w  bin_tree_instrumented.c 
+ 1468  gdb --args /home/aidb/Dropbox/testcases/sed/sed_single -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1469  gdb -x space_single_commands.debug -batch --args space_single gr27
+ 1470  time gdb -x space_single_commands.debug -batch --args space_single gr27
+ 1471  time gdb --args space_single gr27
+ 1472  time gdb -x space_single_commands.debug -batch --args space_single gr27
+ 1473  gdb --args /home/aidb/Dropbox/testcases/sed/sed_single -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1474  gdb --args /home/aidb/Dropbox/testcases/sed/sed_single -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in -x test0.txt -batch
+ 1475  gdb -x test0.txt -batch --args /home/aidb/Dropbox/testcases/sed/sed_single -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1476  time gdb -x test0.txt -batch --args /home/aidb/Dropbox/testcases/sed/sed_single -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1477  cd ../space
+ 1478  time gdb -x test0.txt -batch --args /home/aidb/Dropbox/testcases/space/space_single gr27
+ 1479  cd ../tot_info/
+ 1480  time gdb -x test0.txt -batch --args /home/aidb/Dropbox/testcases/tot_info/tot_info_single
+ 1481  gcc -g -o tot_info_single tot_info_single.c
+ 1482  gcc -g -o tot_info_single tot_info_single.c -lm
+ 1483  ./run.sh 
+ 1484  gcc bin_tree_instrumented.c 
+ 1485  gcc -2 bin_tree_instrumented.c 
+ 1486  gcc -w bin_tree_instrumented.c 
+ 1487  sudo systemctl restart cups.service
+ 1488  gedit /var/log/cups/error_log
+ 1489  sudo apt-get update
+ 1490  sudo apt update
+ 1491  sudo apt-get update
+ 1492  sudo apt-get upgrade
+ 1493  ls -a
+ 1494  cd .Trash-1000/
+ 1495  ls
+ 1496  cd files
+ 1497  ls
+ 1498  bibtex main
+ 1499  bibtex debugger.aux 
+ 1500  bibtex debugger
+ 1501  bibtex dc_jun19
+ 1502  pdftk main_sem1.pdf spe.pdf cat output dileep_seminar1_report.pdf
+ 1503  pdftk A=datasheet.pdf B=dc_jun19.pdf cat A1 B output dileep_jun19.pdf
+ 1504  ./run.sh 
+ 1505  pdftk A=datasheet.pdf B=dc_jun19.pdf cat A1 B output dileep_jun19_ver2.pdf
+ 1506  pdftk A=datasheet.pdf B=dc_jun19.pdf cat A1 B output dileep_jun19_submitted.pdf
+ 1507  pdftk A=datasheet_pic.pdf B=dc_jun19.pdf cat A1 B output dileep_jun19_submitted.pdf
+ 1508  sudo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z"
+ 1509  sudo hwclock --systohc
+ 1510  bibtex main
+ 1511  make
+ 1512  make
+ 1513  rdf3xload dataDB rose_lu_single.ttl 
+ 1514  /home/aidb/gh-rdf3x/bin/rdf3xload dataDB rose_lu_single.ttl 
+ 1515  /home/aidb/gh-rdf3x/bin/rdf3xquery dataDB query_lu_formatted.sparql 
+ 1516  /home/aidb/gh-rdf3x/bin/rdf3xquery dataDB query_loop.sparql 
+ 1517  /home/aidb/gh-rdf3x/bin/extractstats dataDB query_loop.sparql 
+ 1518  /home/aidb/gh-rdf3x/bin/extractstats dataDB --joins query_loop.sparql 
+ 1519  /home/aidb/gh-rdf3x/bin/extractstats dataDB query_loop.sparql  --joins
+ 1520  /home/aidb/gh-rdf3x/bin/extractstats dataDB query_play.sparql
+ 1521  /home/aidb/gh-rdf3x/bin/extractstats dataDB query_stats.sparql 
+ 1522  /home/aidb/gh-rdf3x/bin/rdf3xload dataDB /home/aidb/nas-synthetic/rdf3x_loop40.ttl 
+ 1523  /home/aidb/gh-rdf3x/bin/extractstats dataDB query_stats.sparql 
+ 1524  swipl --nosignals --quiet -s run.pl -- /home/aidb/nas-synthetic/synthetic2_loop40.ttl is.c.txt > abc2.txt
+ 1525  gcc synthetic3_loop1.c
+ 1526  gcc -c synthetic3_loop1.c 
+ 1527  ../gh-rdf3x/bin/rdf3xload dataDB rdf3x_syn3_loop1.ttl
+ 1528  ../gh-rdf3x/bin/rdf3xquery dataDB query_cg.sparql 
+ 1529  time ../gh-rdf3x/bin/rdf3xquery dataDB query_cg.sparql 
+ 1530  ../gh-rdf3x/bin/rdf3xload dataDB rdf3x_syn3_loop10.ttl
+ 1531  time ../gh-rdf3x/bin/rdf3xquery dataDB query_cg.sparql 
+ 1532  ../gh-rdf3x/bin/rdf3xload dataDB rdf3x_syn3_loop20.ttl
+ 1533  time ../gh-rdf3x/bin/rdf3xquery dataDB query_cg.sparql 
+ 1534  ../gh-rdf3x/bin/rdf3xload dataDB rdf3x_syn3_loop20.ttl
+ 1535  time ../gh-rdf3x/bin/rdf3xquery dataDB query_cg.sparql 
+ 1536  ../gh-rdf3x/bin/rdf3xload dataDB rdf3x_syn3_loop40.ttl
+ 1537  time ../gh-rdf3x/bin/rdf3xquery dataDB query_cg.sparql 
+ 1538  swipl --nosignals --quiet -s run.pl -- /home/aidb/nas-synthetic/synthetic3_loop1.ttl is.c.txt > abc.txt
+ 1539  swipl --nosignals --quiet -s run.pl -- /home/aidb/nas-synthetic/synthetic3_loop10.ttl is.c.txt > abc.txt
+ 1540  swipl --nosignals --quiet -s run.pl -- /home/aidb/nas-synthetic/synthetic3_loop20.ttl is.c.txt > abc.txt
+ 1541  swipl --nosignals --quiet -s run.pl -- /home/aidb/nas-synthetic/synthetic3_loop20.ttl is.c.txt > abc3.txt
+ 1542  swipl --nosignals --quiet -s run.pl -- /home/aidb/nas-synthetic/synthetic3_loop1.ttl is.c.txt > abc.txt
+ 1543  swipl --nosignals --quiet -s run.pl -- /home/aidb/nas-synthetic/synthetic3_loop10.ttl is.c.txt > abc.txt
+ 1544  swipl --nosignals --quiet -s run.pl -- /home/aidb/nas-synthetic/synthetic3_loop20.ttl is.c.txt > abc.txt
+ 1545  swipl --nosignals --quiet -s run.pl -- /home/aidb/nas-synthetic/synthetic3_loop40.ttl is.c.txt > abc.txt
+ 1546  swipl --nosignals --quiet -s run.pl -- /home/aidb/nas-synthetic/synthetic3_loop60.ttl is.c.txt > abc.txt
+ 1547  split
+ 1548  split -l 300000 synthetic3_loop60.ttl
+ 1549  cat rdf3x_xaa rdf3x_xab rdf3x_xac rdf3x_xad > rdf3x_syn3_loop60.ttl
+ 1550  ../gh-rdf3x/bin/rdf3xload dataDB rdf3x_syn3_loop60.ttl
+ 1551  time ../gh-rdf3x/bin/rdf3xquery dataDB query_cg.sparql 
+ 1552  ../gh-rdf3x/bin/rdf3xload dataDB rdf3x_syn3_loop40.ttl
+ 1553  time ../gh-rdf3x/bin/rdf3xquery dataDB query_cg.sparql 
+ 1554  ../gh-rdf3x/bin/rdf3xload dataDB rdf3x_syn3_loop60.ttl
+ 1555  time ../gh-rdf3x/bin/rdf3xquery dataDB query_cg.sparql 
+ 1556  gcc -c synthetic3_loop.c
+ 1557  gcc -c synthetic3_loop1.c
+ 1558  swipl --nosignals --quiet -s run.pl -- /home/aidb/nas-synthetic/synthetic3_loop60.ttl is.c.txt > abc.txt
+ 1559  ./run.sh 
+ 1560  bibtex main
+ 1561  sudo apt-get install  compiz-plugins-extra compizconfig-settings-manager
+ 1562  swipl --nosignals --quiet -s run.pl -- /home/aidb/nas-synthetic/synthetic3_loop40.ttl is.c.txt > abc.txt
+ 1563  bc
+ 1564  cd Dropbox/pato/projects/cfg/
+ 1565  swipl --nosignals --quiet -s run.pl -- /home/aidb/nas-synthetic/synthetic2_loop1.ttl is.c.txt > /home/aidb/nas-synthetic/synthetic2_loop1_cfg.ttl
+ 1566  swipl --nosignals --quiet -s run.pl -- /home/aidb/nas-synthetic/synthetic3_loop1.ttl is.c.txt > /home/aidb/nas-synthetic/synthetic3_loop1_cfg.ttl
+ 1567  swipl --nosignals --quiet -s run.pl -- /home/aidb/nas-synthetic/synthetic3_loop60.ttl is.c.txt > /home/aidb/nas-synthetic/synthetic3_loop60_cfg.ttl
+ 1568  gcc -g tot_info_single_instrumented.c -lm
+ 1569  gdb a.out
+ 1570  gcc -g tot_info_single_instrumented.c -lm
+ 1571  ./a.out < 
+ 1572  gcc -g tot_info_single_instrumented.c -lm
+ 1573  ./a.out < /home/aidb/SIRprograms/formatted/totinfo/inputs/test5
+ 1574  ./tot_info_single < /home/aidb/SIRprograms/formatted/totinfo/inputs/test5
+ 1575  gcc tot_info_single_instrumented.c 
+ 1576  gcc -w tot_info_single_instrumented.c 
+ 1577  gcc -w tot_info_single_instrumented.c -lm
+ 1578  ./a.out < /home/aidb/SIRprograms/formatted/totinfo/inputs/test5
+ 1579  gcc -w -o tot_info_single tot_info_single.c -lm
+ 1580  ./tot_info_single < /home/aidb/SIRprograms/formatted/totinfo/inputs/test5
+ 1581  gcc -w tot_info_single_instrumented.c -lm
+ 1582  ./a.out < /home/aidb/SIRprograms/formatted/totinfo/inputs/test5
+ 1583  gcc -w tot_info_single_instrumented.c -lm
+ 1584  ./a.out < /home/aidb/SIRprograms/formatted/totinfo/inputs/test5
+ 1585  gcc -w tot_info_single_instrumented.c -lm
+ 1586  ./a.out < /home/aidb/SIRprograms/formatted/totinfo/inputs/test5
+ 1587  gdb a.out
+ 1588  gdb tot_info_single
+ 1589  gcc -g -w -o tot_info_single tot_info_single.c -lm
+ 1590  gdb tot_info_single
+ 1591  gcc -w space_single.c
+ 1592  gcc -w space_single.c -lm
+ 1593  ./a.out /home/aidb/Dropbox/testcases/sed/test0.txt
+ 1594  ./a.out gr27.adl
+ 1595  ./a.out gr27
+ 1596  clear
+ 1597  ./a.out gr27
+ 1598  gcc -w space_single_instrumented.c 
+ 1599  gcc -w space_single_instrumented.c -lm
+ 1600  ./a.out gr27
+ 1601  gcc -w -o space_single space_single.c -lm
+ 1602  ./space_single gr27
+ 1603  gcc -w space_single_instrumented.c -lm
+ 1604  ./a.out gr27
+ 1605  gcc -w space_single_instrumented.c -lm
+ 1606  ./a.out gr27
+ 1607  gdb a.out 
+ 1608  gcc -g -w space_single_instrumented.c -lm
+ 1609  gdb a.out
+ 1610  gcc -g -w space_single_instrumented.c -lm
+ 1611  gdb a.out 
+ 1612  gcc -g -w space_single_instrumented.c -lm
+ 1613  gdb a.out 
+ 1614  gcc -g -w space_single_instrumented.c -lm
+ 1615  gdb a.out 
+ 1616  ./space_single gr27
+ 1617  gcc -w sed_single_rose_nobraces.c 
+ 1618  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1619  ./sed_single -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1620  gcc -w sed_single_rose.c 
+ 1621  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1622  gcc -w sed_single_rose_original.c 
+ 1623  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1624  gcc -w sed_single_rose.c
+ 1625  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1626  gcc -w sed_single_rose_instrumented.c.c
+ 1627  gcc -w sed_single_rose_instrumented.c
+ 1628  gcc sed_single_rose.c 2>&1 1>/dev/null | sed --quiet 's/\(.*:\)\([0-9]*\)\(:.*\)/\2/p'
+ 1629  gcc sed_single_rose.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented\.c:\)\([0-9]*\)\(:.*undeclared.*\)/\2/p'
+ 1630  gcc sed_single_rose.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented:\)\([0-9]*\)\(:.*undeclared.*\)/\2/p'
+ 1631  gcc sed_single_rose.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented:\)\([0-9]+\)\(:.*undeclared.*\)/\2/p'
+ 1632  gcc sed_single_rose.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented:\)\([0-9]+\)\(:.*\)/\2/p'
+ 1633  gcc sed_single_rose.c 2>&1 1>/dev/null | sed --quiet 's/\(.*:\)\([0-9]+\)\(:.*\)/\2/p'
+ 1634  gcc sed_single_rose.c 2>&1 1>/dev/null | sed --quiet 's/\(.*:\)\([0-9]*\)\(:.*\)/\2/p'
+ 1635  gcc sed_single_rose.c
+ 1636  gcc -w  sed_single_rose.c
+ 1637  gcc sed_single_rose_instrumented.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented:\)\([0-9]*\)\(:.*undeclared.*\)/\2/p'
+ 1638  gcc sed_single_rose_instrumented.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented:\)\([0-9]*\)\(:.*undeclared.*\)/\2/p' | sed 's/,$/\n/'
+ 1639  gcc sed_single_rose_instrumented.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented:\)\([0-9]*\)\(:.*undeclared.*\)/\2/p' | 
+ 1640  gcc sed_single_rose_instrumented.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented:\)\([0-9]*\)\(:.*undeclared.*\)/\2/p' 
+ 1641  gcc sed_single_rose_instrumented.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented:\)\([0-9]*\)\(:.*undeclared.*\)/\2/p'
+ 1642  sed -i '3960,3964,5491,5536,5568,5588,5601,5605,5664,5745,8457,8887,8900,10745,10755,10770,10775,10780,10785,10790,10795,10800,10932,12041,12203,15430,18114,18273,18301,18584,18753,19031,19092,19262,19500,20073,20082,20153,20460,20472,20492,21043,21047,21116,22056,22080,23522,23864,23893,27475,27483,27518,27542,27551,27610,27618,27634,27638,27643,27657,27665,27683,27695,27707,27758,28118,29812,29817,30578,30975
+ 1643   s/^//////' sed_single_rose_instrumented.c
+ 1644  sed -i '3960,3964,5491,5536,5568,5588,5601,5605,5664,5745,8457,8887,8900,10745,10755,10770,10775,10780,10785,10790,10795,10800,10932,12041,12203,15430,18114,18273,18301,18584,18753,19031,19092,19262,19500,20073,20082,20153,20460,20472,20492,21043,21047,21116,22056,22080,23522,23864,23893,27475,27483,27518,27542,27551,27610,27618,27634,27638,27643,27657,27665,27683,27695,27707,27758,28118,29812,29817,30578,30975
+ 1645   s/^//////' sed_single_rose_instrumented.c
+ 1646  sed -i '3960,3964,5491,5536,5568,5588,5601,5605,5664,5745,8457,8887,8900,10745,10755,10770,10775,10780,10785,10790,10795,10800,10932,12041,12203,15430,18114,18273,18301,18584,18753,19031,19092,19262,19500,20073,20082,20153,20460,20472,20492,21043,21047,21116,22056,22080,23522,23864,23893,27475,27483,27518,27542,27551,27610,27618,27634,27638,27643,27657,27665,27683,27695,27707,27758,28118,29812,29817,30578,30975
+ 1647   s/^//////' sed_single_rose_instrumented.c
+ 1648  sed -i '3960,3964,5491,5536,5568,5588,5601,5605,5664,5745,8457,8887,8900,10745,10755,10770,10775,10780,10785,10790,10795,10800,10932,12041,12203,15430,18114,18273,18301,18584,18753,19031,19092,19262,19500,20073,20082,20153,20460,20472,20492,21043,21047,21116,22056,22080,23522,23864,23893,27475,27483,27518,27542,27551,27610,27618,27634,27638,27643,27657,27665,27683,27695,27707,27758,28118,29812,29817,30578,30975
+ 1649   s/^//////' sed_single_rose_instrumented.c gcc -w sed_single_rose_instrumented.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented\.c:\)\([0-9]*\)\(:.*error.*undeclared.*\)/\2/p'
+ 1650  awk 'NR == 3960|| NR == 3964|| NR == 5491|| NR == 5536|| NR == 5568|| NR == 5588|| NR == 5601|| NR == 5605|| NR == 5664|| NR == 5745|| NR == 8457|| NR == 8887|| NR == 8900|| NR == 10745|| NR == 10755|| NR == 10770|| NR == 10775|| NR == 10780|| NR == 10785|| NR == 10790|| NR == 10795|| NR == 10800|| NR == 10932|| NR == 12041|| NR == 12203|| NR == 15430|| NR == 18114|| NR == 18273|| NR == 18301|| NR == 18584|| NR == 18753|| NR == 19031|| NR == 19092|| NR == 19262|| NR == 19500|| NR == 20073|| NR == 20082|| NR == 20153|| NR == 20460|| NR == 20472|| NR == 20492|| NR == 21043|| NR == 21047|| NR == 21116|| NR == 22056|| NR == 22080|| NR == 23522|| NR == 23864|| NR == 23893|| NR == 27475|| NR == 27483|| NR == 27518|| NR == 27542|| NR == 27551|| NR == 27610|| NR == 27618|| NR == 27634|| NR == 27638|| NR == 27643|| NR == 27657|| NR == 27665|| NR == 27683|| NR == 27695|| NR == 27707|| NR == 27758|| NR == 28118|| NR == 29812|| NR == 29817|| NR == 30578|| NR == 30975
+ 1651   { print "//" $0; next } 1'  test.c
+ 1652  awk 'NR == 3960|| NR == 3964|| NR == 5491|| NR == 5536|| NR == 5568|| NR == 5588|| NR == 5601|| NR == 5605|| NR == 5664|| NR == 5745|| NR == 8457|| NR == 8887|| NR == 8900|| NR == 10745|| NR == 10755|| NR == 10770|| NR == 10775|| NR == 10780|| NR == 10785|| NR == 10790|| NR == 10795|| NR == 10800|| NR == 10932|| NR == 12041|| NR == 12203|| NR == 15430|| NR == 18114|| NR == 18273|| NR == 18301|| NR == 18584|| NR == 18753|| NR == 19031|| NR == 19092|| NR == 19262|| NR == 19500|| NR == 20073|| NR == 20082|| NR == 20153|| NR == 20460|| NR == 20472|| NR == 20492|| NR == 21043|| NR == 21047|| NR == 21116|| NR == 22056|| NR == 22080|| NR == 23522|| NR == 23864|| NR == 23893|| NR == 27475|| NR == 27483|| NR == 27518|| NR == 27542|| NR == 27551|| NR == 27610|| NR == 27618|| NR == 27634|| NR == 27638|| NR == 27643|| NR == 27657|| NR == 27665|| NR == 27683|| NR == 27695|| NR == 27707|| NR == 27758|| NR == 28118|| NR == 29812|| NR == 29817|| NR == 30578|| NR == 30975
+ 1653   { print "#" $0; next } 1'  test.c
+ 1654  awk 'NR == 3960|| NR == 3964|| NR == 5491|| NR == 5536|| NR == 5568|| NR == 5588|| NR == 5601|| NR == 5605|| NR == 5664|| NR == 5745|| NR == 8457|| NR == 8887|| NR == 8900|| NR == 10745|| NR == 10755|| NR == 10770|| NR == 10775|| NR == 10780|| NR == 10785|| NR == 10790|| NR == 10795|| NR == 10800|| NR == 10932|| NR == 12041|| NR == 12203|| NR == 15430|| NR == 18114|| NR == 18273|| NR == 18301|| NR == 18584|| NR == 18753|| NR == 19031|| NR == 19092|| NR == 19262|| NR == 19500|| NR == 20073|| NR == 20082|| NR == 20153|| NR == 20460|| NR == 20472|| NR == 20492|| NR == 21043|| NR == 21047|| NR == 21116|| NR == 22056|| NR == 22080|| NR == 23522|| NR == 23864|| NR == 23893|| NR == 27475|| NR == 27483|| NR == 27518|| NR == 27542|| NR == 27551|| NR == 27610|| NR == 27618|| NR == 27634|| NR == 27638|| NR == 27643|| NR == 27657|| NR == 27665|| NR == 27683|| NR == 27695|| NR == 27707|| NR == 27758|| NR == 28118|| NR == 29812|| NR == 29817|| NR == 30578|| NR == 30975
+ 1655   { print "#" $0; next } 1'  test.c > test2.c
+ 1656  awk 'NR == 3960 || NR == 3964 || NR == 5491 || NR == 5536 || NR == 5568 || NR == 5588 || NR == 5601 || NR == 5605 || NR == 5664 || NR == 5745 || NR == 8457 || NR == 8887 || NR == 8900 || NR == 10745 || NR == 10755 || NR == 10770 || NR == 10775 || NR == 10780 || NR == 10785 || NR == 10790 || NR == 10795 || NR == 10800 || NR == 10932 || NR == 12041 || NR == 12203 || NR == 15430 || NR == 18114 || NR == 18273 || NR == 18301 || NR == 18584 || NR == 18753 || NR == 19031 || NR == 19092 || NR == 19262 || NR == 19500 || NR == 20073 || NR == 20082 || NR == 20153 || NR == 20460 || NR == 20472 || NR == 20492 || NR == 21043 || NR == 21047 || NR == 21116 || NR == 22056 || NR == 22080 || NR == 23522 || NR == 23864 || NR == 23893 || NR == 27475 || NR == 27483 || NR == 27518 || NR == 27542 || NR == 27551 || NR == 27610 || NR == 27618 || NR == 27634 || NR == 27638 || NR == 27643 || NR == 27657 || NR == 27665 || NR == 27683 || NR == 27695 || NR == 27707 || NR == 27758 || NR == 28118 || NR == 29812 || NR == 29817 || NR == 30578 || NR == 30975 
+ 1657   { print "//" $0; next } 1'  test.c
+ 1658  awk 'NR == 3960 || NR == 3964 || NR == 5491 || NR == 5536 || NR == 5568 || NR == 5588 || NR == 5601 || NR == 5605 || NR == 5664 || NR == 5745 || NR == 8457 || NR == 8887 || NR == 8900 || NR == 10745 || NR == 10755 || NR == 10770 || NR == 10775 || NR == 10780 || NR == 10785 || NR == 10790 || NR == 10795 || NR == 10800 || NR == 10932 || NR == 12041 || NR == 12203 || NR == 15430 || NR == 18114 || NR == 18273 || NR == 18301 || NR == 18584 || NR == 18753 || NR == 19031 || NR == 19092 || NR == 19262 || NR == 19500 || NR == 20073 || NR == 20082 || NR == 20153 || NR == 20460 || NR == 20472 || NR == 20492 || NR == 21043 || NR == 21047 || NR == 21116 || NR == 22056 || NR == 22080 || NR == 23522 || NR == 23864 || NR == 23893 || NR == 27475 || NR == 27483 || NR == 27518 || NR == 27542 || NR == 27551 || NR == 27610 || NR == 27618 || NR == 27634 || NR == 27638 || NR == 27643 || NR == 27657 || NR == 27665 || NR == 27683 || NR == 27695 || NR == 27707 || NR == 27758 || NR == 28118 || NR == 29812 || NR == 29817 || NR == 30578 || NR == 30975 { print "//" $0; next } 1'  test.c
+ 1659  awk 'NR == 3960 || NR == 3964 || NR == 5491 || NR == 5536 || NR == 5568 || NR == 5588 || NR == 5601 || NR == 5605 || NR == 5664 || NR == 5745 || NR == 8457 || NR == 8887 || NR == 8900 || NR == 10745 || NR == 10755 || NR == 10770 || NR == 10775 || NR == 10780 || NR == 10785 || NR == 10790 || NR == 10795 || NR == 10800 || NR == 10932 || NR == 12041 || NR == 12203 || NR == 15430 || NR == 18114 || NR == 18273 || NR == 18301 || NR == 18584 || NR == 18753 || NR == 19031 || NR == 19092 || NR == 19262 || NR == 19500 || NR == 20073 || NR == 20082 || NR == 20153 || NR == 20460 || NR == 20472 || NR == 20492 || NR == 21043 || NR == 21047 || NR == 21116 || NR == 22056 || NR == 22080 || NR == 23522 || NR == 23864 || NR == 23893 || NR == 27475 || NR == 27483 || NR == 27518 || NR == 27542 || NR == 27551 || NR == 27610 || NR == 27618 || NR == 27634 || NR == 27638 || NR == 27643 || NR == 27657 || NR == 27665 || NR == 27683 || NR == 27695 || NR == 27707 || NR == 27758 || NR == 28118 || NR == 29812 || NR == 29817 || NR == 30578 || NR == 30975 { print "//" $0; next } 1'  test.c> test2.c
+ 1660  gcc -w test2.c
+ 1661  gcc -w sed_single_rose.c
+ 1662  awk 'NR == 3960 || NR == 3964 || NR == 5491 || NR == 5536 || NR == 5568 || NR == 5588 || NR == 5601 || NR == 5605 || NR == 5664 || NR == 5745 || NR == 8457 || NR == 8887 || NR == 8900 || NR == 10745 || NR == 10755 || NR == 10770 || NR == 10775 || NR == 10780 || NR == 10785 || NR == 10790 || NR == 10795 || NR == 10800 || NR == 10932 || NR == 12041 || NR == 12203 || NR == 15430 || NR == 18114 || NR == 18273 || NR == 18301 || NR == 18584 || NR == 18753 || NR == 19031 || NR == 19092 || NR == 19262 || NR == 19500 || NR == 20073 || NR == 20082 || NR == 20153 || NR == 20460 || NR == 20472 || NR == 20492 || NR == 21043 || NR == 21047 || NR == 21116 || NR == 22056 || NR == 22080 || NR == 23522 || NR == 23864 || NR == 23893 || NR == 27475 || NR == 27483 || NR == 27518 || NR == 27542 || NR == 27551 || NR == 27610 || NR == 27618 || NR == 27634 || NR == 27638 || NR == 27643 || NR == 27657 || NR == 27665 || NR == 27683 || NR == 27695 || NR == 27707 || NR == 27758 || NR == 28118 || NR == 29812 || NR == 29817 || NR == 30578 || NR == 30975 { print "//" $0; next } 1'  test.c> test2.c
+ 1663  awk 'NR == 3960 || NR == 3964 || NR == 5491 || NR == 5536 || NR == 5568 || NR == 5588 || NR == 5601 || NR == 5605 || NR == 5664 || NR == 5745 || NR == 8457 || NR == 8887 || NR == 8900 || NR == 10745 || NR == 10755 || NR == 10770 || NR == 10775 || NR == 10780 || NR == 10785 || NR == 10790 || NR == 10795 || NR == 10800 || NR == 10932 || NR == 12041 || NR == 12203 || NR == 15430 || NR == 18114 || NR == 18273 || NR == 18301 || NR == 18584 || NR == 18753 || NR == 19031 || NR == 19092 || NR == 19262 || NR == 19500 || NR == 20073 || NR == 20082 || NR == 20153 || NR == 20460 || NR == 20472 || NR == 20492 || NR == 21043 || NR == 21047 || NR == 21116 || NR == 22056 || NR == 22080 || NR == 23522 || NR == 23864 || NR == 23893 || NR == 27475 || NR == 27483 || NR == 27518 || NR == 27542 || NR == 27551 || NR == 27610 || NR == 27618 || NR == 27634 || NR == 27638 || NR == 27643 || NR == 27657 || NR == 27665 || NR == 27683 || NR == 27695 || NR == 27707 || NR == 27758 || NR == 28118 || NR == 29812 || NR == 29817 || NR == 30578 || NR == 30975 { print "//" $0; next } 1'  sed_single_rose_instrumented.c > test2.c
+ 1664  gcc -w test2.c
+ 1665  awk 'NR == 3960 || NR == 3964 || NR == 5491 || NR == 5536 || NR == 5568 || NR == 5588 || NR == 5601 || NR == 5605 || NR == 5664 || NR == 5745 || NR == 8457 || NR == 8887 || NR == 8900 || NR == 10745 || NR == 10755 || NR == 10770 || NR == 10775 || NR == 10780 || NR == 10785 || NR == 10790 || NR == 10795 || NR == 10800 || NR == 10932 || NR == 12041 || NR == 12203 || NR == 15430 || NR == 18114 || NR == 18273 || NR == 18301 || NR == 18584 || NR == 18753 || NR == 19031 || NR == 19092 || NR == 19262 || NR == 19500 || NR == 20073 || NR == 20082 || NR == 20153 || NR == 20460 || NR == 20472 || NR == 20492 || NR == 21043 || NR == 21047 || NR == 21116 || NR == 22056 || NR == 22080 || NR == 23522 || NR == 23864 || NR == 23893 || NR == 27475 || NR == 27483 || NR == 27518 || NR == 27542 || NR == 27551 || NR == 27610 || NR == 27618 || NR == 27634 || NR == 27638 || NR == 27643 || NR == 27657 || NR == 27665 || NR == 27683 || NR == 27695 || NR == 27707 || NR == 27758 || NR == 28118 || NR == 29812 || NR == 29817 || NR == 30578 || NR == 30975 { print "//" $0; next } 1'  sed_single_rose_instrumented.c > sed_single_rose_instrumented.c
+ 1666  gcc -w sed_single_rose_instrumented.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented\.c:\)\([0-9]*\)\(:.*error.*undeclared.*\)/\2/p' | awk '{ print "| NR == " $0 " "; next } 1' |  paste -d'|' -s
+ 1667  awk ' NR == 3972 || NR == 5642 || NR == 5680 || NR == 8895 || NR == 10937 || NR == 15435 || NR == 18127 || NR == 18282 || NR == 18612 || NR == 18776 || NR == 19054 || NR == 19513 || NR == 20132 || NR == 20464 || NR == 20565 || NR == 21157 || NR == 22060 || NR == 23666 || NR == 27500 || NR == 27522 || NR == 27558 || NR == 27647 || NR == 27670 || NR == 27687 || NR == 27746 || NR == 27762 || NR == 29851 || NR == 29856 || NR == 30631 || NR == 30983 { print "//" $0; next } 1'  sed_single_rose_instrumented.c > test2.c
+ 1668  gcc -w test2.c
+ 1669  gcc -w sed_single_rose_instrumented.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented\.c:\)\([0-9]*\)\(:.*error.*undeclared.*\)/\2/p' | awk '{ print "| NR == " $0 " "; next } 1' |  paste -d'|' -s
+ 1670  awk ' NR == 18296 || NR == 18781 || NR == 19063 || NR == 19536 || NR == 20518 || NR == 23670 || NR == 27567 || NR == 27571 || NR == 27699 || NR == 27767 || NR == 29888 || NR == 29893 || NR == 30643 { print "//" $0; next } 1'  sed_single_rose_instrumented.c > test2.c
+ 1671  gcc -w test2.c
+ 1672  gcc -w sed_single_rose_instrumented.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented\.c:\)\([0-9]*\)\(:.*error.*undeclared.*\)/\2/p' | awk '{ print "| NR == " $0 " "; next } 1' |  paste -d'|' -s
+ 1673  awk ' NR == 18823 || NR == 20087 || NR == 20522 || NR == 23706 || NR == 27597 || NR == 27605 || NR == 27728 || NR == 27772 || NR == 29924 || NR == 29929  { print "//" $0; next } 1'  sed_single_rose_instrumented.c > test2.c
+ 1674  gcc -w test2.c
+ 1675  gcc -w sed_single_rose_instrumented.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented\.c:\)\([0-9]*\)\(:.*error.*undeclared.*\)/\2/p' | awk '{ print "| NR == " $0 " "; next } 1' |  paste -d'|' -s
+ 1676  gcc -w test2.c
+ 1677  gcc -w sed_single_rose_instrumented.c
+ 1678  gcc -w test2.c
+ 1679  gcc -w sed_single_rose_instrumented.c
+ 1680  gcc -w sed_single_rose_instrumented.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented\.c:\)\([0-9]*\)\(:.*error.*undeclared.*\)/\2/p' | awk '{ print "| NR == " $0 " "; next } 1' |  paste -d'|' -s
+ 1681  awk ' NR == 18839 || NR == 20096 || NR == 20570 || NR == 23711 || NR == 27623  { print "//" $0; next } 1'  sed_single_rose_instrumented.c > test2.c
+ 1682  gcc -w test2.c
+ 1683  cp test2.c sed_single_rose_instrumented.c
+ 1684  gcc -w sed_single_rose_instrumented.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented\.c:\)\([0-9]*\)\(:.*error.*undeclared.*\)/\2/p' | awk '{ print "| NR == " $0 " "; next } 1' |  paste -d'|' -s
+ 1685  awk ' NR == 18844 || NR == 20106 || NR == 20574 || NR == 27627  { print "//" $0; next } 1'  sed_single_rose_instrumented.c > test2.c
+ 1686  gcc -w test2.c
+ 1687  cp test2.c sed_single_rose_instrumented.c
+ 1688  gcc -w sed_single_rose_instrumented.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented\.c:\)\([0-9]*\)\(:.*error.*undeclared.*\)/\2/p' | awk '{ print "| NR == " $0 " "; next } 1' |  paste -d'|' -s
+ 1689  awk '  NR == 19027 || NR == 20120 || NR == 27631   { print "//" $0; next } 1'  sed_single_rose_instrumented.c > test2.c
+ 1690  gcc -w test2.c
+ 1691  gcc -w sed_single_rose_instrumented.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented\.c:\)\([0-9]*\)\(:.*error.*undeclared.*\)/\2/p' | awk '{ print "| NR == " $0 " "; next } 1' |  paste -d'|' -s
+ 1692  cp test2.c sed_single_rose_instrumented.c
+ 1693  gcc -w sed_single_rose_instrumented.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented\.c:\)\([0-9]*\)\(:.*error.*undeclared.*\)/\2/p' | awk '{ print "| NR == " $0 " "; next } 1' |  paste -d'|' -s
+ 1694  awk '  NR == 19036 || NR == 20137 || NR == 27675    { print "//" $0; next } 1'  sed_single_rose_instrumented.c > test2.c
+ 1695  gcc -w test2.c
+ 1696  cp test2.c sed_single_rose_instrumented.c
+ 1697  gcc -w sed_single_rose_instrumented.c 2>&1 1>/dev/null | sed --quiet 's/\(.*instrumented\.c:\)\([0-9]*\)\(:.*error.*undeclared.*\)/\2/p' | awk '{ print "| NR == " $0 " "; next } 1' |  paste -d'|' -s
+ 1698  awk '   NR == 19068 || NR == 20141 || NR == 27680    { print "//" $0; next } 1'  sed_single_rose_instrumented.c > test2.c
+ 1699  gcc -w test2.c
+ 1700  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1701  gcc -w test2.c
+ 1702  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1703  gcc -w test2.c
+ 1704  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1705  gdb a.out
+ 1706  gcc -g -w test2.c
+ 1707  gdb a.out
+ 1708  gcc -g -w test2.c
+ 1709  gdb a.out
+ 1710  gcc -g -w test2.c
+ 1711  gdb a.out
+ 1712  gcc -g -w test2.c
+ 1713  gdb a.out
+ 1714  gcc -g -w test2.c
+ 1715  gdb a.out
+ 1716  gcc -g -w test2.c
+ 1717  gdb a.out
+ 1718  gcc -g -w test2.c
+ 1719  ./a.out  -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1720  gdb a.out
+ 1721  gcc -g -w test2.c
+ 1722  gdb a.out
+ 1723  gcc -w sed_single_rose.c
+ 1724  ./a.out  -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1725  gcc -g -w test2.c
+ 1726  gdb a.out
+ 1727  gcc -g -w test2.c
+ 1728  gdb a.out
+ 1729  gcc -g -w test2.c
+ 1730  gdb a.out
+ 1731  gcc -g -w test2.c
+ 1732  gdb a.out
+ 1733  gcc -g -w test2.c
+ 1734  ./a.out  -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1735  gcc -g -w test2.c
+ 1736  ./a.out  -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1737  gdb a.out
+ 1738  gcc -g -w test2.c
+ 1739  gdb a.out
+ 1740  gcc -g -w test2.c
+ 1741  gdb a.out
+ 1742  gcc -g -w test2.c
+ 1743  gdb a.out
+ 1744  gcc -g -w test2.c
+ 1745  gdb a.out
+ 1746  gcc -g -w test2.c
+ 1747  gdb a.out
+ 1748  gcc -g -w test2.c
+ 1749  gdb a.out
+ 1750  gcc -g -w test2.c
+ 1751  gdb a.out
+ 1752  gcc -g -w test2.c
+ 1753  gdb a.out
+ 1754  gcc -g -w test2.c
+ 1755  gdb a.out
+ 1756  gcc -g -w test2.c
+ 1757  gdb a.out
+ 1758  gcc -g -w test2.c
+ 1759  gdb a.out
+ 1760  gcc -g -w test2.c
+ 1761  gdb a.out
+ 1762  gcc -g -w test2.c
+ 1763  gdb a.out
+ 1764  gcc -g -w test2.c
+ 1765  gdb a.out
+ 1766  gcc -g -w test2.c
+ 1767  gdb a.out
+ 1768  gcc -g -w test2.c
+ 1769  gdb a.out
+ 1770  gcc -g -w test2.c
+ 1771  gdb a.out
+ 1772  gcc -g -w test2.c
+ 1773  gdb a.out
+ 1774  gcc -g -w test2.c
+ 1775  gdb a.out
+ 1776  gcc -g -w test2.c
+ 1777  gdb a.out
+ 1778  gcc -g -w test2.c
+ 1779  gdb a.out
+ 1780  gcc -g -w test2.c
+ 1781  r
+ 1782  gdb a.out
+ 1783  r
+ 1784  gcc -g -w test2.c
+ 1785  r
+ 1786  gdb a.out
+ 1787  r
+ 1788  gcc -g -w test2.c
+ 1789  gdb a.out
+ 1790  gcc -g -w test2.c
+ 1791  gdb a.out
+ 1792  cd Dropbox/pato/projects/cfg/
+ 1793  swipl --nosignals --quiet -s run.pl -- /home/aidb/Dropbox/testcases/sed/sed_single_rose.ttl is.c.txt > /home/aidb/Dropbox/testcases/sed/sed_single_rose_cfg.ttl
+ 1794  cd Dropbox/pato/projects/cfg/
+ 1795  swipl --nosignals --quiet -s run.pl -- /home/aidb/Dropbox/testcases/space/space_single.ttl is.c.txt > /home/aidb/Dropbox/testcases/space/space_single_cfg.ttl
+ 1796  swipl --nosignals --quiet -s run.pl -- /home/aidb/Dropbox/testcases/tot_info/tot_info_single.ttl is.c.txt > /home/aidb/Dropbox/testcases/tot_info/tot_info_single_cfg.ttl
+ 1797  swipl --nosignals --quiet -s run.pl -- /home/aidb/Dropbox/testcases/sed/sed_single_rose.ttl is.c.txt > /home/aidb/Dropbox/testcases/sed/sed_single_rose_cfg.ttl
+ 1798  swipl --nosignals --quiet -s run.pl -- /home/aidb/Dropbox/testcases/space/space_single.ttl is.c.txt > /home/aidb/Dropbox/testcases/space/space_single_cfg.ttl
+ 1799  swipl --nosignals --quiet -s run.pl -- /home/aidb/Dropbox/testcases/sed/sed_single_rose.ttl is.c.txt > /home/aidb/Dropbox/testcases/sed/sed_single_rose_cfg.ttl
+ 1800  gcc -c tot_info_single_instrumented.c
+ 1801  gcc -c tot_info_single_instrumented.c -lm
+ 1802  gcc -w tot_info_single_instrumented.c -lm
+ 1803  ./a.out < /home/aidb/SIRprograms/formatted/totinfo/inputs/test5
+ 1804  ./tot_info_single < /home/aidb/SIRprograms/formatted/totinfo/inputs/test5
+ 1805  gcc -o tot_info_single tot_info_single.c
+ 1806  gcc -o tot_info_single tot_info_single.c -lm
+ 1807  ./tot_info_single < /home/aidb/SIRprograms/formatted/totinfo/inputs/test5
+ 1808  ./a.out < /home/aidb/SIRprograms/formatted/totinfo/inputs/test5
+ 1809  cd ../space
+ 1810  gcc -w space_single_instrumented.c 
+ 1811  gcc -w space_single_instrumented.c  -lm
+ 1812  ./a.out /home/aidb/Dropbox/testcases/space/test0.txt
+ 1813  ./a.out gr27
+ 1814  gcc -w space_single_instrumented.c  -lm
+ 1815  ./a.out gr27
+ 1816  gcc -w space_single_instrumented.c  -lm
+ 1817  ./a.out gr27
+ 1818  gdb a.out
+ 1819  gcc -g -w space_single_instrumented.c  -lm
+ 1820  gdb a.out
+ 1821  gcc -g -w space_single_instrumented.c  -lm
+ 1822  ./a.out gr27
+ 1823  gdb a.out
+ 1824  ./a.out gr27
+ 1825  gcc -g -w space_single_instrumented.c  -lm
+ 1826  ./a.out gr27
+ 1827  gcc -g -w space_single_instrumented.c  -lm
+ 1828  ./a.out gr27
+ 1829  gcc -g -w space_single_instrumented.c  -lm
+ 1830  gcc -g -w space_single.c  -lm
+ 1831  gcc -g -w space_single.c -lm
+ 1832  ./a.out gr27
+ 1833  gcc -g -w space_single_instrumented.c  -lm
+ 1834  ./a.out gr27
+ 1835  gcc -g -w space_single_instrumented.c  -lm
+ 1836  ./a.out gr27
+ 1837  cd ../tot_info/
+ 1838  gcc -g -w tot_info_single_instrumented.c
+ 1839  gcc -g -w tot_info_single_instrumented.c -lm
+ 1840  ./a.out < /home/aidb/SIRprograms/formatted/totinfo/inputs/test5
+ 1841  cd ../space/
+ 1842  gcc -g -w space_single_instrumented.c  -lm
+ 1843  ./a.out < /home/aidb/SIRprograms/formatted/totinfo/inputs/test5
+ 1844  ./a.out gr27
+ 1845  cd ..
+ 1846  cd sed
+ 1847  ls -l
+ 1848  gcc -g -2 sed_single_rose_nobraces.c
+ 1849  gcc -g -w sed_single_rose_nobraces.c
+ 1850  ls -l
+ 1851  gcc -g -w se.c
+ 1852  ./a.out /home/aidb/Dropbox/testcases/sed/test0.txt
+ 1853  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1854  gcc -g -w sed_single_rose.c
+ 1855  man gcc
+ 1856  gcc -E sed_single_rose_nobraces.c -o temp.c
+ 1857  gcc temp.c
+ 1858  gcc -w temp.c
+ 1859  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1860  gcc -w sed_single_rose_nobraces.c
+ 1861  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1862  gcc -w sed_single_rose_nobraces.c
+ 1863  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1864  gcc -E sed_single_rose_nobraces.c -o temp.c
+ 1865  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1866  gcc -E sed_single_rose_nobraces.c -o sed_single_rose_nobraces.c 
+ 1867  gcc -E sed_single_rose_nobraces.c -o temp.c
+ 1868  gcc -E sed_single_rose_original.c -o temp.c
+ 1869  gcc -C -E sed_single_rose_original.c -o temp.c
+ 1870  gcc -C -E sed_single_rose_original.c -o sed_single_rose_original_preprocessed.c 
+ 1871  gcc -w sed_single_rose_original_preprocessed.c
+ 1872  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1873  gcc -w sed_single_rose_nobraces.c 
+ 1874  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1875  gcc -w sed_single_rose.c 
+ 1876  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1877  gcc -w sed_single_rose.c 
+ 1878  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1879  gcc -w sed_single_rose.c 
+ 1880  gcc -C -E sed_single_rose_original.c -o sed_single_rose_original_preprocessed.c 
+ 1881  gcc -C  sed_single_rose_original.c -o sed_single_rose_original_preprocessed.c 
+ 1882  gcc -E  sed_single_rose_original.c -o sed_single_rose_original_preprocessed.c 
+ 1883  gcc -w sed_single_rose_nobraces.c 
+ 1884  gcc -E  sed_single_rose_original.c -o sed_single_rose_original_preprocessed.c 
+ 1885  gcc -w sed_single_rose_nobraces.c 
+ 1886  gcc -w sed_single_rose_original_preprocessed.c 
+ 1887  gcc -w sed_single_rose_nobraces.c 
+ 1888  gcc -w sed_single_rose_original_preprocessed.c 
+ 1889  gcc -w sed_single_rose_nobraces.c 
+ 1890  gcc -w sed_single_rose_original_preprocessed.c 
+ 1891  gcc -w sed_single_rose_nobraces.c 
+ 1892  unifdef
+ 1893  sudo apt install unifdef
+ 1894  man unifdef
+ 1895  unifdef sed_single_rose_original.c -o temp.c
+ 1896  unifdefall sed_single_rose_original.c -o temp.c
+ 1897  coan
+ 1898  unifdefall sed_single_rose_original.c > temp.c
+ 1899  unifdefall sed_single_rose_original.c > sed_single_rose_original_preprocessed.c 
+ 1900  gcc -w sed_single_rose_original_preprocessed.c 
+ 1901  sunifdef
+ 1902  gcc -w sed_single_rose_original.c 
+ 1903  gcc -w sed_single_rose_original_preprocessed.c 
+ 1904  unifdef sed_single_rose_original.c > sed_single_rose_original_preprocessed.c 
+ 1905  gcc -w sed_single_rose_original_preprocessed.c 
+ 1906  unifdef sed_single_rose_original.c > sed_single_rose_original_preprocessed.c 
+ 1907  gcc -w sed_single_rose_original_preprocessed.c 
+ 1908  gcc -w sed_single_rose_nobraces.c 
+ 1909  unifdef sed_single_rose_original.c > sed_single_rose_original_preprocessed.c 
+ 1910  gcc -w sed_single_rose_original_preprocessed.c 
+ 1911  gcc -w sed_single_rose_nobraces.c 
+ 1912  gcc -w sed_single_rose.c
+ 1913  unifdef -s sed_single_rose_original.c 
+ 1914  unifdef -f sed_single_rose_original.c sed_single_rose_original.c 
+ 1915  gcc -w sed_single_rose.c
+ 1916  gcc -w sed_single_rose_original.c
+ 1917  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1918  gcc -E  sed_single_rose_original.c -o sed_single_rose_original_preprocessed.c 
+ 1919  gcc -w sed_single_rose_original_preprocessed.c
+ 1920  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1921  gcc -w sed_single_rose_nobraces.c 
+ 1922  sed -n '/^#/p' sed_single_rose_original_preprocessed.c 
+ 1923  sed -n '/^#/p' sed_single_rose_original_preprocessed.c > t1
+ 1924  sed -n '/^#/d' sed_single_rose_original_preprocessed.c > t2
+ 1925  sed -n '/^#/d' sed_single_rose_original_preprocessed.c 
+ 1926  gcc -E  sed_single_rose_original.c -o sed_single_rose_original_preprocessed.c 
+ 1927  sed -n '/^#/p' sed_single_rose_original_preprocessed.c > t1
+ 1928  sed -n '/^#/p' sed_single_rose_original_preprocessed.c 
+ 1929  sed  '/^#/d' sed_single_rose_original_preprocessed.c > t2
+ 1930  cat t1 t2 > t3.c
+ 1931  gcc -w 
+ 1932  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1933  gcc -E  sed_single_rose_original.c -o sed_single_rose_original_preprocessed.c 
+ 1934  sed -n '/^#/p' sed_single_rose_original_preprocessed.c > t1
+ 1935  sed  '/^#/d' sed_single_rose_original_preprocessed.c > t2
+ 1936  cat t1 t2 > sed_single_rose_original_preprocessed.c 
+ 1937  gcc -w sed_single_rose_nobraces.c 
+ 1938  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1939  gcc -w sed_single_rose_nobraces.c 
+ 1940  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1941  gcc -w sed_single_rose.c
+ 1942  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1943  gcc -w sed_single_rose_instrumented.c
+ 1944  gcc -E  sed_single_rose_original.c -o t1.c 
+ 1945  gcc -w t1.c
+ 1946  gcc -w sed_single_rose_original.c
+ 1947  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1948  gcc -w sed_single_rose_original.c
+ 1949  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1950  gcc -w sed_single_rose_original.c
+ 1951  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1952  gcc -w sed_single_rose_original.c
+ 1953  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1954  gcc -w sed_single_rose_original.c
+ 1955  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1956  gcc -E  sed_single_rose_original.c -o t1.c 
+ 1957  gcc -E  sed_single_rose_original.c -o sed_single_rose_original_preprocessed.c
+ 1958  gcc -w sed_single_rose_original.c
+ 1959  gcc -w sed_single_rose_nobraces.c 
+ 1960  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1961  gcc -w sed_single_rose_nobraces.c 
+ 1962  gcc -w sed_single_rose_original.c
+ 1963  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1964  gcc -E  sed_single_rose_original.c -o sed_single_rose_original_preprocessed.c
+ 1965  gcc -w sed_single_rose_nobraces.c 
+ 1966  gcc -w sed_single_rose.c
+ 1967  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1968  gcc -w sed_single_rose_nobraces.c 
+ 1969  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1970  gcc -w sed_single_rose.c
+ 1971  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1972  gcc -w sed_single_rose.c
+ 1973  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1974  gcc -w sed_single_rose_instrumented.c
+ 1975  gcc -E  sed_single_rose_original.c -o sed_single_rose_original_preprocessed.c
+ 1976  gcc -w sed_single_rose_nobraces.c
+ 1977  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1978  gcc -w sed_single_rose_nobraces.c
+ 1979  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1980  gcc -w sed_single_rose_nobraces.c
+ 1981  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1982  gcc -w sed_single_rose.c
+ 1983  gcc -w sed_single_rose2.c
+ 1984  gcc -w sed_single_rose.c
+ 1985  gcc -w sed_single_rose_nobraces.c
+ 1986  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1987  gcc -w sed_single_rose_nobraces.c
+ 1988  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1989  gcc -w sed_single_rose_nobraces.c
+ 1990  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1991  gcc -w sed_single_rose_nobraces.c
+ 1992  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1993  gcc -w sed_single_rose_nobraces.c
+ 1994  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1995  gcc -w sed_single_rose_nobraces.c
+ 1996  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1997  gcc -w sed_single_rose.c
+ 1998  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 1999  gcc -w sed_single_rose.c
+ 2000  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 2001  gcc -w sed_single_rose.c
+ 2002  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 2003  gcc -w sed_single_rose.c
+ 2004  gcc -w sed_single_rose_instrumented.c
+ 2005  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 2006  gcc -w sed_single_rose_instrumented.c
+ 2007  gcc -w sed_single_rose_original.c
+ 2008  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 2009  gcc -w sed_single_rose_instrumented.c
+ 2010  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 2011  gcc -w sed_single_rose_instrumented.c
+ 2012  gcc x.c
+ 2013  ./a.out
+ 2014  gcc x.c
+ 2015  ./a.out
+ 2016  gcc -w sed_single_rose_instrumented.c
+ 2017  ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 2018  time ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 2019  gcc -w sed_single_rose.c
+ 2020  time ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 2021  gcc -w sed_single_rose_original.c
+ 2022  time ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 2023  gcc -w sed_single_rose_instrumented.c
+ 2024  time ./a.out -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+ 2025  history > commands

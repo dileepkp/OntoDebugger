@@ -1,0 +1,12 @@
+break /home/aidb/Dropbox/testcases/grep/grep_single_original.c:505
+commands
+ silent
+ printf "%d \n",bytesread
+ continue 
+end
+
+
+
+run -n I /home/aidb/SIRprograms/formatted/grep/inputs/grep1.dat
+
+

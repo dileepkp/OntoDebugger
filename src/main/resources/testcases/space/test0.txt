@@ -1,0 +1,8 @@
+break /home/aidb/Dropbox/testcases/space/space_single_original.c:3639
+commands
+ silent
+ printf "%lu \n",*pp2
+ continue 
+end
+
+run 

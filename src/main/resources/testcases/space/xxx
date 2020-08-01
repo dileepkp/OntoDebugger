@@ -1,0 +1,688 @@
+Breakpoint 1 at 0x40de4a: file space_single_original.c, line 7108.
+Breakpoint 2 at 0x40de8b: file space_single_original.c, line 7114.
+Breakpoint 3 at 0x40ded2: file space_single_original.c, line 7125.
+Breakpoint 4 at 0x40df88: file space_single_original.c, line 7143.
+Breakpoint 5 at 0x40dfd5: file space_single_original.c, line 7151.
+Breakpoint 6 at 0x40e103: file space_single_original.c, line 7181.
+Breakpoint 7 at 0x40e11c: file space_single_original.c, line 7186.
+
+Breakpoint 1, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7108
+7108		if ((f = fopen(adlfilename, "r")) == NULL) {
+
+Breakpoint 2, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7114
+7114		c = (char) getc(f);
+Bug in the code:FopenPrecedesFread 7114
+fopen precedes freadf
+
+Breakpoint 4, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7143
+7143		c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 6, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7181
+7181				c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 5, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7151
+7151					c = (char) getc(f);
+
+Breakpoint 7, readfil3 (filename=0x7fffffffdcc0 "gr27", firstel=0x7fffffffdca0, lastel=0x7fffffffdca8) at space_single_original.c:7186
+7186		fclose(f);
+*******************************************************************************
+                         ARRAY PREPROCESSOR ver. 1.0
+*******************************************************************************
+
+
+
+   1	GROUP testgroup
+   3	 GRID HEXAGONAL
+   4	 ELEMENT
+   5	 GEOMETRY RECTANGULAR 46 53 mm
+   7	 POLARIZATION LINEAR ORIENTATION 37
+   8	 ADD BLOCK -12 1 -5 1
+  10	 GROUP_EXCITATION
+  11	 AMPLITUDE XX
+  12	 PHASE UNIFORM 0
+  13	 END
+
+Error occurred at line 5
+   5:	 GEOMETRY RECTANGULAR 46 53 mm
+% 	                      ^
+** ERROR 94: At least one ADD statement is required. 
+
+** ERROR 82: Incorrect GROUP definition, group: testgroup
+[Inferior 1 (process 12630) exited with code 01]
+No Bug: FopenPrecedesFclose
+No Bug: FcloseFollowsFopen
+No Bug: FreadFollowsFopen
+No Bug: FreadPrecedesFclose
+No Bug: FcloseFollowsFread
+No Bug: Double fopen
+No Bug: Double fclose

@@ -1,0 +1,8 @@
+break /home/aidb/Dropbox/testcases/tot_info/tot_info_single_original.c:228
+commands
+ silent
+ printf "%f %f \n",info, totinfo
+ continue 
+end
+
+run < /home/aidb/SIRprograms/formatted/totinfo/inputs/test5

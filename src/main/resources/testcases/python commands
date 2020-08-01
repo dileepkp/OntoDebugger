@@ -1,0 +1,26 @@
+time gdb -x test0.txt -batch tot_info_single
+time gdb -x test0.py -batch tot_info_single < /home/aidb/SIRprograms/formatted/totinfo/inputs/test5
+time gdb -x tp.py -batch tot_info_single < /home/aidb/SIRprograms/formatted/totinfo/inputs/test5
+
+
+time gdb -x test0.txt -batch --args space_single gr27
+time gdb -x test0.py -batch --args space_single gr27
+time gdb -x main.py -batch --args space_single gr27
+
+gdb -x a0.py -batch --args space_single gr27
+
+time gdb -x test0.txt -batch --args /home/aidb/Dropbox/testcases/sed/sed_single -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+time gdb -x test0.py -batch --args /home/aidb/Dropbox/testcases/sed/sed_single -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in
+
+
+time gdb -x test0.txt -batch a.out
+time gdb -x test0.py -batch a.out
+
+
+time gdb -x test0.txt -batch a.out
+time gdb -x test0.py -batch a.out
+
+
+gcc -I. -g grep_single_original.c
+
+

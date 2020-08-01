@@ -1,0 +1,15 @@
+break /home/aidb/Dropbox/testcases/sed/sed_single.c:2220
+commands
+ silent
+ printf "%lu \n",last_regex
+ continue 
+end
+
+break /home/aidb/Dropbox/testcases/sed/sed_single.c:2226
+commands
+ silent
+ printf "%lu \n",last_regex
+ continue 
+end
+
+run 

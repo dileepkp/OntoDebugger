@@ -1,0 +1,1910 @@
+space_single_instrumented.c:839:1: error: conflicting types for ‘yyfp’
+ yyfp = fopen("/home/aidb/Dropbox/testcases/space/space_single_trace.ttl","w");
+ ^
+space_single_instrumented.c:834:7: note: previous declaration of ‘yyfp’ was here
+ FILE *yyfp;
+       ^
+space_single_instrumented.c:839:8: error: initializer element is not constant
+ yyfp = fopen("/home/aidb/Dropbox/testcases/space/space_single_trace.ttl","w");
+        ^
+space_single_instrumented.c:2147:1: error: expected identifier or ‘(’ before ‘if’
+ if (rot_angle != 0) {
+ ^
+space_single_instrumented.c:2179:1: error: expected identifier or ‘(’ before ‘if’
+ if (group_shape == CIRCUL_SHAPE) {
+ ^
+space_single_instrumented.c:2249:3: error: expected identifier or ‘(’ before ‘else’
+ } else if (group_shape == RECTAN_SHAPE) {{
+   ^
+space_single_instrumented.c:2449:10: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+ group_ptr->NUM_OF_NODES = nodes_num;
+          ^
+space_single_instrumented.c:2450:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:301_1_301_16 pa:hasState file0:301_1_301_16_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:2451:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:301_1_301_16_state-%d pa:hasValue %d\n", yyseq, group_ptr->NUM_OF_NODES);
+                 ^
+space_single_instrumented.c:2452:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:301_1_301_16_state-%d pa:atProgramPoint file0:1073_1_1073_31-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:2453:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:2453:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:2454:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:979_1_979_25 pa:hasState file0:979_1_979_25_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:2455:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:979_1_979_25_state-%d pa:hasValue %d\n", yyseq, nodes_num);
+                 ^
+space_single_instrumented.c:2456:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:979_1_979_25_state-%d pa:atProgramPoint file0:1073_1_1073_31-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:2457:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:2457:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:2458:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1073_1_1073_31-%d pa:beforeStatement file0:1073_1_1073_31\n", yyseq);
+                 ^
+space_single_instrumented.c:2459:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1073_1_1073_31-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:2461:10: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+ group_ptr->SHAPE = group_shape;
+          ^
+space_single_instrumented.c:2462:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:302_1_302_9 pa:hasState file0:302_1_302_9_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:2463:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:302_1_302_9_state-%d pa:hasValue %d\n", yyseq, group_ptr->SHAPE);
+                 ^
+space_single_instrumented.c:2464:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:302_1_302_9_state-%d pa:atProgramPoint file0:1074_1_1074_31-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:2465:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:2465:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:2466:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:979_1_979_38 pa:hasState file0:979_1_979_38_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:2467:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:979_1_979_38_state-%d pa:hasValue %d\n", yyseq, group_shape);
+                 ^
+space_single_instrumented.c:2468:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:979_1_979_38_state-%d pa:atProgramPoint file0:1074_1_1074_31-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:2469:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:2469:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:2470:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1074_1_1074_31-%d pa:beforeStatement file0:1074_1_1074_31\n", yyseq);
+                 ^
+space_single_instrumented.c:2471:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1074_1_1074_31-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:2473:10: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+ group_ptr->PSIZE = group_psize;
+          ^
+space_single_instrumented.c:2474:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:980_1_980_27 pa:hasState file0:980_1_980_27_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:2475:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:980_1_980_27_state-%d pa:hasValue %f\n", yyseq, group_psize);
+                 ^
+space_single_instrumented.c:2476:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:980_1_980_27_state-%d pa:atProgramPoint file0:1075_1_1075_31-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:2477:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:2477:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:2478:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:303_1_303_12 pa:hasState file0:303_1_303_12_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:2479:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:303_1_303_12_state-%d pa:hasValue %f\n", yyseq, group_ptr->PSIZE);
+                 ^
+space_single_instrumented.c:2480:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:303_1_303_12_state-%d pa:atProgramPoint file0:1075_1_1075_31-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:2481:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:2481:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:2482:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1075_1_1075_31-%d pa:beforeStatement file0:1075_1_1075_31\n", yyseq);
+                 ^
+space_single_instrumented.c:2483:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1075_1_1075_31-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:2485:10: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+ group_ptr->QSIZE = group_qsize;
+          ^
+space_single_instrumented.c:2486:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:304_1_304_12 pa:hasState file0:304_1_304_12_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:2487:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:304_1_304_12_state-%d pa:hasValue %f\n", yyseq, group_ptr->QSIZE);
+                 ^
+space_single_instrumented.c:2488:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:304_1_304_12_state-%d pa:atProgramPoint file0:1076_1_1076_36-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:2489:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:2489:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:2490:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:980_1_980_40 pa:hasState file0:980_1_980_40_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:2491:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:980_1_980_40_state-%d pa:hasValue %f\n", yyseq, group_qsize);
+                 ^
+space_single_instrumented.c:2492:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:980_1_980_40_state-%d pa:atProgramPoint file0:1076_1_1076_36-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:2493:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:2493:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:2494:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1076_1_1076_36-%d pa:beforeStatement file0:1076_1_1076_36\n", yyseq);
+                 ^
+space_single_instrumented.c:2495:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1076_1_1076_36-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:2497:10: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+ group_ptr->GEOMNODE_PTR = primo_ptr;
+          ^
+space_single_instrumented.c:2498:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:973_1_973_26 pa:hasState file0:973_1_973_26_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:2499:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:973_1_973_26_state-%d pa:hasValue %lu\n", yyseq, primo_ptr);
+                 ^
+space_single_instrumented.c:2500:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:973_1_973_26 pa:hasStructDeclRef null \n");
+                 ^
+space_single_instrumented.c:2501:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:973_1_973_26_state-%d pa:atProgramPoint file0:1077_1_1077_9-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:2502:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:2502:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:2503:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:305_1_305_29 pa:hasState file0:305_1_305_29_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:2504:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:305_1_305_29_state-%d pa:hasValue %lu\n", yyseq, group_ptr->GEOMNODE_PTR);
+                 ^
+space_single_instrumented.c:2505:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:305_1_305_29 pa:hasStructDeclRef ftp://home/demo/Dropbox/testcases/space/space_single.c#969_24_969_32 \n");
+                 ^
+space_single_instrumented.c:2506:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:305_1_305_29_state-%d pa:atProgramPoint file0:1077_1_1077_9-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:2507:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:2507:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:2508:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1077_1_1077_9-%d pa:beforeStatement file0:1077_1_1077_9\n", yyseq);
+                 ^
+space_single_instrumented.c:2509:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1077_1_1077_9-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:2511:1: error: expected identifier or ‘(’ before ‘return’
+ return 0;
+ ^
+space_single_instrumented.c:2512:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+space_single_instrumented.c: In function ‘ampunit’:
+space_single_instrumented.c:2790:1: error: expected ‘}’ before ‘else’
+ else if (GetKeyword(Keywords[64], curr_ptr) == 0){
+ ^
+space_single_instrumented.c:2828:1: error: expected ‘}’ before ‘else’
+ else{
+ ^
+space_single_instrumented.c: At top level:
+space_single_instrumented.c:2872:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+space_single_instrumented.c:2873:8: error: ‘curr_ptr’ undeclared here (not in a function)
+ *tp = *curr_ptr;
+        ^
+space_single_instrumented.c:2874:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1120_1_1120_32 pa:hasState file0:1120_1_1120_32_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:2875:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1120_1_1120_32_state-%d pa:hasValue %lu\n", yyseq, curr_ptr);
+                 ^
+space_single_instrumented.c:2876:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1120_1_1120_32 pa:hasStructDeclRef null \n");
+                 ^
+space_single_instrumented.c:2877:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1120_1_1120_32_state-%d pa:atProgramPoint file0:1136_1_1136_9-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:2878:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:2878:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:2879:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1118_26_1118_27 pa:hasState file0:1118_26_1118_27_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:2880:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1118_26_1118_27_state-%d pa:hasValue %lu\n", yyseq, tp);
+                 ^
+space_single_instrumented.c:2881:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1118_26_1118_27 pa:hasStructDeclRef null \n");
+                 ^
+space_single_instrumented.c:2882:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1118_26_1118_27_state-%d pa:atProgramPoint file0:1136_1_1136_9-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:2883:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:2883:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:2884:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1136_1_1136_9-%d pa:beforeStatement file0:1136_1_1136_9\n", yyseq);
+                 ^
+space_single_instrumented.c:2885:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1136_1_1136_9-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:2887:1: error: expected identifier or ‘(’ before ‘return’
+ return 0;
+ ^
+space_single_instrumented.c:2888:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+space_single_instrumented.c: In function ‘angunit’:
+space_single_instrumented.c:4002:1: error: expected ‘}’ before ‘else’
+ else{
+ ^
+space_single_instrumented.c: At top level:
+space_single_instrumented.c:4040:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1310_1_1310_32 pa:hasState file0:1310_1_1310_32_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:4041:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1310_1_1310_32_state-%d pa:hasValue %lu\n", yyseq, curr_ptr);
+                 ^
+space_single_instrumented.c:4042:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1310_1_1310_32 pa:hasStructDeclRef null \n");
+                 ^
+space_single_instrumented.c:4043:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1310_1_1310_32_state-%d pa:atProgramPoint file0:1323_1_1323_9-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:4044:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:4044:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:4045:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1308_18_1308_20 pa:hasState file0:1308_18_1308_20_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:4046:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1308_18_1308_20_state-%d pa:hasValue %lu\n", yyseq, pp2);
+                 ^
+space_single_instrumented.c:4047:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1308_18_1308_20 pa:hasStructDeclRef null \n");
+                 ^
+space_single_instrumented.c:4048:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1308_18_1308_20_state-%d pa:atProgramPoint file0:1323_1_1323_9-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:4049:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:4049:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:4050:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1323_1_1323_9-%d pa:beforeStatement file0:1323_1_1323_9\n", yyseq);
+                 ^
+space_single_instrumented.c:4051:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:1323_1_1323_9-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:4053:1: error: expected identifier or ‘(’ before ‘return’
+ return 0;
+ ^
+space_single_instrumented.c:4054:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+space_single_instrumented.c: In function ‘gainunit’:
+space_single_instrumented.c:9454:1: error: expected ‘}’ before ‘else’
+ else{
+ ^
+space_single_instrumented.c: At top level:
+space_single_instrumented.c:9491:2: error: redefinition of ‘pp2’
+ *pp2 = *curr_ptr;
+  ^
+space_single_instrumented.c:4039:2: note: previous definition of ‘pp2’ was here
+ *pp2 = *curr_ptr;
+  ^
+space_single_instrumented.c:9492:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:2386_1_2386_32 pa:hasState file0:2386_1_2386_32_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:9493:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:2386_1_2386_32_state-%d pa:hasValue %lu\n", yyseq, curr_ptr);
+                 ^
+space_single_instrumented.c:9494:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:2386_1_2386_32 pa:hasStructDeclRef null \n");
+                 ^
+space_single_instrumented.c:9495:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:2386_1_2386_32_state-%d pa:atProgramPoint file0:2399_1_2399_9-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:9496:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:9496:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:9497:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:2384_18_2384_20 pa:hasState file0:2384_18_2384_20_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:9498:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:2384_18_2384_20_state-%d pa:hasValue %lu\n", yyseq, pp2);
+                 ^
+space_single_instrumented.c:9499:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:2384_18_2384_20 pa:hasStructDeclRef null \n");
+                 ^
+space_single_instrumented.c:9500:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:2384_18_2384_20_state-%d pa:atProgramPoint file0:2399_1_2399_9-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:9501:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:9501:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:9502:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:2399_1_2399_9-%d pa:beforeStatement file0:2399_1_2399_9\n", yyseq);
+                 ^
+space_single_instrumented.c:9503:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:2399_1_2399_9-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:9505:1: error: expected identifier or ‘(’ before ‘return’
+ return 0;
+ ^
+space_single_instrumented.c:9506:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+space_single_instrumented.c: In function ‘lenunit’:
+space_single_instrumented.c:17375:1: error: expected ‘}’ before ‘else’
+ else if (GetKeyword(Keywords[8], curr_ptr) == 0){
+ ^
+space_single_instrumented.c:17395:1: error: expected ‘}’ before ‘else’
+ else if (GetKeyword(Keywords[9], curr_ptr) == 0){
+ ^
+space_single_instrumented.c:17461:1: error: expected ‘}’ before ‘else’
+ else{
+ ^
+space_single_instrumented.c: At top level:
+space_single_instrumented.c:17480:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+space_single_instrumented.c:17481:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+space_single_instrumented.c:17482:2: error: redefinition of ‘tp’
+ *tp = *curr_ptr;
+  ^
+space_single_instrumented.c:2873:2: note: previous definition of ‘tp’ was here
+ *tp = *curr_ptr;
+  ^
+space_single_instrumented.c:17483:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:3685_26_3685_27 pa:hasState file0:3685_26_3685_27_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:17484:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:3685_26_3685_27_state-%d pa:hasValue %lu\n", yyseq, tp);
+                 ^
+space_single_instrumented.c:17485:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:3685_26_3685_27 pa:hasStructDeclRef null \n");
+                 ^
+space_single_instrumented.c:17486:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:3685_26_3685_27_state-%d pa:atProgramPoint file0:3702_1_3702_9-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:17487:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:17487:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:17488:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:3687_1_3687_32 pa:hasState file0:3687_1_3687_32_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:17489:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:3687_1_3687_32_state-%d pa:hasValue %lu\n", yyseq, curr_ptr);
+                 ^
+space_single_instrumented.c:17490:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:3687_1_3687_32 pa:hasStructDeclRef null \n");
+                 ^
+space_single_instrumented.c:17491:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:3687_1_3687_32_state-%d pa:atProgramPoint file0:3702_1_3702_9-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:17492:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:17492:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:17493:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:3702_1_3702_9-%d pa:beforeStatement file0:3702_1_3702_9\n", yyseq);
+                 ^
+space_single_instrumented.c:17494:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:3702_1_3702_9-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:17496:1: error: expected identifier or ‘(’ before ‘return’
+ return 0;
+ ^
+space_single_instrumented.c:17497:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+space_single_instrumented.c: In function ‘sgramp2n’:
+space_single_instrumented.c:29308:3: error: expected ‘}’ before ‘else’
+ } else {
+   ^
+space_single_instrumented.c: At top level:
+space_single_instrumented.c:29625:6: error: ‘p2x’ undeclared here (not in a function)
+ x1 = p2x - cex;
+      ^
+space_single_instrumented.c:29625:12: error: ‘cex’ undeclared here (not in a function)
+ x1 = p2x - cex;
+            ^
+space_single_instrumented.c:29626:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_59 pa:hasState file0:5389_1_5389_59_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29627:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_59_state-%d pa:hasValue %f\n", yyseq, cex);
+                 ^
+space_single_instrumented.c:29628:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_59_state-%d pa:atProgramPoint file0:5440_1_5440_15-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29629:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29629:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29630:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_29 pa:hasState file0:5389_1_5389_29_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29631:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_29_state-%d pa:hasValue %f\n", yyseq, p2x);
+                 ^
+space_single_instrumented.c:29632:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_29_state-%d pa:atProgramPoint file0:5440_1_5440_15-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29633:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29633:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29634:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_33 pa:hasState file0:5386_1_5386_33_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29635:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_33_state-%d pa:hasValue %f\n", yyseq, x1);
+                 ^
+space_single_instrumented.c:29636:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_33_state-%d pa:atProgramPoint file0:5440_1_5440_15-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29637:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29637:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29638:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5440_1_5440_15-%d pa:beforeStatement file0:5440_1_5440_15\n", yyseq);
+                 ^
+space_single_instrumented.c:29639:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5440_1_5440_15-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29641:1: error: ‘y1’ redeclared as different kind of symbol
+ y1 = q2y - cey;
+ ^
+In file included from /usr/include/features.h:367:0,
+                 from /usr/include/stdio.h:27,
+                 from space_single_instrumented.c:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:251:1: note: previous declaration of ‘y1’ was here
+ __MATHCALL (y1,, (_Mdouble_));
+ ^
+space_single_instrumented.c:29641:6: error: ‘q2y’ undeclared here (not in a function)
+ y1 = q2y - cey;
+      ^
+space_single_instrumented.c:29641:12: error: ‘cey’ undeclared here (not in a function)
+ y1 = q2y - cey;
+            ^
+space_single_instrumented.c:29642:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_64 pa:hasState file0:5389_1_5389_64_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29643:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_64_state-%d pa:hasValue %f\n", yyseq, cey);
+                 ^
+space_single_instrumented.c:29644:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_64_state-%d pa:atProgramPoint file0:5441_1_5441_11-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29645:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29645:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29646:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_37 pa:hasState file0:5386_1_5386_37_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29647:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_37_state-%d pa:hasValue %f\n", yyseq, y1);
+                 ^
+space_single_instrumented.c:29648:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_37_state-%d pa:atProgramPoint file0:5441_1_5441_11-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29649:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29649:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29650:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_54 pa:hasState file0:5389_1_5389_54_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29651:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_54_state-%d pa:hasValue %f\n", yyseq, q2y);
+                 ^
+space_single_instrumented.c:29652:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_54_state-%d pa:atProgramPoint file0:5441_1_5441_11-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29653:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29653:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29654:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5441_1_5441_11-%d pa:beforeStatement file0:5441_1_5441_11\n", yyseq);
+                 ^
+space_single_instrumented.c:29655:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5441_1_5441_11-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29657:5: error: ‘centre’ undeclared here (not in a function)
+ e = centre;
+     ^
+space_single_instrumented.c:29658:1: error: expected identifier or ‘(’ before ‘if’
+ if (x1 == 0) {
+ ^
+space_single_instrumented.c:29687:3: error: expected identifier or ‘(’ before ‘else’
+ } else {
+   ^
+space_single_instrumented.c:29741:1: error: expected identifier or ‘(’ before ‘if’
+ if (y1 == 0) {
+ ^
+space_single_instrumented.c:29770:3: error: expected identifier or ‘(’ before ‘else’
+ } else {
+   ^
+space_single_instrumented.c:29824:5: error: ‘a’ undeclared here (not in a function)
+ A = a;
+     ^
+space_single_instrumented.c:29825:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_17 pa:hasState file0:5386_1_5386_17_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29826:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_17_state-%d pa:hasValue %f\n", yyseq, a);
+                 ^
+space_single_instrumented.c:29827:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_17_state-%d pa:atProgramPoint file0:5455_1_5455_6-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29828:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29828:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29829:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5387_1_5387_17 pa:hasState file0:5387_1_5387_17_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29830:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5387_1_5387_17_state-%d pa:hasValue %f\n", yyseq, A);
+                 ^
+space_single_instrumented.c:29831:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5387_1_5387_17_state-%d pa:atProgramPoint file0:5455_1_5455_6-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29832:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29832:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29833:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5455_1_5455_6-%d pa:beforeStatement file0:5455_1_5455_6\n", yyseq);
+                 ^
+space_single_instrumented.c:29834:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5455_1_5455_6-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29836:5: error: ‘b’ undeclared here (not in a function)
+ B = b;
+     ^
+space_single_instrumented.c:29837:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_20 pa:hasState file0:5386_1_5386_20_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29838:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_20_state-%d pa:hasValue %f\n", yyseq, b);
+                 ^
+space_single_instrumented.c:29839:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_20_state-%d pa:atProgramPoint file0:5456_1_5456_20-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29840:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29840:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29841:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5387_1_5387_20 pa:hasState file0:5387_1_5387_20_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29842:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5387_1_5387_20_state-%d pa:hasValue %f\n", yyseq, B);
+                 ^
+space_single_instrumented.c:29843:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5387_1_5387_20_state-%d pa:atProgramPoint file0:5456_1_5456_20-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29844:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29844:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29845:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5456_1_5456_20-%d pa:beforeStatement file0:5456_1_5456_20\n", yyseq);
+                 ^
+space_single_instrumented.c:29846:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5456_1_5456_20-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29848:5: error: ‘c’ undeclared here (not in a function)
+ C = c - 2 * a * cex;
+     ^
+space_single_instrumented.c:29849:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5387_1_5387_23 pa:hasState file0:5387_1_5387_23_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29850:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5387_1_5387_23_state-%d pa:hasValue %f\n", yyseq, C);
+                 ^
+space_single_instrumented.c:29851:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5387_1_5387_23_state-%d pa:atProgramPoint file0:5457_1_5457_20-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29852:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29852:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29853:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_23 pa:hasState file0:5386_1_5386_23_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29854:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_23_state-%d pa:hasValue %f\n", yyseq, c);
+                 ^
+space_single_instrumented.c:29855:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_23_state-%d pa:atProgramPoint file0:5457_1_5457_20-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29856:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29856:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29857:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_17 pa:hasState file0:5386_1_5386_17_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29858:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_17_state-%d pa:hasValue %f\n", yyseq, a);
+                 ^
+space_single_instrumented.c:29859:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_17_state-%d pa:atProgramPoint file0:5457_1_5457_20-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29860:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29860:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29861:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_59 pa:hasState file0:5389_1_5389_59_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29862:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_59_state-%d pa:hasValue %f\n", yyseq, cex);
+                 ^
+space_single_instrumented.c:29863:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_59_state-%d pa:atProgramPoint file0:5457_1_5457_20-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29864:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29864:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29865:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5457_1_5457_20-%d pa:beforeStatement file0:5457_1_5457_20\n", yyseq);
+                 ^
+space_single_instrumented.c:29866:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5457_1_5457_20-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29868:5: error: ‘d’ undeclared here (not in a function)
+ D = d - 2 * b * cey;
+     ^
+space_single_instrumented.c:29869:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_26 pa:hasState file0:5386_1_5386_26_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29870:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_26_state-%d pa:hasValue %f\n", yyseq, d);
+                 ^
+space_single_instrumented.c:29871:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_26_state-%d pa:atProgramPoint file0:5458_1_5458_58-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29872:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29872:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29873:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5387_1_5387_26 pa:hasState file0:5387_1_5387_26_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29874:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5387_1_5387_26_state-%d pa:hasValue %f\n", yyseq, D);
+                 ^
+space_single_instrumented.c:29875:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5387_1_5387_26_state-%d pa:atProgramPoint file0:5458_1_5458_58-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29876:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29876:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29877:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_64 pa:hasState file0:5389_1_5389_64_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29878:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_64_state-%d pa:hasValue %f\n", yyseq, cey);
+                 ^
+space_single_instrumented.c:29879:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_64_state-%d pa:atProgramPoint file0:5458_1_5458_58-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29880:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29880:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29881:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_20 pa:hasState file0:5386_1_5386_20_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29882:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_20_state-%d pa:hasValue %f\n", yyseq, b);
+                 ^
+space_single_instrumented.c:29883:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_20_state-%d pa:atProgramPoint file0:5458_1_5458_58-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29884:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29884:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29885:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5458_1_5458_58-%d pa:beforeStatement file0:5458_1_5458_58\n", yyseq);
+                 ^
+space_single_instrumented.c:29886:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5458_1_5458_58-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29889:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_17 pa:hasState file0:5386_1_5386_17_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29890:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_17_state-%d pa:hasValue %f\n", yyseq, a);
+                 ^
+space_single_instrumented.c:29891:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_17_state-%d pa:atProgramPoint file0:5459_1_5459_32-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29892:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29892:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29893:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_59 pa:hasState file0:5389_1_5389_59_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29894:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_59_state-%d pa:hasValue %f\n", yyseq, cex);
+                 ^
+space_single_instrumented.c:29895:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_59_state-%d pa:atProgramPoint file0:5459_1_5459_32-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29896:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29896:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29897:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_64 pa:hasState file0:5389_1_5389_64_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29898:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_64_state-%d pa:hasValue %f\n", yyseq, cey);
+                 ^
+space_single_instrumented.c:29899:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5389_1_5389_64_state-%d pa:atProgramPoint file0:5459_1_5459_32-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29900:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29900:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29901:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_26 pa:hasState file0:5386_1_5386_26_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29902:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_26_state-%d pa:hasValue %f\n", yyseq, d);
+                 ^
+space_single_instrumented.c:29903:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_26_state-%d pa:atProgramPoint file0:5459_1_5459_32-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29904:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29904:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29905:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5387_1_5387_29 pa:hasState file0:5387_1_5387_29_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29906:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5387_1_5387_29_state-%d pa:hasValue %f\n", yyseq, E);
+                 ^
+space_single_instrumented.c:29907:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5387_1_5387_29_state-%d pa:atProgramPoint file0:5459_1_5459_32-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29908:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29908:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29909:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_23 pa:hasState file0:5386_1_5386_23_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29910:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_23_state-%d pa:hasValue %f\n", yyseq, c);
+                 ^
+space_single_instrumented.c:29911:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_23_state-%d pa:atProgramPoint file0:5459_1_5459_32-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29912:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29912:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29913:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_29 pa:hasState file0:5386_1_5386_29_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29914:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_29_state-%d pa:hasValue %f\n", yyseq, e);
+                 ^
+space_single_instrumented.c:29915:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_29_state-%d pa:atProgramPoint file0:5459_1_5459_32-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29916:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29916:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29917:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_20 pa:hasState file0:5386_1_5386_20_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29918:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_20_state-%d pa:hasValue %f\n", yyseq, b);
+                 ^
+space_single_instrumented.c:29919:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5386_1_5386_20_state-%d pa:atProgramPoint file0:5459_1_5459_32-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29920:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29920:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29921:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5459_1_5459_32-%d pa:beforeStatement file0:5459_1_5459_32\n", yyseq);
+                 ^
+space_single_instrumented.c:29922:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5459_1_5459_32-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29924:20: error: ‘geomnode_ptr’ undeclared here (not in a function)
+ geomnode_app_ptr = geomnode_ptr;
+                    ^
+space_single_instrumented.c:29925:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5369_19_5369_30 pa:hasState file0:5369_19_5369_30_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29926:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5369_19_5369_30_state-%d pa:hasValue %lu\n", yyseq, geomnode_ptr);
+                 ^
+space_single_instrumented.c:29927:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5369_19_5369_30 pa:hasStructDeclRef null \n");
+                 ^
+space_single_instrumented.c:29928:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5369_19_5369_30_state-%d pa:atProgramPoint file0:5460_1_5460_24-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29929:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29929:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29930:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5375_1_5375_33 pa:hasState file0:5375_1_5375_33_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:29931:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5375_1_5375_33_state-%d pa:hasValue %lu\n", yyseq, geomnode_app_ptr);
+                 ^
+space_single_instrumented.c:29932:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5375_1_5375_33 pa:hasStructDeclRef null \n");
+                 ^
+space_single_instrumented.c:29933:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5375_1_5375_33_state-%d pa:atProgramPoint file0:5460_1_5460_24-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29934:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:29934:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:29935:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5460_1_5460_24-%d pa:beforeStatement file0:5460_1_5460_24\n", yyseq);
+                 ^
+space_single_instrumented.c:29936:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5460_1_5460_24-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:29938:16: error: ‘port_ptr’ undeclared here (not in a function)
+ port_app_ptr = port_ptr;
+                ^
+space_single_instrumented.c:29939:1: error: expected identifier or ‘(’ before ‘while’
+ while (geomnode_app_ptr != NULL) {
+ ^
+space_single_instrumented.c:30178:1: error: expected identifier or ‘(’ before ‘return’
+ return 0;
+ ^
+space_single_instrumented.c:30179:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+space_single_instrumented.c: In function ‘sgrpha2n’:
+space_single_instrumented.c:31241:3: error: expected ‘}’ before ‘else’
+ } else {
+   ^
+space_single_instrumented.c: At top level:
+space_single_instrumented.c:31558:1: error: redefinition of ‘x1’
+ x1 = p2x - cex;
+ ^
+space_single_instrumented.c:29625:1: note: previous definition of ‘x1’ was here
+ x1 = p2x - cex;
+ ^
+space_single_instrumented.c:31559:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_29 pa:hasState file0:5549_1_5549_29_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31560:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_29_state-%d pa:hasValue %f\n", yyseq, p2x);
+                 ^
+space_single_instrumented.c:31561:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_29_state-%d pa:atProgramPoint file0:5600_1_5600_15-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31562:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31562:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31563:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_59 pa:hasState file0:5549_1_5549_59_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31564:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_59_state-%d pa:hasValue %f\n", yyseq, cex);
+                 ^
+space_single_instrumented.c:31565:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_59_state-%d pa:atProgramPoint file0:5600_1_5600_15-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31566:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31566:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31567:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_33 pa:hasState file0:5546_1_5546_33_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31568:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_33_state-%d pa:hasValue %f\n", yyseq, x1);
+                 ^
+space_single_instrumented.c:31569:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_33_state-%d pa:atProgramPoint file0:5600_1_5600_15-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31570:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31570:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31571:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5600_1_5600_15-%d pa:beforeStatement file0:5600_1_5600_15\n", yyseq);
+                 ^
+space_single_instrumented.c:31572:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5600_1_5600_15-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31574:1: error: ‘y1’ redeclared as different kind of symbol
+ y1 = q2y - cey;
+ ^
+In file included from /usr/include/features.h:367:0,
+                 from /usr/include/stdio.h:27,
+                 from space_single_instrumented.c:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:251:1: note: previous declaration of ‘y1’ was here
+ __MATHCALL (y1,, (_Mdouble_));
+ ^
+space_single_instrumented.c:31575:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_37 pa:hasState file0:5546_1_5546_37_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31576:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_37_state-%d pa:hasValue %f\n", yyseq, y1);
+                 ^
+space_single_instrumented.c:31577:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_37_state-%d pa:atProgramPoint file0:5601_1_5601_11-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31578:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31578:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31579:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_54 pa:hasState file0:5549_1_5549_54_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31580:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_54_state-%d pa:hasValue %f\n", yyseq, q2y);
+                 ^
+space_single_instrumented.c:31581:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_54_state-%d pa:atProgramPoint file0:5601_1_5601_11-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31582:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31582:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31583:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_64 pa:hasState file0:5549_1_5549_64_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31584:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_64_state-%d pa:hasValue %f\n", yyseq, cey);
+                 ^
+space_single_instrumented.c:31585:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_64_state-%d pa:atProgramPoint file0:5601_1_5601_11-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31586:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31586:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31587:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5601_1_5601_11-%d pa:beforeStatement file0:5601_1_5601_11\n", yyseq);
+                 ^
+space_single_instrumented.c:31588:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5601_1_5601_11-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31590:1: error: redefinition of ‘e’
+ e = centre;
+ ^
+space_single_instrumented.c:29657:1: note: previous definition of ‘e’ was here
+ e = centre;
+ ^
+space_single_instrumented.c:31591:1: error: expected identifier or ‘(’ before ‘if’
+ if (x1 == 0) {
+ ^
+space_single_instrumented.c:31620:3: error: expected identifier or ‘(’ before ‘else’
+ } else {
+   ^
+space_single_instrumented.c:31674:1: error: expected identifier or ‘(’ before ‘if’
+ if (y1 == 0) {
+ ^
+space_single_instrumented.c:31703:3: error: expected identifier or ‘(’ before ‘else’
+ } else {
+   ^
+space_single_instrumented.c:31757:1: error: redefinition of ‘A’
+ A = a;
+ ^
+space_single_instrumented.c:29824:1: note: previous definition of ‘A’ was here
+ A = a;
+ ^
+space_single_instrumented.c:31758:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_17 pa:hasState file0:5546_1_5546_17_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31759:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_17_state-%d pa:hasValue %f\n", yyseq, a);
+                 ^
+space_single_instrumented.c:31760:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_17_state-%d pa:atProgramPoint file0:5615_1_5615_6-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31761:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31761:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31762:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5547_1_5547_17 pa:hasState file0:5547_1_5547_17_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31763:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5547_1_5547_17_state-%d pa:hasValue %f\n", yyseq, A);
+                 ^
+space_single_instrumented.c:31764:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5547_1_5547_17_state-%d pa:atProgramPoint file0:5615_1_5615_6-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31765:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31765:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31766:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5615_1_5615_6-%d pa:beforeStatement file0:5615_1_5615_6\n", yyseq);
+                 ^
+space_single_instrumented.c:31767:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5615_1_5615_6-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31769:1: error: redefinition of ‘B’
+ B = b;
+ ^
+space_single_instrumented.c:29836:1: note: previous definition of ‘B’ was here
+ B = b;
+ ^
+space_single_instrumented.c:31770:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_20 pa:hasState file0:5546_1_5546_20_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31771:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_20_state-%d pa:hasValue %f\n", yyseq, b);
+                 ^
+space_single_instrumented.c:31772:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_20_state-%d pa:atProgramPoint file0:5616_1_5616_20-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31773:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31773:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31774:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5547_1_5547_20 pa:hasState file0:5547_1_5547_20_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31775:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5547_1_5547_20_state-%d pa:hasValue %f\n", yyseq, B);
+                 ^
+space_single_instrumented.c:31776:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5547_1_5547_20_state-%d pa:atProgramPoint file0:5616_1_5616_20-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31777:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31777:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31778:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5616_1_5616_20-%d pa:beforeStatement file0:5616_1_5616_20\n", yyseq);
+                 ^
+space_single_instrumented.c:31779:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5616_1_5616_20-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31781:1: error: redefinition of ‘C’
+ C = c - 2 * a * cex;
+ ^
+space_single_instrumented.c:29848:1: note: previous definition of ‘C’ was here
+ C = c - 2 * a * cex;
+ ^
+space_single_instrumented.c:31782:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_59 pa:hasState file0:5549_1_5549_59_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31783:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_59_state-%d pa:hasValue %f\n", yyseq, cex);
+                 ^
+space_single_instrumented.c:31784:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_59_state-%d pa:atProgramPoint file0:5617_1_5617_20-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31785:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31785:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31786:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_23 pa:hasState file0:5546_1_5546_23_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31787:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_23_state-%d pa:hasValue %f\n", yyseq, c);
+                 ^
+space_single_instrumented.c:31788:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_23_state-%d pa:atProgramPoint file0:5617_1_5617_20-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31789:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31789:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31790:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5547_1_5547_23 pa:hasState file0:5547_1_5547_23_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31791:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5547_1_5547_23_state-%d pa:hasValue %f\n", yyseq, C);
+                 ^
+space_single_instrumented.c:31792:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5547_1_5547_23_state-%d pa:atProgramPoint file0:5617_1_5617_20-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31793:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31793:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31794:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_17 pa:hasState file0:5546_1_5546_17_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31795:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_17_state-%d pa:hasValue %f\n", yyseq, a);
+                 ^
+space_single_instrumented.c:31796:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_17_state-%d pa:atProgramPoint file0:5617_1_5617_20-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31797:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31797:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31798:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5617_1_5617_20-%d pa:beforeStatement file0:5617_1_5617_20\n", yyseq);
+                 ^
+space_single_instrumented.c:31799:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5617_1_5617_20-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31801:1: error: redefinition of ‘D’
+ D = d - 2 * b * cey;
+ ^
+space_single_instrumented.c:29868:1: note: previous definition of ‘D’ was here
+ D = d - 2 * b * cey;
+ ^
+space_single_instrumented.c:31802:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_20 pa:hasState file0:5546_1_5546_20_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31803:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_20_state-%d pa:hasValue %f\n", yyseq, b);
+                 ^
+space_single_instrumented.c:31804:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_20_state-%d pa:atProgramPoint file0:5618_1_5618_58-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31805:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31805:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31806:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5547_1_5547_26 pa:hasState file0:5547_1_5547_26_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31807:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5547_1_5547_26_state-%d pa:hasValue %f\n", yyseq, D);
+                 ^
+space_single_instrumented.c:31808:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5547_1_5547_26_state-%d pa:atProgramPoint file0:5618_1_5618_58-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31809:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31809:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31810:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_64 pa:hasState file0:5549_1_5549_64_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31811:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_64_state-%d pa:hasValue %f\n", yyseq, cey);
+                 ^
+space_single_instrumented.c:31812:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_64_state-%d pa:atProgramPoint file0:5618_1_5618_58-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31813:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31813:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31814:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_26 pa:hasState file0:5546_1_5546_26_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31815:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_26_state-%d pa:hasValue %f\n", yyseq, d);
+                 ^
+space_single_instrumented.c:31816:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_26_state-%d pa:atProgramPoint file0:5618_1_5618_58-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31817:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31817:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31818:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5618_1_5618_58-%d pa:beforeStatement file0:5618_1_5618_58\n", yyseq);
+                 ^
+space_single_instrumented.c:31819:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5618_1_5618_58-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31821:1: error: redefinition of ‘E’
+ E = a * cex * cex + b * cey * cey - c * cex - d * cey + e;
+ ^
+space_single_instrumented.c:29888:1: note: previous definition of ‘E’ was here
+ E = a * cex * cex + b * cey * cey - c * cex - d * cey + e;
+ ^
+space_single_instrumented.c:31822:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5547_1_5547_29 pa:hasState file0:5547_1_5547_29_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31823:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5547_1_5547_29_state-%d pa:hasValue %f\n", yyseq, E);
+                 ^
+space_single_instrumented.c:31824:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5547_1_5547_29_state-%d pa:atProgramPoint file0:5619_1_5619_32-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31825:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31825:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31826:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_59 pa:hasState file0:5549_1_5549_59_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31827:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_59_state-%d pa:hasValue %f\n", yyseq, cex);
+                 ^
+space_single_instrumented.c:31828:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_59_state-%d pa:atProgramPoint file0:5619_1_5619_32-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31829:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31829:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31830:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_29 pa:hasState file0:5546_1_5546_29_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31831:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_29_state-%d pa:hasValue %f\n", yyseq, e);
+                 ^
+space_single_instrumented.c:31832:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_29_state-%d pa:atProgramPoint file0:5619_1_5619_32-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31833:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31833:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31834:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_64 pa:hasState file0:5549_1_5549_64_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31835:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_64_state-%d pa:hasValue %f\n", yyseq, cey);
+                 ^
+space_single_instrumented.c:31836:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5549_1_5549_64_state-%d pa:atProgramPoint file0:5619_1_5619_32-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31837:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31837:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31838:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_26 pa:hasState file0:5546_1_5546_26_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31839:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_26_state-%d pa:hasValue %f\n", yyseq, d);
+                 ^
+space_single_instrumented.c:31840:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_26_state-%d pa:atProgramPoint file0:5619_1_5619_32-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31841:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31841:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31842:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_17 pa:hasState file0:5546_1_5546_17_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31843:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_17_state-%d pa:hasValue %f\n", yyseq, a);
+                 ^
+space_single_instrumented.c:31844:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_17_state-%d pa:atProgramPoint file0:5619_1_5619_32-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31845:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31845:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31846:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_20 pa:hasState file0:5546_1_5546_20_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31847:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_20_state-%d pa:hasValue %f\n", yyseq, b);
+                 ^
+space_single_instrumented.c:31848:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_20_state-%d pa:atProgramPoint file0:5619_1_5619_32-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31849:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31849:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31850:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_23 pa:hasState file0:5546_1_5546_23_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31851:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_23_state-%d pa:hasValue %f\n", yyseq, c);
+                 ^
+space_single_instrumented.c:31852:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5546_1_5546_23_state-%d pa:atProgramPoint file0:5619_1_5619_32-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31853:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31853:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31854:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5619_1_5619_32-%d pa:beforeStatement file0:5619_1_5619_32\n", yyseq);
+                 ^
+space_single_instrumented.c:31855:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5619_1_5619_32-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31857:1: error: redefinition of ‘geomnode_app_ptr’
+ geomnode_app_ptr = geomnode_ptr;
+ ^
+space_single_instrumented.c:29924:1: note: previous definition of ‘geomnode_app_ptr’ was here
+ geomnode_app_ptr = geomnode_ptr;
+ ^
+space_single_instrumented.c:31858:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5535_1_5535_33 pa:hasState file0:5535_1_5535_33_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31859:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5535_1_5535_33_state-%d pa:hasValue %lu\n", yyseq, geomnode_app_ptr);
+                 ^
+space_single_instrumented.c:31860:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5535_1_5535_33 pa:hasStructDeclRef null \n");
+                 ^
+space_single_instrumented.c:31861:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5535_1_5535_33_state-%d pa:atProgramPoint file0:5620_8_5620_28-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31862:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31862:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31863:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5529_19_5529_30 pa:hasState file0:5529_19_5529_30_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31864:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5529_19_5529_30_state-%d pa:hasValue %lu\n", yyseq, geomnode_ptr);
+                 ^
+space_single_instrumented.c:31865:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5529_19_5529_30 pa:hasStructDeclRef null \n");
+                 ^
+space_single_instrumented.c:31866:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5529_19_5529_30_state-%d pa:atProgramPoint file0:5620_8_5620_28-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31867:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31867:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31868:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:364_1_364_21 pa:hasState file0:364_1_364_21_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:31869:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:364_1_364_21_state-%d pa:hasValue %lu\n", yyseq, geomnode_app_ptr->NEXT);
+                 ^
+space_single_instrumented.c:31870:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:364_1_364_21 pa:hasStructDeclRef ftp://home/demo/Dropbox/testcases/space/space_single.c#5535_1_5535_33 \n");
+                 ^
+space_single_instrumented.c:31871:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:364_1_364_21_state-%d pa:atProgramPoint file0:5620_8_5620_28-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31872:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:31872:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:31873:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5620_8_5620_28-%d pa:beforeStatement file0:5620_8_5620_28\n", yyseq);
+                 ^
+space_single_instrumented.c:31874:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5620_8_5620_28-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:31876:1: error: expected identifier or ‘(’ before ‘while’
+ while (geomnode_app_ptr != NULL) {
+ ^
+space_single_instrumented.c:32026:1: error: expected identifier or ‘(’ before ‘return’
+ return 0;
+ ^
+space_single_instrumented.c:32027:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+space_single_instrumented.c: In function ‘sgrphasr’:
+space_single_instrumented.c:32254:3: error: expected ‘}’ before ‘else’
+ } else {
+   ^
+space_single_instrumented.c: At top level:
+space_single_instrumented.c:32329:1: error: expected identifier or ‘(’ before ‘if’
+ if (group_ptr->SHAPE == RECTAN_SHAPE) {
+ ^
+space_single_instrumented.c:32359:3: error: expected identifier or ‘(’ before ‘else’
+ } else if (group_ptr->SHAPE == CIRCUL_SHAPE) {{
+   ^
+space_single_instrumented.c:32419:1: error: redefinition of ‘geomnode_app_ptr’
+ geomnode_app_ptr = group_ptr->GEOMNODE_PTR;
+ ^
+space_single_instrumented.c:29924:1: note: previous definition of ‘geomnode_app_ptr’ was here
+ geomnode_app_ptr = geomnode_ptr;
+ ^
+space_single_instrumented.c:32419:20: error: ‘group_ptr’ undeclared here (not in a function)
+ geomnode_app_ptr = group_ptr->GEOMNODE_PTR;
+                    ^
+space_single_instrumented.c:32420:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5638_1_5638_33 pa:hasState file0:5638_1_5638_33_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:32421:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5638_1_5638_33_state-%d pa:hasValue %lu\n", yyseq, geomnode_app_ptr);
+                 ^
+space_single_instrumented.c:32422:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5638_1_5638_33 pa:hasStructDeclRef null \n");
+                 ^
+space_single_instrumented.c:32423:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5638_1_5638_33_state-%d pa:atProgramPoint file0:5680_8_5680_28-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:32424:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:32424:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:32425:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:364_1_364_21 pa:hasState file0:364_1_364_21_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:32426:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:364_1_364_21_state-%d pa:hasValue %lu\n", yyseq, geomnode_app_ptr->NEXT);
+                 ^
+space_single_instrumented.c:32427:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:364_1_364_21 pa:hasStructDeclRef ftp://home/demo/Dropbox/testcases/space/space_single.c#5638_1_5638_33 \n");
+                 ^
+space_single_instrumented.c:32428:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:364_1_364_21_state-%d pa:atProgramPoint file0:5680_8_5680_28-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:32429:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:32429:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:32430:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:305_1_305_29 pa:hasState file0:305_1_305_29_state-%d \n",yyseq);
+                 ^
+space_single_instrumented.c:32431:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:305_1_305_29_state-%d pa:hasValue %lu\n", yyseq, group_ptr->GEOMNODE_PTR);
+                 ^
+space_single_instrumented.c:32432:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:305_1_305_29 pa:hasStructDeclRef ftp://home/demo/Dropbox/testcases/space/space_single.c#5636_25_5636_33 \n");
+                 ^
+space_single_instrumented.c:32433:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:305_1_305_29_state-%d pa:atProgramPoint file0:5680_8_5680_28-%d\n", yyseq, yyseq);
+                 ^
+space_single_instrumented.c:32434:1: error: redefinition of ‘yyseq’
+ yyseq = yyseq + 1;
+ ^
+space_single_instrumented.c:836:5: note: previous definition of ‘yyseq’ was here
+ int yyseq = 1;
+     ^
+space_single_instrumented.c:32434:9: error: initializer element is not constant
+ yyseq = yyseq + 1;
+         ^
+space_single_instrumented.c:32435:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5680_8_5680_28-%d pa:beforeStatement file0:5680_8_5680_28\n", yyseq);
+                 ^
+space_single_instrumented.c:32436:17: error: expected ‘)’ before string constant
+  fprintf( yyfp, "zzzfile0:5680_8_5680_28-%d pa:timeStamp %d\n" , yyseq, yyseq);
+                 ^
+space_single_instrumented.c:32438:1: error: expected identifier or ‘(’ before ‘while’
+ while (geomnode_app_ptr != NULL) {
+ ^
+space_single_instrumented.c:32455:1: error: expected identifier or ‘(’ before ‘return’
+ return 0;
+ ^
+space_single_instrumented.c:32456:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^

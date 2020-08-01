@@ -1,0 +1,448 @@
+set $seq = 1
+#file0:12_6_12_19 : 1
+break /home/aidb/Dropbox/testcases/bin_tree.c:12
+commands
+ silent
+ printf "zzzfile0:12_6_12_19-%d pa:beforeStatement file0:12_6_12_19\n", $seq
+ printf "zzzfile0:12_6_12_19-%d pa:timeStamp %d\n", $seq, $seq
+ continue 
+end
+
+#file0:13_6_13_15 : 2
+break /home/aidb/Dropbox/testcases/bin_tree.c:13
+commands
+ silent
+ printf "zzzfile0:13_6_13_15-%d pa:beforeStatement file0:13_6_13_15\n", $seq
+ printf "zzzfile0:13_6_13_15-%d pa:timeStamp %d\n", $seq, $seq
+ continue 
+end
+
+#file0:18_12_18_12 : 3
+break /home/aidb/Dropbox/testcases/bin_tree.c:18
+commands
+ silent
+ printf "zzzfile0:18_12_18_12-%d pa:beforeStatement file0:18_12_18_12\n", $seq
+ printf "zzzfile0:18_12_18_12-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:12_6_12_19 pa:hasState file0:12_6_12_19_state-%d \n",$seq
+ printf "zzzfile0:12_6_12_19_state-%d pa:hasValue %d\n", $seq, depth
+ printf "zzzfile0:12_6_12_19_state-%d pa:atProgramPoint file0:18_12_18_12-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:21_7_22_15 : 4
+break /home/aidb/Dropbox/testcases/bin_tree.c:21
+commands
+ silent
+ printf "zzzfile0:21_7_22_15-%d pa:beforeStatement file0:21_7_22_15\n", $seq
+ printf "zzzfile0:21_7_22_15-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:12_6_12_13 pa:hasState file0:12_6_12_13_state-%d \n",$seq
+ printf "zzzfile0:12_6_12_13_state-%d pa:hasValue %d\n", $seq, data
+ printf "zzzfile0:12_6_12_13_state-%d pa:atProgramPoint file0:21_7_22_15-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:22_10_22_15 : 5
+break /home/aidb/Dropbox/testcases/bin_tree.c:22
+commands
+ silent
+ printf "zzzfile0:22_10_22_15-%d pa:beforeStatement file0:22_10_22_15\n", $seq
+ printf "zzzfile0:22_10_22_15-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:12_6_12_13 pa:hasState file0:12_6_12_13_state-%d \n",$seq
+ printf "zzzfile0:12_6_12_13_state-%d pa:hasValue %d\n", $seq, data
+ printf "zzzfile0:12_6_12_13_state-%d pa:atProgramPoint file0:22_10_22_15-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:24_7_24_35 : 6
+break /home/aidb/Dropbox/testcases/bin_tree.c:24
+commands
+ silent
+ printf "zzzfile0:24_7_24_35-%d pa:beforeStatement file0:24_7_24_35\n", $seq
+ printf "zzzfile0:24_7_24_35-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:13_6_13_15 pa:hasState file0:13_6_13_15_state-%d \n",$seq
+ printf "zzzfile0:13_6_13_15_state-%d pa:hasValue %lu\n", $seq, tree
+ printf "zzzfile0:13_6_13_15 pa:hasStructDeclRef null \n"
+ printf "zzzfile0:13_6_13_15_state-%d pa:atProgramPoint file0:24_7_24_35-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:12_6_12_13 pa:hasState file0:12_6_12_13_state-%d \n",$seq
+ printf "zzzfile0:12_6_12_13_state-%d pa:hasValue %d\n", $seq, data
+ printf "zzzfile0:12_6_12_13_state-%d pa:atProgramPoint file0:24_7_24_35-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:26_7_26_14 : 7
+break /home/aidb/Dropbox/testcases/bin_tree.c:26
+commands
+ silent
+ printf "zzzfile0:26_7_26_14-%d pa:beforeStatement file0:26_7_26_14\n", $seq
+ printf "zzzfile0:26_7_26_14-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:13_6_13_15 pa:hasState file0:13_6_13_15_state-%d \n",$seq
+ printf "zzzfile0:13_6_13_15_state-%d pa:hasValue %lu\n", $seq, tree
+ printf "zzzfile0:13_6_13_15 pa:hasStructDeclRef null \n"
+ printf "zzzfile0:13_6_13_15_state-%d pa:atProgramPoint file0:26_7_26_14-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:27_7_27_31 : 8
+break /home/aidb/Dropbox/testcases/bin_tree.c:27
+commands
+ silent
+ printf "zzzfile0:27_7_27_31-%d pa:beforeStatement file0:27_7_27_31\n", $seq
+ printf "zzzfile0:27_7_27_31-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:12_6_12_19 pa:hasState file0:12_6_12_19_state-%d \n",$seq
+ printf "zzzfile0:12_6_12_19_state-%d pa:hasValue %d\n", $seq, depth
+ printf "zzzfile0:12_6_12_19_state-%d pa:atProgramPoint file0:27_7_27_31-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:28_7_28_41 : 9
+break /home/aidb/Dropbox/testcases/bin_tree.c:28
+commands
+ silent
+ printf "zzzfile0:28_7_28_41-%d pa:beforeStatement file0:28_7_28_41\n", $seq
+ printf "zzzfile0:28_7_28_41-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:13_6_13_15 pa:hasState file0:13_6_13_15_state-%d \n",$seq
+ printf "zzzfile0:13_6_13_15_state-%d pa:hasValue %lu\n", $seq, tree
+ printf "zzzfile0:13_6_13_15 pa:hasStructDeclRef null \n"
+ printf "zzzfile0:13_6_13_15_state-%d pa:atProgramPoint file0:28_7_28_41-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:12_6_12_19 pa:hasState file0:12_6_12_19_state-%d \n",$seq
+ printf "zzzfile0:12_6_12_19_state-%d pa:hasValue %d\n", $seq, depth
+ printf "zzzfile0:12_6_12_19_state-%d pa:atProgramPoint file0:28_7_28_41-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:32_37_32_37 : 10
+break /home/aidb/Dropbox/testcases/bin_tree.c:32
+commands
+ silent
+ printf "zzzfile0:32_37_32_37-%d pa:beforeStatement file0:32_37_32_37\n", $seq
+ printf "zzzfile0:32_37_32_37-%d pa:timeStamp %d\n", $seq, $seq
+ continue 
+end
+
+#file0:34_7_34_36 : 11
+break /home/aidb/Dropbox/testcases/bin_tree.c:34
+commands
+ silent
+ printf "zzzfile0:34_7_34_36-%d pa:beforeStatement file0:34_7_34_36\n", $seq
+ printf "zzzfile0:34_7_34_36-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:32_37_32_37 pa:hasState file0:32_37_32_37_state-%d \n",$seq
+ printf "zzzfile0:32_37_32_37_state-%d pa:hasValue %lu\n", $seq, p
+ printf "zzzfile0:32_37_32_37 pa:hasStructDeclRef null \n"
+ printf "zzzfile0:32_37_32_37_state-%d pa:atProgramPoint file0:34_7_34_36-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:35_7_35_19 : 12
+break /home/aidb/Dropbox/testcases/bin_tree.c:35
+commands
+ silent
+ printf "zzzfile0:35_7_35_19-%d pa:beforeStatement file0:35_7_35_19\n", $seq
+ printf "zzzfile0:35_7_35_19-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:32_37_32_37 pa:hasState file0:32_37_32_37_state-%d \n",$seq
+ printf "zzzfile0:32_37_32_37_state-%d pa:hasValue %lu\n", $seq, p
+ printf "zzzfile0:32_37_32_37 pa:hasStructDeclRef null \n"
+ printf "zzzfile0:32_37_32_37_state-%d pa:atProgramPoint file0:35_7_35_19-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:36_7_36_19 : 13
+break /home/aidb/Dropbox/testcases/bin_tree.c:36
+commands
+ silent
+ printf "zzzfile0:36_7_36_19-%d pa:beforeStatement file0:36_7_36_19\n", $seq
+ printf "zzzfile0:36_7_36_19-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:6_6_6_13 pa:hasState file0:6_6_6_13_state-%d \n",$seq
+ printf "zzzfile0:6_6_6_13_state-%d pa:hasValue %d\n", $seq, p->data
+ printf "zzzfile0:6_6_6_13_state-%d pa:atProgramPoint file0:36_7_36_19-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:32_26_32_29 pa:hasState file0:32_26_32_29_state-%d \n",$seq
+ printf "zzzfile0:32_26_32_29_state-%d pa:hasValue %d\n", $seq, data
+ printf "zzzfile0:32_26_32_29_state-%d pa:atProgramPoint file0:36_7_36_19-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:37_7_37_20 : 14
+break /home/aidb/Dropbox/testcases/bin_tree.c:37
+commands
+ silent
+ printf "zzzfile0:37_7_37_20-%d pa:beforeStatement file0:37_7_37_20\n", $seq
+ printf "zzzfile0:37_7_37_20-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:7_6_7_22 pa:hasState file0:7_6_7_22_state-%d \n",$seq
+ printf "zzzfile0:7_6_7_22_state-%d pa:hasValue %lu\n", $seq, p->left
+ printf "zzzfile0:7_6_7_22 pa:hasStructDeclRef ftp://home/demo/Dropbox/testcases/bin_tree.c#32_37_32_37 \n"
+ printf "zzzfile0:7_6_7_22_state-%d pa:atProgramPoint file0:37_7_37_20-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:38_7_38_16 : 15
+break /home/aidb/Dropbox/testcases/bin_tree.c:38
+commands
+ silent
+ printf "zzzfile0:38_7_38_16-%d pa:beforeStatement file0:38_7_38_16\n", $seq
+ printf "zzzfile0:38_7_38_16-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:8_6_8_23 pa:hasState file0:8_6_8_23_state-%d \n",$seq
+ printf "zzzfile0:8_6_8_23_state-%d pa:hasValue %lu\n", $seq, p->right
+ printf "zzzfile0:8_6_8_23 pa:hasStructDeclRef ftp://home/demo/Dropbox/testcases/bin_tree.c#32_37_32_37 \n"
+ printf "zzzfile0:8_6_8_23_state-%d pa:atProgramPoint file0:38_7_38_16-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:40_6_43_41_exit : 16
+break /home/aidb/Dropbox/testcases/bin_tree.c:44
+commands
+ silent
+ printf "zzzfile0:40_6_43_41_exit-%d pa:beforeStatement file0:40_6_43_41_exit\n", $seq
+ printf "zzzfile0:40_6_43_41_exit-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:32_37_32_37 pa:hasState file0:32_37_32_37_state-%d \n",$seq
+ printf "zzzfile0:32_37_32_37_state-%d pa:hasValue %lu\n", $seq, p
+ printf "zzzfile0:32_37_32_37 pa:hasStructDeclRef null \n"
+ printf "zzzfile0:32_37_32_37_state-%d pa:atProgramPoint file0:40_6_43_41_exit-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:32_26_32_29 pa:hasState file0:32_26_32_29_state-%d \n",$seq
+ printf "zzzfile0:32_26_32_29_state-%d pa:hasValue %d\n", $seq, data
+ printf "zzzfile0:32_26_32_29_state-%d pa:atProgramPoint file0:40_6_43_41_exit-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:8_6_8_23 pa:hasState file0:8_6_8_23_state-%d \n",$seq
+ printf "zzzfile0:8_6_8_23_state-%d pa:hasValue %lu\n", $seq, p->right
+ printf "zzzfile0:8_6_8_23 pa:hasStructDeclRef ftp://home/demo/Dropbox/testcases/bin_tree.c#32_37_32_37 \n"
+ printf "zzzfile0:8_6_8_23_state-%d pa:atProgramPoint file0:40_6_43_41_exit-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:7_6_7_22 pa:hasState file0:7_6_7_22_state-%d \n",$seq
+ printf "zzzfile0:7_6_7_22_state-%d pa:hasValue %lu\n", $seq, p->left
+ printf "zzzfile0:7_6_7_22 pa:hasStructDeclRef ftp://home/demo/Dropbox/testcases/bin_tree.c#32_37_32_37 \n"
+ printf "zzzfile0:7_6_7_22_state-%d pa:atProgramPoint file0:40_6_43_41_exit-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:41_7_41_39 : 17
+break /home/aidb/Dropbox/testcases/bin_tree.c:41
+commands
+ silent
+ printf "zzzfile0:41_7_41_39-%d pa:beforeStatement file0:41_7_41_39\n", $seq
+ printf "zzzfile0:41_7_41_39-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:6_6_6_13 pa:hasState file0:6_6_6_13_state-%d \n",$seq
+ printf "zzzfile0:6_6_6_13_state-%d pa:hasValue %d\n", $seq, p->data
+ printf "zzzfile0:6_6_6_13_state-%d pa:atProgramPoint file0:41_7_41_39-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:32_26_32_29 pa:hasState file0:32_26_32_29_state-%d \n",$seq
+ printf "zzzfile0:32_26_32_29_state-%d pa:hasValue %d\n", $seq, data
+ printf "zzzfile0:32_26_32_29_state-%d pa:atProgramPoint file0:41_7_41_39-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:7_6_7_22 pa:hasState file0:7_6_7_22_state-%d \n",$seq
+ printf "zzzfile0:7_6_7_22_state-%d pa:hasValue %lu\n", $seq, p->left
+ printf "zzzfile0:7_6_7_22 pa:hasStructDeclRef ftp://home/demo/Dropbox/testcases/bin_tree.c#32_37_32_37 \n"
+ printf "zzzfile0:7_6_7_22_state-%d pa:atProgramPoint file0:41_7_41_39-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:8_6_8_23 pa:hasState file0:8_6_8_23_state-%d \n",$seq
+ printf "zzzfile0:8_6_8_23_state-%d pa:hasValue %lu\n", $seq, p->right
+ printf "zzzfile0:8_6_8_23 pa:hasStructDeclRef ftp://home/demo/Dropbox/testcases/bin_tree.c#32_37_32_37 \n"
+ printf "zzzfile0:8_6_8_23_state-%d pa:atProgramPoint file0:41_7_41_39-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:43_7_43_41 : 18
+break /home/aidb/Dropbox/testcases/bin_tree.c:43
+commands
+ silent
+ printf "zzzfile0:43_7_43_41-%d pa:beforeStatement file0:43_7_43_41\n", $seq
+ printf "zzzfile0:43_7_43_41-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:6_6_6_13 pa:hasState file0:6_6_6_13_state-%d \n",$seq
+ printf "zzzfile0:6_6_6_13_state-%d pa:hasValue %d\n", $seq, p->data
+ printf "zzzfile0:6_6_6_13_state-%d pa:atProgramPoint file0:43_7_43_41-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:32_26_32_29 pa:hasState file0:32_26_32_29_state-%d \n",$seq
+ printf "zzzfile0:32_26_32_29_state-%d pa:hasValue %d\n", $seq, data
+ printf "zzzfile0:32_26_32_29_state-%d pa:atProgramPoint file0:43_7_43_41-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:8_6_8_23 pa:hasState file0:8_6_8_23_state-%d \n",$seq
+ printf "zzzfile0:8_6_8_23_state-%d pa:hasValue %lu\n", $seq, p->right
+ printf "zzzfile0:8_6_8_23 pa:hasStructDeclRef ftp://home/demo/Dropbox/testcases/bin_tree.c#32_37_32_37 \n"
+ printf "zzzfile0:8_6_8_23_state-%d pa:atProgramPoint file0:43_7_43_41-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:46_45_46_49 : 19
+break /home/aidb/Dropbox/testcases/bin_tree.c:46
+commands
+ silent
+ printf "zzzfile0:46_45_46_49-%d pa:beforeStatement file0:46_45_46_49\n", $seq
+ printf "zzzfile0:46_45_46_49-%d pa:timeStamp %d\n", $seq, $seq
+ continue 
+end
+
+#file0:47_6_47_10 : 20
+break /home/aidb/Dropbox/testcases/bin_tree.c:47
+commands
+ silent
+ printf "zzzfile0:47_6_47_10-%d pa:beforeStatement file0:47_6_47_10\n", $seq
+ printf "zzzfile0:47_6_47_10-%d pa:timeStamp %d\n", $seq, $seq
+ continue 
+end
+
+#file0:49_7_49_45 : 21
+break /home/aidb/Dropbox/testcases/bin_tree.c:49
+commands
+ silent
+ printf "zzzfile0:49_7_49_45-%d pa:beforeStatement file0:49_7_49_45\n", $seq
+ printf "zzzfile0:49_7_49_45-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:46_45_46_49 pa:hasState file0:46_45_46_49_state-%d \n",$seq
+ printf "zzzfile0:46_45_46_49_state-%d pa:hasValue %d\n", $seq, level
+ printf "zzzfile0:46_45_46_49_state-%d pa:atProgramPoint file0:49_7_49_45-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:47_6_47_10 pa:hasState file0:47_6_47_10_state-%d \n",$seq
+ printf "zzzfile0:47_6_47_10_state-%d pa:hasValue %d\n", $seq, i
+ printf "zzzfile0:47_6_47_10_state-%d pa:atProgramPoint file0:49_7_49_45-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:8_6_8_23 pa:hasState file0:8_6_8_23_state-%d \n",$seq
+ printf "zzzfile0:8_6_8_23_state-%d pa:hasValue %lu\n", $seq, tree->right
+ printf "zzzfile0:8_6_8_23 pa:hasStructDeclRef ftp://home/demo/Dropbox/testcases/bin_tree.c#46_35_46_38 \n"
+ printf "zzzfile0:8_6_8_23_state-%d pa:atProgramPoint file0:49_7_49_45-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:6_6_6_13 pa:hasState file0:6_6_6_13_state-%d \n",$seq
+ printf "zzzfile0:6_6_6_13_state-%d pa:hasValue %d\n", $seq, tree->data
+ printf "zzzfile0:6_6_6_13_state-%d pa:atProgramPoint file0:49_7_49_45-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:46_35_46_38 pa:hasState file0:46_35_46_38_state-%d \n",$seq
+ printf "zzzfile0:46_35_46_38_state-%d pa:hasValue %lu\n", $seq, tree
+ printf "zzzfile0:46_35_46_38 pa:hasStructDeclRef null \n"
+ printf "zzzfile0:46_35_46_38_state-%d pa:atProgramPoint file0:49_7_49_45-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:7_6_7_22 pa:hasState file0:7_6_7_22_state-%d \n",$seq
+ printf "zzzfile0:7_6_7_22_state-%d pa:hasValue %lu\n", $seq, tree->left
+ printf "zzzfile0:7_6_7_22 pa:hasStructDeclRef ftp://home/demo/Dropbox/testcases/bin_tree.c#46_35_46_38 \n"
+ printf "zzzfile0:7_6_7_22_state-%d pa:atProgramPoint file0:49_7_49_45-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:50_7_50_21 : 22
+break /home/aidb/Dropbox/testcases/bin_tree.c:50
+commands
+ silent
+ printf "zzzfile0:50_7_50_21-%d pa:beforeStatement file0:50_7_50_21\n", $seq
+ printf "zzzfile0:50_7_50_21-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:46_45_46_49 pa:hasState file0:46_45_46_49_state-%d \n",$seq
+ printf "zzzfile0:46_45_46_49_state-%d pa:hasValue %d\n", $seq, level
+ printf "zzzfile0:46_45_46_49_state-%d pa:atProgramPoint file0:50_7_50_21-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:8_6_8_23 pa:hasState file0:8_6_8_23_state-%d \n",$seq
+ printf "zzzfile0:8_6_8_23_state-%d pa:hasValue %lu\n", $seq, tree->right
+ printf "zzzfile0:8_6_8_23 pa:hasStructDeclRef ftp://home/demo/Dropbox/testcases/bin_tree.c#46_35_46_38 \n"
+ printf "zzzfile0:8_6_8_23_state-%d pa:atProgramPoint file0:50_7_50_21-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:51_16_51_22 : 23
+break /home/aidb/Dropbox/testcases/bin_tree.c:51
+commands
+ silent
+ printf "zzzfile0:51_16_51_22-%d pa:beforeStatement file0:51_16_51_22\n", $seq
+ printf "zzzfile0:51_16_51_22-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:47_6_47_10 pa:hasState file0:47_6_47_10_state-%d \n",$seq
+ printf "zzzfile0:47_6_47_10_state-%d pa:hasValue %d\n", $seq, i
+ printf "zzzfile0:47_6_47_10_state-%d pa:atProgramPoint file0:51_16_51_22-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:46_45_46_49 pa:hasState file0:46_45_46_49_state-%d \n",$seq
+ printf "zzzfile0:46_45_46_49_state-%d pa:hasValue %d\n", $seq, level
+ printf "zzzfile0:46_45_46_49_state-%d pa:atProgramPoint file0:51_16_51_22-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:52_9_52_26 : 24
+break /home/aidb/Dropbox/testcases/bin_tree.c:52
+commands
+ silent
+ printf "zzzfile0:52_9_52_26-%d pa:beforeStatement file0:52_9_52_26\n", $seq
+ printf "zzzfile0:52_9_52_26-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:46_45_46_49 pa:hasState file0:46_45_46_49_state-%d \n",$seq
+ printf "zzzfile0:46_45_46_49_state-%d pa:hasValue %d\n", $seq, level
+ printf "zzzfile0:46_45_46_49_state-%d pa:atProgramPoint file0:52_9_52_26-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:47_6_47_10 pa:hasState file0:47_6_47_10_state-%d \n",$seq
+ printf "zzzfile0:47_6_47_10_state-%d pa:hasValue %d\n", $seq, i
+ printf "zzzfile0:47_6_47_10_state-%d pa:atProgramPoint file0:52_9_52_26-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:54_7_54_44 : 25
+break /home/aidb/Dropbox/testcases/bin_tree.c:54
+commands
+ silent
+ printf "zzzfile0:54_7_54_44-%d pa:beforeStatement file0:54_7_54_44\n", $seq
+ printf "zzzfile0:54_7_54_44-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:6_6_6_13 pa:hasState file0:6_6_6_13_state-%d \n",$seq
+ printf "zzzfile0:6_6_6_13_state-%d pa:hasValue %d\n", $seq, tree->data
+ printf "zzzfile0:6_6_6_13_state-%d pa:atProgramPoint file0:54_7_54_44-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:58_45_58_49 : 26
+break /home/aidb/Dropbox/testcases/bin_tree.c:58
+commands
+ silent
+ printf "zzzfile0:58_45_58_49-%d pa:beforeStatement file0:58_45_58_49\n", $seq
+ printf "zzzfile0:58_45_58_49-%d pa:timeStamp %d\n", $seq, $seq
+ continue 
+end
+
+#file0:61_12_61_24 : 27
+break /home/aidb/Dropbox/testcases/bin_tree.c:61
+commands
+ silent
+ printf "zzzfile0:61_12_61_24-%d pa:beforeStatement file0:61_12_61_24\n", $seq
+ printf "zzzfile0:61_12_61_24-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:58_45_58_49 pa:hasState file0:58_45_58_49_state-%d \n",$seq
+ printf "zzzfile0:58_45_58_49_state-%d pa:hasValue %d\n", $seq, level
+ printf "zzzfile0:58_45_58_49_state-%d pa:atProgramPoint file0:61_12_61_24-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:58_35_58_39 pa:hasState file0:58_35_58_39_state-%d \n",$seq
+ printf "zzzfile0:58_35_58_39_state-%d pa:hasValue %d\n", $seq, *depth
+ printf "zzzfile0:58_35_58_39_state-%d pa:atProgramPoint file0:61_12_61_24-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+#file0:63_7_63_43 : 28
+break /home/aidb/Dropbox/testcases/bin_tree.c:63
+commands
+ silent
+ printf "zzzfile0:63_7_63_43-%d pa:beforeStatement file0:63_7_63_43\n", $seq
+ printf "zzzfile0:63_7_63_43-%d pa:timeStamp %d\n", $seq, $seq
+ printf "zzzfile0:58_35_58_39 pa:hasState file0:58_35_58_39_state-%d \n",$seq
+ printf "zzzfile0:58_35_58_39_state-%d pa:hasValue %d\n", $seq, *depth
+ printf "zzzfile0:58_35_58_39_state-%d pa:atProgramPoint file0:63_7_63_43-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:58_45_58_49 pa:hasState file0:58_45_58_49_state-%d \n",$seq
+ printf "zzzfile0:58_45_58_49_state-%d pa:hasValue %d\n", $seq, level
+ printf "zzzfile0:58_45_58_49_state-%d pa:atProgramPoint file0:63_7_63_43-%d\n", $seq, $seq
+set $seq = $seq + 1
+ printf "zzzfile0:7_6_7_22 pa:hasState file0:7_6_7_22_state-%d \n",$seq
+ printf "zzzfile0:7_6_7_22_state-%d pa:hasValue %lu\n", $seq, tree->left
+ printf "zzzfile0:7_6_7_22 pa:hasStructDeclRef ftp://home/demo/Dropbox/testcases/bin_tree.c#58_25_58_28 \n"
+ printf "zzzfile0:7_6_7_22_state-%d pa:atProgramPoint file0:63_7_63_43-%d\n", $seq, $seq
+set $seq = $seq + 1
+ continue 
+end
+
+run < /home/aidb/Dropbox/testcases/bin_tree_input.txt

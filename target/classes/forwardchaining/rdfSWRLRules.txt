@@ -1,0 +1,490 @@
+@prefix c: <http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix pa: <http://www.semanticweb.org/aidb/ontologies/BugFindingOntology#> .
+@prefix pdo: <http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#> .
+
+
+[
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type rdf:List)
+(?l1 rdf:rest ?r1)
+(?l2 rdf:rest ?r2)
+(?r1 pdo:notLessThanListOf ?r2)
+
+->
+(?l1 pdo:notLessThanListOf ?l2)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type rdf:List)
+(?l1 rdf:first ?v1)
+(?l2 rdf:first ?v2)
+ge(?v1,?v2)
+
+->
+(?l1 pdo:notLessThanListOf ?l2)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type rdf:List)
+(?l1 rdf:first ?v1)
+(?l2 rdf:first ?v2)
+greaterThan(?v1,?v2)
+
+->
+(?l1 pdo:notLessThanOrEqualListOf ?l2)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type rdf:List)
+(?l1 rdf:first ?v1)
+(?l2 rdf:first ?v2)
+notEqual(?v1,?v2)
+
+->
+(?l1 pdo:notEqualListOf ?l2)
+
+]
+
+[
+(?l1 rdf:rest ?l2)
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type pdo:ListWithNon-ZeroElement)
+
+->
+(?l1 rdf:type pdo:ListWithNon-ZeroElement)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l1 rdf:first ?a)
+greaterThan(?a,0)
+
+->
+(?l1 rdf:type pdo:ListWithPositiveElement)
+
+]
+
+[
+(?l1 rdf:rest ?l2)
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type pdo:ListWithNon-PositiveElement)
+
+->
+(?l1 rdf:type pdo:ListWithNon-PositiveElement)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l1 rdf:rest rdf:nil)
+
+->
+(?l1 rdf:type pdo:Non-IncreasingList)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l1 rdf:rest rdf:nil)
+
+->
+(?l1 rdf:type pdo:IncreasingList)
+
+]
+
+[
+(?s1 pdo:notLessThanOrEqualListOf ?s2)
+(?s1 rdf:type pdo:Span)
+(?s2 rdf:type pdo:Span)
+(?s1 pdo:comparableSpanOf ?s2)
+
+->
+(?s1 pdo:notLessThanOrEqualListOf ?s2)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type rdf:List)
+(?l1 rdf:first ?v1)
+(?l2 rdf:first ?v2)
+le(?v1,?v2)
+
+->
+(?l1 pdo:notGreaterThanListOf ?l2)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l1 rdf:first ?a)
+lessThan(?a,0)
+
+->
+(?l1 rdf:type pdo:ListWithNegativeElement)
+
+]
+
+[
+(?l1 rdf:rest ?l2)
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type pdo:ListWithNon-NegativeElement)
+
+->
+(?l1 rdf:type pdo:ListWithNon-NegativeElement)
+
+]
+
+[
+(?l1 rdf:rest ?l2)
+(?l2 rdf:type pdo:ListWithTwoDistinctElements)
+(?l1 rdf:type rdf:List)
+
+->
+(?l1 rdf:type pdo:ListWithTwoDistinctElements)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type rdf:List)
+(?l1 rdf:first ?v1)
+(?l2 rdf:first ?v2)
+lessThan(?v1,?v2)
+
+->
+(?l1 pdo:notGreaterThanOrEqualListOf ?l2)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type rdf:List)
+(?l1 rdf:first ?v1)
+(?l2 rdf:first ?v2)
+equal(?v1,?v2)
+
+->
+(?l1 pdo:notNonEqualListOf ?l2)
+
+]
+
+[
+(?s1 pdo:notNonEqualListOf ?s2)
+(?s1 rdf:type pdo:Span)
+(?s2 rdf:type pdo:Span)
+(?s1 pdo:comparableSpanOf ?s2)
+
+->
+(?s1 pdo:notNonEqualListOf ?s2)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l1 rdf:first ?a)
+ge(?a,0)
+
+->
+(?l1 rdf:type pdo:ListWithNon-NegativeElement)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l1 rdf:first ?a)
+le(?a,0)
+
+->
+(?l1 rdf:type pdo:ListWithNon-PositiveElement)
+
+]
+
+[
+(?l1 rdf:rest ?l2)
+(?l2 rdf:type pdo:DecreasingList)
+(?l1 rdf:first ?a)
+(?l2 rdf:first ?b)
+(?l1 rdf:type rdf:List)
+greaterThan(?a,?b)
+
+->
+(?l1 rdf:type pdo:DecreasingList)
+
+]
+
+[
+(?s1 rdf:type pdo:Span)
+(?s1 pdo:notLessThanListOf ?s2)
+(?s2 rdf:type pdo:Span)
+(?s1 pdo:comparableSpanOf ?s2)
+
+->
+(?s1 pdo:notLessThanListOf ?s2)
+
+]
+
+[
+(?l1 rdf:rest ?l2)
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type pdo:ListWithZeroElement)
+
+->
+(?l1 rdf:type pdo:ListWithZeroElement)
+
+]
+
+[
+(?s1 pdo:notEqualListOf ?s2)
+(?s1 rdf:type pdo:Span)
+(?s2 rdf:type pdo:Span)
+(?s1 pdo:comparableSpanOf ?s2)
+
+->
+(?s1 pdo:notEqualListOf ?s2)
+
+]
+
+[
+(?l1 rdf:rest ?l2)
+(?l2 rdf:type pdo:Non-DecreasingList)
+(?l1 rdf:first ?a)
+(?l2 rdf:first ?b)
+(?l1 rdf:type rdf:List)
+le(?a,?b)
+
+->
+(?l1 rdf:type pdo:Non-DecreasingList)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type rdf:List)
+(?l1 rdf:rest ?r1)
+(?l2 rdf:rest ?r2)
+(?r1 pdo:notGreaterThanListOf ?r2)
+
+->
+(?l1 pdo:notGreaterThanListOf ?l2)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type rdf:List)
+(?l1 rdf:rest ?r1)
+(?l2 rdf:rest ?r2)
+(?r1 pdo:notGreaterThanOrEqualListOf ?r2)
+
+->
+(?l1 pdo:notGreaterThanOrEqualListOf ?l2)
+
+]
+
+[
+(?l1 rdf:rest ?l2)
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type pdo:ListWithPositiveElement)
+
+->
+(?l1 rdf:type pdo:ListWithPositiveElement)
+
+]
+
+[
+(?s1 pdo:notGreaterThanListOf ?s2)
+(?s1 rdf:type pdo:Span)
+(?s2 rdf:type pdo:Span)
+(?s1 pdo:comparableSpanOf ?s2)
+
+->
+(?s1 pdo:notGreaterThanListOf ?s2)
+
+]
+
+[
+(?s1 pdo:notGreaterThanOrEqualListOf ?s2)
+(?s1 rdf:type pdo:Span)
+(?s2 rdf:type pdo:Span)
+(?s1 pdo:comparableSpanOf ?s2)
+
+->
+(?s1 pdo:notGreaterThanOrEqualListOf ?s2)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l1 rdf:first ?a)
+notEqual(?a,0)
+
+->
+(?l1 rdf:type pdo:ListWithNon-ZeroElement)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l1 rdf:first ?a)
+equal(?a,0)
+
+->
+(?l1 rdf:type pdo:ListWithZeroElement)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type rdf:List)
+(?l1 rdf:rest rdf:nil)
+(?l2 rdf:rest rdf:nil)
+(?l1 pdo:timestamp ?t1)
+(?l2 pdo:timestamp ?t2)
+le(?t1,?t2)
+
+->
+(?l1 pdo:beforeListOf ?l2)
+
+]
+
+[
+(?l1 rdf:rest ?l2)
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type pdo:ListWithNegativeElement)
+
+->
+(?l1 rdf:type pdo:ListWithNegativeElement)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type rdf:List)
+(?l1 rdf:rest ?r1)
+(?l2 rdf:rest ?r2)
+(?r1 pdo:beforeListOf ?r2)
+(?l1 pdo:timestamp ?t1)
+(?l2 pdo:timestamp ?t2)
+(?r1 pdo:timestamp ?t11)
+le(?t1,?t2)
+lessThan(?t2,?t11)
+
+->
+(?l1 pdo:beforeListOf ?l2)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type rdf:List)
+(?l1 rdf:rest ?r1)
+(?l2 rdf:rest ?r2)
+(?r1 pdo:notEqualListOf ?r2)
+
+->
+(?l1 pdo:notEqualListOf ?l2)
+
+]
+
+[
+(?s1 rdf:type pdo:Span)
+(?s2 rdf:type pdo:Span)
+(?s1 pdo:beforeListOf ?s2)
+
+->
+(?s1 pdo:beforeSpanOf ?s2)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type rdf:List)
+(?l1 rdf:rest ?r1)
+(?l2 rdf:rest ?r2)
+(?r1 pdo:notLessThanOrEqualListOf ?r2)
+
+->
+(?l1 pdo:notLessThanOrEqualListOf ?l2)
+
+]
+
+[
+(?l1 rdf:rest ?l2)
+(?l1 rdf:first ?a)
+(?l2 rdf:first ?b)
+(?l1 rdf:type rdf:List)
+notEqual(?a,?b)
+
+->
+(?l1 rdf:type pdo:ListWithTwoDistinctElements)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l1 rdf:rest rdf:nil)
+
+->
+(?l1 rdf:type pdo:DecreasingList)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l2 rdf:type rdf:List)
+(?l1 rdf:rest ?r1)
+(?l2 rdf:rest ?r2)
+(?r1 pdo:notNonEqualListOf ?r2)
+
+->
+(?l1 pdo:notNonEqualListOf ?l2)
+
+]
+
+[
+(?l1 rdf:rest ?l2)
+(?l2 rdf:type pdo:Non-IncreasingList)
+(?l1 rdf:first ?a)
+(?l2 rdf:first ?b)
+(?l1 rdf:type rdf:List)
+ge(?a,?b)
+
+->
+(?l1 rdf:type pdo:Non-IncreasingList)
+
+]
+
+[
+(?l1 rdf:rest ?l2)
+(?l2 rdf:type pdo:IncreasingList)
+(?l1 rdf:first ?a)
+(?l2 rdf:first ?b)
+(?l1 rdf:type rdf:List)
+lessThan(?a,?b)
+
+->
+(?l1 rdf:type pdo:IncreasingList)
+
+]
+
+[
+(?l1 rdf:type rdf:List)
+(?l1 rdf:rest rdf:nil)
+
+->
+(?l1 rdf:type pdo:Non-DecreasingList)
+
+]
+

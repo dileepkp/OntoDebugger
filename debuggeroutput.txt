@@ -1,0 +1,331 @@
+
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building OntoDebugger 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:exec (default-cli) @ OntoDebugger ---
+2
+Root element :inputs
+Root element :queries
+Root element :queries
+{ftp://home/demo/Dropbox/testcases/bin_tree.c#51_7_52_26_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#53_7_53_30, ftp://home/demo/Dropbox/testcases/bin_tree.c#59_6_64_6_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#65_6_65_15, ftp://home/demo/Dropbox/testcases/bin_tree.c#60_7_61_24_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#62_7_62_42, ftp://home/demo/Dropbox/testcases/bin_tree.c#33_6_39_6_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#40_6_43_41, ftp://home/demo/Dropbox/testcases/bin_tree.c#48_6_55_6_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#56_6_56_18, ftp://home/demo/Dropbox/testcases/bin_tree.c#40_6_43_41_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#44_6_44_15, ftp://home/demo/Dropbox/testcases/bin_tree.c#42_7_43_41_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#44_6_44_15, ftp://home/demo/Dropbox/testcases/bin_tree.c#32_40_45_5_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#40_6_43_41, ftp://home/demo/Dropbox/testcases/bin_tree.c#21_7_22_15_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#23_7_23_34, ftp://home/demo/Dropbox/testcases/bin_tree.c#18_6_29_6_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#30_6_30_15}
+Root element :queries
+Root element :queries
+------------------------------------------------------------------------------------------------------------------------------
+| nextSt                | entityExpression  | entityDeclaration | entityName | cType          | baseType | structDeclRef     |
+==============================================================================================================================
+| file0:63_7_63_43      | file0:62_28_62_32 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:63_7_63_43      | file0:62_34_62_38 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:63_7_63_43      | file0:62_17_62_26 | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:58_25_58_28 |
+| file0:12_6_12_19      | file0:12_6_12_13  |                   |            |                |          |                   |
+| file0:48_6_55_6_exit  | file0:54_36_54_40 | file0:46_45_46_49 | "level"    | c:int          |          |                   |
+| file0:48_6_55_6_exit  | file0:54_25_54_34 | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:46_35_46_38 |
+| file0:47_6_47_10      | file0:46_45_46_49 |                   |            |                |          |                   |
+| file0:51_16_51_22     | file0:51_24_51_24 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:58_45_58_49     | file0:58_35_58_39 |                   |            |                |          |                   |
+| file0:59_6_64_6_exit  | file0:63_29_63_33 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:59_6_64_6_exit  | file0:63_17_63_27 | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:58_25_58_28 |
+| file0:59_6_64_6_exit  | file0:63_35_63_39 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:37_7_37_20      | file0:36_7_36_13  | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:54_7_54_44      | file0:53_19_53_28 | file0:6_6_6_13    |            | c:int          |          | file0:46_35_46_38 |
+| file0:38_7_38_16      | file0:37_7_37_14  | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:60_7_61_24_exit | file0:61_19_61_23 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:60_7_61_24_exit | file0:61_13_61_17 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:18_12_18_12     | file0:13_6_13_15  |                   |            |                |          |                   |
+| file0:50_7_50_21      | file0:49_37_49_41 | file0:46_45_46_49 | "level"    | c:int          |          |                   |
+| file0:50_7_50_21      | file0:49_25_49_35 | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:46_35_46_38 |
+| file0:13_6_13_15      | file0:12_6_12_19  |                   |            |                |          |                   |
+| file0:21_7_22_15      | file0:20_19_20_23 |                   |            |                |          |                   |
+| file0:21_7_22_15      | file0:20_20_20_23 | file0:12_6_12_13  | "data"     | c:int          |          |                   |
+| file0:36_7_36_19      | file0:35_7_35_13  | file0:6_6_6_13    |            | c:int          |          | file0:32_37_32_37 |
+| file0:36_7_36_19      | file0:35_15_35_18 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:51_16_51_22     | file0:51_12_51_12 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:60_7_61_24_exit | file0:60_11_60_15 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:60_7_61_24_exit | file0:60_18_60_22 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:61_12_61_24     | file0:61_19_61_23 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:61_12_61_24     | file0:60_11_60_15 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:61_12_61_24     | file0:61_13_61_17 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:61_12_61_24     | file0:60_18_60_22 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:58_35_58_39     | file0:58_25_58_28 |                   |            |                |          |                   |
+| file0:32_37_32_37     | file0:32_26_32_29 |                   |            |                |          |                   |
+| file0:26_7_26_14      | file0:25_25_25_28 | file0:13_6_13_15  | "tree"     | c:pointer_type | c:TREE   |                   |
+| file0:51_7_52_26_exit | file0:51_18_51_22 | file0:46_45_46_49 | "level"    | c:int          |          |                   |
+| file0:51_7_52_26_exit | file0:51_16_51_16 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:52_9_52_26      | file0:51_18_51_22 | file0:46_45_46_49 | "level"    | c:int          |          |                   |
+| file0:52_9_52_26      | file0:51_16_51_16 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:59_6_64_6_exit  | file0:62_28_62_32 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:59_6_64_6_exit  | file0:59_9_59_12  | file0:58_25_58_28 | "tree"     | c:pointer_type | c:TREE   |                   |
+| file0:59_6_64_6_exit  | file0:62_34_62_38 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:59_6_64_6_exit  | file0:61_19_61_23 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:59_6_64_6_exit  | file0:62_17_62_26 | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:58_25_58_28 |
+| file0:59_6_64_6_exit  | file0:60_11_60_15 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:59_6_64_6_exit  | file0:61_13_61_17 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:59_6_64_6_exit  | file0:60_18_60_22 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:60_7_61_24      | file0:63_29_63_33 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:60_7_61_24      | file0:62_28_62_32 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:60_7_61_24      | file0:59_9_59_12  | file0:58_25_58_28 | "tree"     | c:pointer_type | c:TREE   |                   |
+| file0:60_7_61_24      | file0:62_34_62_38 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:60_7_61_24      | file0:61_19_61_23 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:60_7_61_24      | file0:62_17_62_26 | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:58_25_58_28 |
+| file0:60_7_61_24      | file0:60_11_60_15 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:60_7_61_24      | file0:63_17_63_27 | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:58_25_58_28 |
+| file0:60_7_61_24      | file0:63_35_63_39 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:60_7_61_24      | file0:61_13_61_17 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:60_7_61_24      | file0:60_18_60_22 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:28_7_28_41      | file0:27_17_27_20 | file0:13_6_13_15  | "tree"     | c:pointer_type | c:TREE   |                   |
+| file0:28_7_28_41      | file0:27_22_27_27 |                   |            |                |          |                   |
+| file0:28_7_28_41      | file0:27_23_27_27 | file0:12_6_12_19  | "depth"    | c:int          |          |                   |
+| file0:18_12_18_12     | file0:28_35_28_39 | file0:12_6_12_19  | "depth"    | c:int          |          |                   |
+| file0:24_7_24_35      | file0:23_29_23_32 | file0:13_6_13_15  | "tree"     | c:pointer_type | c:TREE   |                   |
+| file0:24_7_24_35      | file0:23_7_23_10  | file0:13_6_13_15  | "tree"     | c:pointer_type | c:TREE   |                   |
+| file0:24_7_24_35      | file0:23_24_23_27 | file0:12_6_12_13  | "data"     | c:int          |          |                   |
+| file0:42_7_43_41_exit | file0:42_17_42_23 | file0:6_6_6_13    |            | c:int          |          | file0:32_37_32_37 |
+| file0:42_7_43_41_exit | file0:43_27_43_30 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:42_7_43_41_exit | file0:43_7_43_14  | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:42_7_43_41_exit | file0:42_10_42_13 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:42_7_43_41_exit | file0:43_32_43_39 | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:43_7_43_41      | file0:42_17_42_23 | file0:6_6_6_13    |            | c:int          |          | file0:32_37_32_37 |
+| file0:43_7_43_41      | file0:43_27_43_30 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:43_7_43_41      | file0:43_7_43_14  | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:43_7_43_41      | file0:42_10_42_13 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:43_7_43_41      | file0:43_32_43_39 | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:59_6_64_6       | file0:58_45_58_49 |                   |            |                |          |                   |
+| file0:35_7_35_19      | file0:34_7_34_7   | file0:32_37_32_37 | "p"        | c:pointer_type | c:TREE   |                   |
+| file0:48_6_55_6_exit  | file0:49_37_49_41 | file0:46_45_46_49 | "level"    | c:int          |          |                   |
+| file0:48_6_55_6_exit  | file0:51_24_51_24 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:48_6_55_6_exit  | file0:49_25_49_35 | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:46_35_46_38 |
+| file0:48_6_55_6_exit  | file0:53_19_53_28 | file0:6_6_6_13    |            | c:int          |          | file0:46_35_46_38 |
+| file0:48_6_55_6_exit  | file0:48_9_48_12  | file0:46_35_46_38 | "tree"     | c:pointer_type | c:TREE   |                   |
+| file0:48_6_55_6_exit  | file0:51_12_51_12 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:48_6_55_6_exit  | file0:51_18_51_22 | file0:46_45_46_49 | "level"    | c:int          |          |                   |
+| file0:48_6_55_6_exit  | file0:51_16_51_16 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:49_7_49_45      | file0:49_37_49_41 | file0:46_45_46_49 | "level"    | c:int          |          |                   |
+| file0:49_7_49_45      | file0:51_24_51_24 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:49_7_49_45      | file0:49_25_49_35 | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:46_35_46_38 |
+| file0:49_7_49_45      | file0:53_19_53_28 | file0:6_6_6_13    |            | c:int          |          | file0:46_35_46_38 |
+| file0:49_7_49_45      | file0:48_9_48_12  | file0:46_35_46_38 | "tree"     | c:pointer_type | c:TREE   |                   |
+| file0:49_7_49_45      | file0:51_12_51_12 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:49_7_49_45      | file0:54_36_54_40 | file0:46_45_46_49 | "level"    | c:int          |          |                   |
+| file0:49_7_49_45      | file0:54_25_54_34 | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:46_35_46_38 |
+| file0:49_7_49_45      | file0:51_18_51_22 | file0:46_45_46_49 | "level"    | c:int          |          |                   |
+| file0:49_7_49_45      | file0:51_16_51_16 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:46_45_46_49     | file0:46_35_46_38 |                   |            |                |          |                   |
+| file0:21_7_22_15_exit | file0:21_11_21_14 | file0:12_6_12_13  | "data"     | c:int          |          |                   |
+| file0:22_10_22_15     | file0:21_11_21_14 | file0:12_6_12_13  | "data"     | c:int          |          |                   |
+| file0:33_6_39_6_exit  | file0:35_7_35_13  | file0:6_6_6_13    |            | c:int          |          | file0:32_37_32_37 |
+| file0:33_6_39_6_exit  | file0:34_7_34_7   | file0:32_37_32_37 | "p"        | c:pointer_type | c:TREE   |                   |
+| file0:33_6_39_6_exit  | file0:37_7_37_14  | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:33_6_39_6_exit  | file0:33_10_33_10 | file0:32_37_32_37 | "p"        | c:pointer_type | c:TREE   |                   |
+| file0:33_6_39_6_exit  | file0:36_7_36_13  | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:33_6_39_6_exit  | file0:35_15_35_18 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:33_6_39_6_exit  | file0:38_14_38_14 | file0:32_37_32_37 | "p"        | c:pointer_type | c:TREE   |                   |
+| file0:34_7_34_36      | file0:35_7_35_13  | file0:6_6_6_13    |            | c:int          |          | file0:32_37_32_37 |
+| file0:34_7_34_36      | file0:34_7_34_7   | file0:32_37_32_37 | "p"        | c:pointer_type | c:TREE   |                   |
+| file0:34_7_34_36      | file0:37_7_37_14  | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:34_7_34_36      | file0:33_10_33_10 | file0:32_37_32_37 | "p"        | c:pointer_type | c:TREE   |                   |
+| file0:34_7_34_36      | file0:36_7_36_13  | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:34_7_34_36      | file0:35_15_35_18 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:34_7_34_36      | file0:38_14_38_14 | file0:32_37_32_37 | "p"        | c:pointer_type | c:TREE   |                   |
+| file0:33_6_39_6       | file0:32_37_32_37 |                   |            |                |          |                   |
+| file0:27_7_27_31      | file0:26_7_26_11  | file0:12_6_12_19  | "depth"    | c:int          |          |                   |
+| file0:42_7_43_41      | file0:42_17_42_23 | file0:6_6_6_13    |            | c:int          |          | file0:32_37_32_37 |
+| file0:42_7_43_41      | file0:43_27_43_30 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:42_7_43_41      | file0:41_31_41_37 | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:42_7_43_41      | file0:43_7_43_14  | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:42_7_43_41      | file0:40_16_40_22 | file0:6_6_6_13    |            | c:int          |          | file0:32_37_32_37 |
+| file0:42_7_43_41      | file0:40_9_40_12  | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:42_7_43_41      | file0:42_10_42_13 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:42_7_43_41      | file0:41_26_41_29 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:42_7_43_41      | file0:43_32_43_39 | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:42_7_43_41      | file0:41_7_41_13  | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:41_7_41_39      | file0:42_17_42_23 | file0:6_6_6_13    |            | c:int          |          | file0:32_37_32_37 |
+| file0:41_7_41_39      | file0:43_27_43_30 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:41_7_41_39      | file0:41_31_41_37 | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:41_7_41_39      | file0:43_7_43_14  | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:41_7_41_39      | file0:40_16_40_22 | file0:6_6_6_13    |            | c:int          |          | file0:32_37_32_37 |
+| file0:41_7_41_39      | file0:40_9_40_12  | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:41_7_41_39      | file0:42_10_42_13 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:41_7_41_39      | file0:41_26_41_29 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:41_7_41_39      | file0:43_32_43_39 | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:41_7_41_39      | file0:41_7_41_13  | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:48_6_55_6       | file0:47_6_47_10  |                   |            |                |          |                   |
+| file0:40_6_43_41_exit | file0:41_31_41_37 | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:40_6_43_41_exit | file0:41_26_41_29 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:40_6_43_41_exit | file0:41_7_41_13  | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+------------------------------------------------------------------------------------------------------------------------------
+
+ Trace generation time:1xxyy307 milliseconds
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.242s
+[INFO] Finished at: Sun Apr 14 15:32:48 IST 2019
+[INFO] Final Memory: 17M/173M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building OntoDebugger 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:exec (default-cli) @ OntoDebugger ---
+2
+Root element :inputs
+Root element :queries
+Root element :queries
+{ftp://home/demo/Dropbox/testcases/bin_tree.c#51_7_52_26_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#53_7_53_30, ftp://home/demo/Dropbox/testcases/bin_tree.c#59_6_64_6_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#65_6_65_15, ftp://home/demo/Dropbox/testcases/bin_tree.c#60_7_61_24_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#62_7_62_42, ftp://home/demo/Dropbox/testcases/bin_tree.c#33_6_39_6_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#40_6_43_41, ftp://home/demo/Dropbox/testcases/bin_tree.c#48_6_55_6_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#56_6_56_18, ftp://home/demo/Dropbox/testcases/bin_tree.c#40_6_43_41_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#44_6_44_15, ftp://home/demo/Dropbox/testcases/bin_tree.c#42_7_43_41_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#44_6_44_15, ftp://home/demo/Dropbox/testcases/bin_tree.c#32_40_45_5_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#40_6_43_41, ftp://home/demo/Dropbox/testcases/bin_tree.c#21_7_22_15_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#23_7_23_34, ftp://home/demo/Dropbox/testcases/bin_tree.c#18_6_29_6_exit=ftp://home/demo/Dropbox/testcases/bin_tree.c#30_6_30_15}
+Root element :queries
+Root element :queries
+------------------------------------------------------------------------------------------------------------------------------
+| nextSt                | entityExpression  | entityDeclaration | entityName | cType          | baseType | structDeclRef     |
+==============================================================================================================================
+| file0:63_7_63_43      | file0:62_28_62_32 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:63_7_63_43      | file0:62_34_62_38 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:63_7_63_43      | file0:62_17_62_26 | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:58_25_58_28 |
+| file0:12_6_12_19      | file0:12_6_12_13  |                   |            |                |          |                   |
+| file0:48_6_55_6_exit  | file0:54_36_54_40 | file0:46_45_46_49 | "level"    | c:int          |          |                   |
+| file0:48_6_55_6_exit  | file0:54_25_54_34 | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:46_35_46_38 |
+| file0:47_6_47_10      | file0:46_45_46_49 |                   |            |                |          |                   |
+| file0:51_16_51_22     | file0:51_24_51_24 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:58_45_58_49     | file0:58_35_58_39 |                   |            |                |          |                   |
+| file0:59_6_64_6_exit  | file0:63_29_63_33 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:59_6_64_6_exit  | file0:63_17_63_27 | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:58_25_58_28 |
+| file0:59_6_64_6_exit  | file0:63_35_63_39 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:37_7_37_20      | file0:36_7_36_13  | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:54_7_54_44      | file0:53_19_53_28 | file0:6_6_6_13    |            | c:int          |          | file0:46_35_46_38 |
+| file0:38_7_38_16      | file0:37_7_37_14  | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:60_7_61_24_exit | file0:61_19_61_23 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:60_7_61_24_exit | file0:61_13_61_17 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:18_12_18_12     | file0:13_6_13_15  |                   |            |                |          |                   |
+| file0:50_7_50_21      | file0:49_37_49_41 | file0:46_45_46_49 | "level"    | c:int          |          |                   |
+| file0:50_7_50_21      | file0:49_25_49_35 | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:46_35_46_38 |
+| file0:13_6_13_15      | file0:12_6_12_19  |                   |            |                |          |                   |
+| file0:21_7_22_15      | file0:20_19_20_23 |                   |            |                |          |                   |
+| file0:21_7_22_15      | file0:20_20_20_23 | file0:12_6_12_13  | "data"     | c:int          |          |                   |
+| file0:36_7_36_19      | file0:35_7_35_13  | file0:6_6_6_13    |            | c:int          |          | file0:32_37_32_37 |
+| file0:36_7_36_19      | file0:35_15_35_18 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:51_16_51_22     | file0:51_12_51_12 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:60_7_61_24_exit | file0:60_11_60_15 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:60_7_61_24_exit | file0:60_18_60_22 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:61_12_61_24     | file0:61_19_61_23 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:61_12_61_24     | file0:60_11_60_15 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:61_12_61_24     | file0:61_13_61_17 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:61_12_61_24     | file0:60_18_60_22 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:58_35_58_39     | file0:58_25_58_28 |                   |            |                |          |                   |
+| file0:32_37_32_37     | file0:32_26_32_29 |                   |            |                |          |                   |
+| file0:26_7_26_14      | file0:25_25_25_28 | file0:13_6_13_15  | "tree"     | c:pointer_type | c:TREE   |                   |
+| file0:51_7_52_26_exit | file0:51_18_51_22 | file0:46_45_46_49 | "level"    | c:int          |          |                   |
+| file0:51_7_52_26_exit | file0:51_16_51_16 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:52_9_52_26      | file0:51_18_51_22 | file0:46_45_46_49 | "level"    | c:int          |          |                   |
+| file0:52_9_52_26      | file0:51_16_51_16 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:59_6_64_6_exit  | file0:62_28_62_32 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:59_6_64_6_exit  | file0:59_9_59_12  | file0:58_25_58_28 | "tree"     | c:pointer_type | c:TREE   |                   |
+| file0:59_6_64_6_exit  | file0:62_34_62_38 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:59_6_64_6_exit  | file0:61_19_61_23 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:59_6_64_6_exit  | file0:62_17_62_26 | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:58_25_58_28 |
+| file0:59_6_64_6_exit  | file0:60_11_60_15 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:59_6_64_6_exit  | file0:61_13_61_17 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:59_6_64_6_exit  | file0:60_18_60_22 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:60_7_61_24      | file0:63_29_63_33 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:60_7_61_24      | file0:62_28_62_32 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:60_7_61_24      | file0:59_9_59_12  | file0:58_25_58_28 | "tree"     | c:pointer_type | c:TREE   |                   |
+| file0:60_7_61_24      | file0:62_34_62_38 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:60_7_61_24      | file0:61_19_61_23 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:60_7_61_24      | file0:62_17_62_26 | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:58_25_58_28 |
+| file0:60_7_61_24      | file0:60_11_60_15 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:60_7_61_24      | file0:63_17_63_27 | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:58_25_58_28 |
+| file0:60_7_61_24      | file0:63_35_63_39 | file0:58_45_58_49 | "level"    | c:int          |          |                   |
+| file0:60_7_61_24      | file0:61_13_61_17 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:60_7_61_24      | file0:60_18_60_22 | file0:58_35_58_39 | "depth"    | c:pointer_type | c:int    |                   |
+| file0:28_7_28_41      | file0:27_17_27_20 | file0:13_6_13_15  | "tree"     | c:pointer_type | c:TREE   |                   |
+| file0:28_7_28_41      | file0:27_22_27_27 |                   |            |                |          |                   |
+| file0:28_7_28_41      | file0:27_23_27_27 | file0:12_6_12_19  | "depth"    | c:int          |          |                   |
+| file0:18_12_18_12     | file0:28_35_28_39 | file0:12_6_12_19  | "depth"    | c:int          |          |                   |
+| file0:24_7_24_35      | file0:23_29_23_32 | file0:13_6_13_15  | "tree"     | c:pointer_type | c:TREE   |                   |
+| file0:24_7_24_35      | file0:23_7_23_10  | file0:13_6_13_15  | "tree"     | c:pointer_type | c:TREE   |                   |
+| file0:24_7_24_35      | file0:23_24_23_27 | file0:12_6_12_13  | "data"     | c:int          |          |                   |
+| file0:42_7_43_41_exit | file0:42_17_42_23 | file0:6_6_6_13    |            | c:int          |          | file0:32_37_32_37 |
+| file0:42_7_43_41_exit | file0:43_27_43_30 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:42_7_43_41_exit | file0:43_7_43_14  | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:42_7_43_41_exit | file0:42_10_42_13 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:42_7_43_41_exit | file0:43_32_43_39 | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:43_7_43_41      | file0:42_17_42_23 | file0:6_6_6_13    |            | c:int          |          | file0:32_37_32_37 |
+| file0:43_7_43_41      | file0:43_27_43_30 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:43_7_43_41      | file0:43_7_43_14  | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:43_7_43_41      | file0:42_10_42_13 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:43_7_43_41      | file0:43_32_43_39 | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:59_6_64_6       | file0:58_45_58_49 |                   |            |                |          |                   |
+| file0:35_7_35_19      | file0:34_7_34_7   | file0:32_37_32_37 | "p"        | c:pointer_type | c:TREE   |                   |
+| file0:48_6_55_6_exit  | file0:49_37_49_41 | file0:46_45_46_49 | "level"    | c:int          |          |                   |
+| file0:48_6_55_6_exit  | file0:51_24_51_24 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:48_6_55_6_exit  | file0:49_25_49_35 | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:46_35_46_38 |
+| file0:48_6_55_6_exit  | file0:53_19_53_28 | file0:6_6_6_13    |            | c:int          |          | file0:46_35_46_38 |
+| file0:48_6_55_6_exit  | file0:48_9_48_12  | file0:46_35_46_38 | "tree"     | c:pointer_type | c:TREE   |                   |
+| file0:48_6_55_6_exit  | file0:51_12_51_12 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:48_6_55_6_exit  | file0:51_18_51_22 | file0:46_45_46_49 | "level"    | c:int          |          |                   |
+| file0:48_6_55_6_exit  | file0:51_16_51_16 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:49_7_49_45      | file0:49_37_49_41 | file0:46_45_46_49 | "level"    | c:int          |          |                   |
+| file0:49_7_49_45      | file0:51_24_51_24 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:49_7_49_45      | file0:49_25_49_35 | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:46_35_46_38 |
+| file0:49_7_49_45      | file0:53_19_53_28 | file0:6_6_6_13    |            | c:int          |          | file0:46_35_46_38 |
+| file0:49_7_49_45      | file0:48_9_48_12  | file0:46_35_46_38 | "tree"     | c:pointer_type | c:TREE   |                   |
+| file0:49_7_49_45      | file0:51_12_51_12 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:49_7_49_45      | file0:54_36_54_40 | file0:46_45_46_49 | "level"    | c:int          |          |                   |
+| file0:49_7_49_45      | file0:54_25_54_34 | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:46_35_46_38 |
+| file0:49_7_49_45      | file0:51_18_51_22 | file0:46_45_46_49 | "level"    | c:int          |          |                   |
+| file0:49_7_49_45      | file0:51_16_51_16 | file0:47_6_47_10  | "i"        | c:int          |          |                   |
+| file0:46_45_46_49     | file0:46_35_46_38 |                   |            |                |          |                   |
+| file0:21_7_22_15_exit | file0:21_11_21_14 | file0:12_6_12_13  | "data"     | c:int          |          |                   |
+| file0:22_10_22_15     | file0:21_11_21_14 | file0:12_6_12_13  | "data"     | c:int          |          |                   |
+| file0:33_6_39_6_exit  | file0:35_7_35_13  | file0:6_6_6_13    |            | c:int          |          | file0:32_37_32_37 |
+| file0:33_6_39_6_exit  | file0:34_7_34_7   | file0:32_37_32_37 | "p"        | c:pointer_type | c:TREE   |                   |
+| file0:33_6_39_6_exit  | file0:37_7_37_14  | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:33_6_39_6_exit  | file0:33_10_33_10 | file0:32_37_32_37 | "p"        | c:pointer_type | c:TREE   |                   |
+| file0:33_6_39_6_exit  | file0:36_7_36_13  | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:33_6_39_6_exit  | file0:35_15_35_18 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:33_6_39_6_exit  | file0:38_14_38_14 | file0:32_37_32_37 | "p"        | c:pointer_type | c:TREE   |                   |
+| file0:34_7_34_36      | file0:35_7_35_13  | file0:6_6_6_13    |            | c:int          |          | file0:32_37_32_37 |
+| file0:34_7_34_36      | file0:34_7_34_7   | file0:32_37_32_37 | "p"        | c:pointer_type | c:TREE   |                   |
+| file0:34_7_34_36      | file0:37_7_37_14  | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:34_7_34_36      | file0:33_10_33_10 | file0:32_37_32_37 | "p"        | c:pointer_type | c:TREE   |                   |
+| file0:34_7_34_36      | file0:36_7_36_13  | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:34_7_34_36      | file0:35_15_35_18 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:34_7_34_36      | file0:38_14_38_14 | file0:32_37_32_37 | "p"        | c:pointer_type | c:TREE   |                   |
+| file0:33_6_39_6       | file0:32_37_32_37 |                   |            |                |          |                   |
+| file0:27_7_27_31      | file0:26_7_26_11  | file0:12_6_12_19  | "depth"    | c:int          |          |                   |
+| file0:42_7_43_41      | file0:42_17_42_23 | file0:6_6_6_13    |            | c:int          |          | file0:32_37_32_37 |
+| file0:42_7_43_41      | file0:43_27_43_30 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:42_7_43_41      | file0:41_31_41_37 | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:42_7_43_41      | file0:43_7_43_14  | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:42_7_43_41      | file0:40_16_40_22 | file0:6_6_6_13    |            | c:int          |          | file0:32_37_32_37 |
+| file0:42_7_43_41      | file0:40_9_40_12  | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:42_7_43_41      | file0:42_10_42_13 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:42_7_43_41      | file0:41_26_41_29 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:42_7_43_41      | file0:43_32_43_39 | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:42_7_43_41      | file0:41_7_41_13  | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:41_7_41_39      | file0:42_17_42_23 | file0:6_6_6_13    |            | c:int          |          | file0:32_37_32_37 |
+| file0:41_7_41_39      | file0:43_27_43_30 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:41_7_41_39      | file0:41_31_41_37 | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:41_7_41_39      | file0:43_7_43_14  | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:41_7_41_39      | file0:40_16_40_22 | file0:6_6_6_13    |            | c:int          |          | file0:32_37_32_37 |
+| file0:41_7_41_39      | file0:40_9_40_12  | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:41_7_41_39      | file0:42_10_42_13 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:41_7_41_39      | file0:41_26_41_29 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:41_7_41_39      | file0:43_32_43_39 | file0:8_6_8_23    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:41_7_41_39      | file0:41_7_41_13  | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:48_6_55_6       | file0:47_6_47_10  |                   |            |                |          |                   |
+| file0:40_6_43_41_exit | file0:41_31_41_37 | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+| file0:40_6_43_41_exit | file0:41_26_41_29 | file0:32_26_32_29 | "data"     | c:int          |          |                   |
+| file0:40_6_43_41_exit | file0:41_7_41_13  | file0:7_6_7_22    |            | c:pointer_type | c:TREE   | file0:32_37_32_37 |
+------------------------------------------------------------------------------------------------------------------------------
+
+ Trace generation time:1xxyy309 milliseconds
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.953s
+[INFO] Finished at: Sun Apr 14 15:32:54 IST 2019
+[INFO] Final Memory: 17M/173M
+[INFO] ------------------------------------------------------------------------

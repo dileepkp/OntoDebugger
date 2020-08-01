@@ -1,0 +1,23 @@
+int maxSubArraySum(int a[], int size) 
+{ 
+    int globalMax = -32767, localMax = 0; 
+  
+    for (int i = 0; i < size; i++) 
+    { 
+        localMax = localMax + a[i]; 
+        if (globalMax > localMax) 
+            globalMax = localMax; 
+  
+        if (localMax < 0) 
+            localMax = 0; 
+    } 
+    return globalMax; 
+} 
+
+ globalMax must be non-decreasing //  cumulativeMaxProfit must be non-decreasing
+ localMax must be non-negative  //  normalizedProfit must be non-negative
+ i must be strictly increasing // dayIndex must be strictly increasing
+
+Whenever normalizedProfit is +ve, cumulativeMaxProfit must be +ve
+
+SPP and \exits normalizedProfit > 0

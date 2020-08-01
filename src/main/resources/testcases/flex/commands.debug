@@ -1,0 +1,10 @@
+set listsize 1
+rbreak /home/aidb/Dropbox/testcases/flex/flex_single.c:.
+commands
+ silent
+ frame
+ list
+ continue 
+end
+
+run error -B /home/aidb/SIRprograms/formatted/flex/inputs/in.eof

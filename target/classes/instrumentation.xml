@@ -1,0 +1,703 @@
+<?xml version="1.0"?>
+<queries>
+
+    <query id="0">
+        PREFIX c:&lt;http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#&gt;
+        PREFIX file0:&lt;file:///home/demo/Downloads/PATO-ROSE-master/tools/onto-build-rose/test/writeToFile.c#&gt;
+        PREFIX owl:&lt;http://www.w3.org/2002/07/owl#&gt;
+        PREFIX rdf:&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+        PREFIX rdfs:&lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+        PREFIX xsd:&lt;http://www.w3.org/2001/XMLSchema#&gt;
+        PREFIX pa:&lt;http://www.semanticweb.org/aidb/ontologies/BugFindingOntology#&gt;
+        PREFIX fl:&lt;http://www.semanticweb.org/aidb/ontologies/FileLibraryOntology#&gt;
+
+    </query>
+
+<!--
+    <query id="1">
+        SELECT ?s ?p ?o
+        WHERE {
+         ?s ?p ?o.
+        }
+
+    </query>
+    
+     <query id="getNext">
+        SELECT ?s ?o
+        WHERE {
+         ?s rdf:type ?o.
+        }
+
+    </query>
+
+ <query id="singleStatementBlocks_backup">
+
+	
+	SELECT ?blockSt ?st
+	WHERE{
+	?blockSt rdf:type ?type.
+	?blockSt (c:hasBody | c:hasTrueBody | c:hasFalseBody) ?body.
+	MINUS{?body rdf:type c:Block}.
+	?st c:hasParent ?blockSt.
+	filter(?type in (c:ForStatement, c:WhileStatement, c:IfElseStatement))	
+	}
+
+	
+    </query>
+
+ <query id="singleStatementBlocks_backup2">
+
+	
+	SELECT ?blockSt ?trueSt ?falseSt ?trueStType ?falseStType
+	WHERE{
+	
+?blockSt3 pa:nextTrueStatement ?trueSt.
+?blockSt3 pa:nextFalseStatement ?falseSt.
+optional{
+	?trueSt rdf:type ?trueStType.
+}optional{	?falseSt rdf:type ?falseStType.
+}optional{	?blockSt3 c:hasParent ?par.
+		?par rdf:type ?parType.
+		filter(?parType in (c:ForStatement, c:WhileStatement))
+		bind(?par as ?blockSt2)
+}
+  BIND ( IF (BOUND (?blockSt2), ?blockSt2, ?blockSt3 )  as ?blockSt  ) .
+	}
+
+order by ?trueSt
+	
+    </query>
+
+ <query id="singleStatementBlocks">
+
+	
+	SELECT ?blockSt ?trueSt ?falseSt ?trueStType ?falseStType 
+	WHERE{
+	
+?blockSt pa:nextTrueStatement ?trueSt.
+?blockSt pa:nextFalseStatement ?falseSt.
+optional{
+	?trueSt rdf:type ?trueStType.
+}optional{	?falseSt rdf:type ?falseStType.
+}
+MINUS{
+?trueSt c:hasParent ?forSt.
+?forSt rdf:type c:ForStatement.
+?forSt c:hasParent/rdf:type c:Block.
+}
+MINUS{
+?blockSt c:hasParent/rdf:type c:ForStatement.
+}
+}
+
+order by ?trueSt
+	
+    </query>
+-->
+    <query id="exitStatementInfo">
+
+	
+	SELECT ?exitSt ?nextSt 
+	WHERE{
+	
+		?exitSt (pa:nextFalseStatement|pa:nextTrueStatement|pa:nextStatement) ?nextSt.
+	FILTER (regex(str(?exitSt), "exit$") )
+	}
+
+	
+    </query>
+<!--
+<query id="notSingleLineStatements">
+	SELECT ?st ?type
+	WHERE{
+	
+		{
+		?st2 (pa:nextFalseStatement|pa:nextTrueStatement|pa:nextStatement) ?nextSt.
+		?st2 rdf:type ?type.
+		bind(?st2 as ?st)
+		filter(?type not in (c:IfElseStatement))
+		}
+		union
+		{
+		?st2 (pa:nextFalseStatement|pa:nextTrueStatement|pa:nextStatement) ?nextSt.
+		?st2 rdf:type ?type.
+		?st2 c:hasCondition ?cond.
+		bind(?cond as ?st)
+		filter(?type in (c:IfElseStatement))
+		}
+	}
+	order by ?st
+    </query>
+
+<query id="noBracesStatements">
+
+	
+	SELECT distinct ?st ?next ?stType
+	WHERE{
+	
+{		{
+		?st rdf:type ?stType.
+		?st (c:hasForTest|c:hasCondition) ?cond.
+		?cond pa:nextTrueStatement ?next.
+		?next c:hasParent ?par.
+		filter not exists{?par rdf:type c:Block}
+		filter(str(?st) = str(?par))
+		filter(?stType in (c:ForStatement, c:WhileStatement))
+		}
+}
+		UNION
+		{
+		?st rdf:type c:IfElseStatement.
+		?st c:hasTrueBody ?trueBody.
+		FILTER regex(str(?trueBody), "true")
+
+		?next c:hasParent ?trueBody.
+		}
+		UNION
+		{
+		?st rdf:type c:IfElseStatement.
+		?st c:hasFalseBody ?falseBody.
+		FILTER regex(str(?falseBody), "false")
+
+		?next c:hasParent ?falseBody.
+		}
+	}
+	order by ?st
+    </query>
+
+ <query id="exitStatementInfo_backup2">
+
+	
+	SELECT ?exitSt ?nextSt 
+	WHERE{
+	
+	{
+	SELECT ?exitSt (min(?length) as ?minLength)
+	WHERE{
+        SELECT ?exitSt (count(*) as ?length)
+        WHERE {
+	?exitSt (pa:nextFalseStatement|pa:nextTrueStatement|pa:nextStatement)* ?temp1.
+	FILTER (regex(str(?exitSt), "exit$") )
+	?temp1 (pa:nextFalseStatement|pa:nextTrueStatement|pa:nextStatement) ?temp2.
+	?temp2 (pa:nextFalseStatement|pa:nextTrueStatement|pa:nextStatement)* ?nextSt.
+	FILTER (!regex(str(?nextSt), "exit$")  )
+	}
+	group by ?exitSt ?nextSt
+        }
+	group by ?exitSt 
+	}
+
+	?exitSt (pa:nextFalseStatement|pa:nextTrueStatement|pa:nextStatement)* ?temp1.
+	FILTER (regex(str(?exitSt), "exit$") )
+	?temp1 (pa:nextFalseStatement|pa:nextTrueStatement|pa:nextStatement) ?temp2.
+	?temp2 (pa:nextFalseStatement|pa:nextTrueStatement|pa:nextStatement)* ?nextSt.
+	FILTER (!regex(str(?nextSt), "exit$")  )
+	}
+	group by ?exitSt ?nextSt ?minLength
+	having(count(*) = xsd:integer(?minLength))
+	
+
+	
+    </query>
+
+<query id="exitStatementInfo_backup">
+
+	SELECT ?exitSt ?nextSt
+	WHERE{
+	
+	{
+	SELECT ?exitSt (min(?length) as ?minLength)
+	WHERE{
+        SELECT ?exitSt (count(*) as ?length)
+        WHERE {
+	?exitSt (pa:nextFalseStatement|pa:nextTrueStatement|pa:nextStatement)* ?temp1.
+	FILTER (regex(?exitSt, "exit$") )
+	?temp1 (pa:nextFalseStatement|pa:nextTrueStatement|pa:nextStatement) ?temp2.
+	?temp2 (pa:nextFalseStatement|pa:nextTrueStatement|pa:nextStatement)* ?nextSt.
+	FILTER (!regex(?nextSt, "exit$")  )
+	}
+	group by ?exitSt
+        }
+	group by ?exitSt 
+	}
+
+	?exitSt (pa:nextFalseStatement|pa:nextTrueStatement|pa:nextStatement)* ?temp1.
+	FILTER (regex(?exitSt, "exit$") )
+	?temp1 (pa:nextFalseStatement|pa:nextTrueStatement|pa:nextStatement) ?temp2.
+	?temp2 (pa:nextFalseStatement|pa:nextTrueStatement|pa:nextStatement)* ?nextSt.
+	FILTER (!regex(?nextSt, "exit$")  )
+	}
+	group by ?exitSt ?nextSt
+	having(count(*) = ?minLength)
+    </query>
+
+    <query id="breakPointDependencies">
+        SELECT ?predSt ?succSt
+        WHERE {
+	?st rdf:type c:ForStatement.
+	{
+?st c:hasForInit ?init .
+	?st c:hasForTest ?test .
+	bind(?init as ?predSt).
+	 bind(?test as ?succSt).}
+	union 
+	{
+	?st c:hasForTest ?test .
+	?st c:hasForIncr ?incr .
+	bind(?test as ?predSt).
+	 bind(?incr as ?succSt).}
+	union 
+	{
+	?st c:hasForTest ?test .
+	?test pa:nextFalseStatement ?falseSt .
+	bind(?test as ?predSt).
+	 bind(?falseSt as ?succSt).}
+	union 
+	{
+
+	?st c:hasForTest ?test .
+	?st c:hasForIncr ?incr .
+bind(?incr as ?predSt).
+	 bind(?test as ?succSt).}
+        }
+
+    </query>
+
+ -->
+<!-- what if x[i] and y[i] are used in the same statement, both i's have distinct URIs. So, two CEntities are same
+if the underlying c code is same-->
+  <query id="varsAfterEachStatement">
+        SELECT DISTINCT ?st (?subExpType as ?rdfType) (?varRef as ?entityExpression) (?var as ?entityDeclaration) (?nameOfVar as ?entityName) ?cType ?baseType ?structDeclRef ?structDeclName ?varScope
+        WHERE {
+
+
+
+	?varRef rdf:type ?subExpType.
+	?varRef c:hasParent* ?st.
+	?st rdf:type ?stType.
+
+	OPTIONAL {
+	{
+	?varRef c:hasName ?nameOfVar.
+	?varRef c:referTo ?var.
+	?var c:hasType ?cType.
+	?var c:hasScope ?varScope.
+	}
+	
+	OPTIONAL {?var c:hasBaseType|c:hasArrayBaseType ?baseType.}
+	}
+
+
+OPTIONAL {
+?varRef rdf:type c:ArraySub.
+?varRef (c:hasLeftOperand|c:hasOperand)+ ?varRef2.
+?varRef2 c:referTo ?var.
+?varRef2 c:hasName ?nameOfVar.
+?varRef2 c:hasScope ?varScope.
+	?varRef c:hasType ?cType.
+	OPTIONAL {?varRef c:hasArrayBaseType ?baseType.}
+	}
+
+OPTIONAL {
+?varRef rdf:type c:MemberRef.
+?varRef c:hasRightOperand ?varRef2.
+	?varRef2 c:referTo ?var.
+	?varRef2 rdf:type c:VariableRef.
+	?varRef2 c:hasType ?cType.
+?varRef c:hasLeftOperand ?memberRefLeft .
+?memberRefLeft c:referTo ?structDeclRef.
+	
+?structDeclRef c:hasScope ?varScope.
+	OPTIONAL{?memberRefLeft c:hasName ?structDeclName. ?structDeclRef c:hasType c:pointer_type.}
+	OPTIONAL{?varRef2 c:hasBaseType|c:hasArrayBaseType ?baseType.}
+	}
+	<!-- For members of structures pointed by variables -->
+
+	{
+	?st (pa:nextFalseStatement|pa:nextTrueStatement|pa:nextStatement) ?nextSt.
+	}
+	union
+	{
+	?st rdf:type c:ExpressionStatement.
+	?st c:hasParent*/rdf:type c:CaseOptionStatement.
+	}
+
+	filter(?stType not in (c:SwitchStatement))
+
+	filter(?subExpType in (c:Variable, c:VariableRef, c:ArraySub, c:MemberRef, c:AddressOp))
+	<!-- 		&amp;&amp; ?subExpType not in (c:VariableDecl)	)-->
+	<!-- AddressOp for & symbol -->
+	filter not exists {?varRef rdf:type c:FunctionCall}.
+	<!-- tot_info line 138 -->
+
+	filter not exists {?varRef c:hasParent ?subExpType}.
+	<!-- For two dimensional arrays or array in a structure -->
+	filter not exists {?varRef c:hasParent ?par2. ?par2 rdf:type c:MemberRef}.
+	<!-- For members of structures pointed by variables 
+		filter not exists {?xyz c:hasForIncr ?nextSt}  -->
+
+        }
+    </query>
+
+
+<query id="getTraceInformation">
+        SELECT DISTINCT ?var ?st ?val ?time
+        WHERE {
+
+?pp pa:afterStatement ?st .
+?pp pa:timeStamp ?time .
+optional{
+	?var2 pa:hasState ?vs  .
+?vs pa:hasValue ?val .
+?vs pa:atProgramPoint ?pp .
+}
+bind(if(bound(?var2), ?var2 , file0:0_0_0_0 ) as ?var)
+	}
+order by ?var ?st ?time
+    </query> 
+
+
+<query id="getTraceInformation_test">
+        SELECT DISTINCT ?var ?st (count(*) as ?cnt)
+        WHERE {
+	?var pa:hasState ?vs  .
+?vs pa:hasValue ?val .
+?vs pa:atProgramPoint ?pp .
+?pp pa:afterStatement ?st .
+?pp pa:timeStamp ?time .
+
+	}
+group by ?var ?st 
+order by ?var ?st
+    </query> 
+<!--
+ <query id="varsAfterEachStatement_backup">
+        SELECT DISTINCT ?nextSt (?subExpType as ?rdfType) (?varRef as ?entityExpression) 
+        WHERE {
+?varRef rdf:type ?subExpType.
+	?varRef c:hasParent* ?st.
+	
+	?st (pa:nextStatement) ?nextSt.
+
+	
+	
+
+        }
+    </query>
+-->
+<!--	
+filter (?stType IN (c:Variable, c:ExpressionStatement, c:ForStatement))
+union
+	{
+	?varRef rdf:type ?subExpType.
+	?varRef c:hasParent* ?st.
+	}
+
+UNION
+	{filter not exists {?varRef c:hasName ?nameOfVar}.
+	?varRef c:hasType ?cType.
+	}<! For array x[i-1] in rate
+ -->
+
+
+<!--
+
+  <query id="constructSpanBasedOnTime_backup">
+        SELECT DISTINCT ?var ?val ?time
+        WHERE {
+	?var pa:hasState ?vs  .
+	?vs pa:hasValue ?val .
+	?vs pa:atProgramPoint ?pp .
+	?pp pa:timeStamp ?time .
+	FILTER (?time &gt;= zz_fromTime &amp;&amp; ?time &lt;= zz_toTime)
+	FILTER (?var in (zz_var))
+	}
+    </query>
+-->
+ <query id="constructSpanBasedOnTime">
+        SELECT DISTINCT ?var ?val ?st ?time
+        WHERE {
+	{
+?var pa:hasState ?vs  .
+VALUES ?var {zz_var }
+?pp pa:afterStatement ?st .
+?pp pa:timeStamp ?time .
+FILTER (?time &gt;= zz_fromTime &amp;&amp; ?time &lt;= zz_toTime)
+}
+UNION
+{
+
+?var pa:hasState ?vs  .
+VALUES ?var {zz_var }
+?vs pa:hasValue ?val .
+?vs pa:atProgramPoint ?pp .
+?pp pa:afterStatement ?st .
+?pp pa:timeStamp ?time .
+FILTER (?time &gt;= zz_fromTime &amp;&amp; ?time &lt;= zz_toTime)
+} <!-- end union -->
+
+	}
+order by ?time
+    </query>
+
+
+ <query id="constructSpanBasedOnVarsAndSpace">
+      
+select distinct ?var ?val ?st ?time 
+where{
+{
+?var pa:hasState ?vs  .
+VALUES ?var {zz_var }
+?pp pa:afterStatement ?st .
+?pp pa:timeStamp ?time .
+VALUES ?st {zz_st }
+}
+UNION
+{
+
+?var pa:hasState ?vs  .
+VALUES ?var {zz_var }
+?vs pa:hasValue ?val .
+?vs pa:atProgramPoint ?pp .
+?pp pa:afterStatement ?st .
+?pp pa:timeStamp ?time .
+} <!-- end union -->
+	
+}
+
+    </query>
+
+<!--
+<query id="constructSpanBasedOnVarsAndSpace_backup2">
+
+
+
+
+
+        SELECT DISTINCT ?var ?val ?st2 ?time2
+        WHERE {
+	?var pa:hasState ?vs  .
+
+	?vs pa:hasValue ?val .
+	?vs pa:atProgramPoint ?pp .
+	?pp pa:afterStatement ?st2 .
+?pp pa:timeStamp ?time2 .
+filter(?time2 &lt;= ?time)
+	
+
+
+{
+select distinct ?var ?st ?time 
+where{
+?var pa:hasState ?vs  .
+	VALUES ?var {zz_var }
+optional{
+	?vs pa:hasValue ?val .
+	?vs pa:atProgramPoint ?pp .
+
+	
+}
+?pp pa:afterStatement ?st .
+?pp pa:timeStamp ?time .
+filter(?st in (zz_st))
+}
+}
+	}
+
+
+    </query>
+
+ <query id="constructSpanBasedOnVarsAndSpace_backup">
+        SELECT DISTINCT ?var ?val ?st ?time
+        WHERE {
+	?var pa:hasState ?vs  .
+optional{
+	?vs pa:hasValue ?val .
+	?vs pa:atProgramPoint ?pp .
+
+	
+}
+	?pp pa:afterStatement ?st .
+?pp pa:timeStamp ?time .
+
+	FILTER (?var in (zz_var) &amp;&amp; ?st in (zz_st))
+	}
+    </query>
+
+  <query id="constructSpanBasedOnSpace">
+        SELECT DISTINCT ?var ?val ?st
+        WHERE {
+	?var pa:hasState ?vs  .
+	?vs pa:hasValue ?val .
+	?vs pa:atProgramPoint ?pp .
+	?pp pa:afterStatement ?st .
+	FILTER (?st in (zz_st))
+	}
+    </query>
+
+-->
+
+  <query id="constructSpanBasedOnTimeAndSpace">
+        SELECT DISTINCT ?var ?val ?time ?st
+        WHERE {
+	?var pa:hasState ?vs  .
+	?vs pa:hasValue ?val .
+	?vs pa:atProgramPoint ?pp .
+	?pp pa:afterStatement ?st .
+	FILTER (?st in (zz_st))
+	?pp pa:timeStamp ?time .
+	FILTER (?time &gt;= zz_fromTime &amp;&amp; ?time &lt;= zz_toTime)
+	}
+    </query>
+
+<!--
+  <query id="spanForFunctionCallReturns_backup">
+        SELECT DISTINCT ?var ?val ?st ?time
+        WHERE {
+	?var pa:hasState ?vs  .
+	?vs pa:hasValue ?val .
+	?vs pa:atProgramPoint ?pp .
+	?pp pa:afterStatement ?st .
+	?pp pa:timeStamp ?time .
+	{
+	SELECT ?st ?var
+WHERE
+{
+		?st rdf:type c:ExpressionStatement .
+		?st c:hasExpression ?exp2_1 .
+		?exp2_1 rdf:type c:AssignOp .
+		?exp2_1 c:hasLeftOperand ?left .
+		?exp2_1 c:hasRightOperand ?func.
+		?left rdf:type c:VariableRef .
+		?left c:referTo ?var.
+		?func c:call ?call.
+		?call rdf:type c:FunctionRef.
+		?call c:hasName ?fname.
+filter(?fname in (zz_st))
+}
+	}}
+    </query>
+-->
+
+  <query id="spanForFunctionCallReturns">
+        SELECT DISTINCT ?var ?val ?st ?time
+        WHERE {
+	
+<!--		?st rdf:type c:ExpressionStatement .
+		?st c:hasExpression ?exp2_1 .
+-->
+		?exp2_1 rdf:type c:AssignOp .
+		?exp2_1 c:hasLeftOperand ?left .
+		?exp2_1 c:hasRightOperand ?func.
+		?left rdf:type c:VariableRef .
+		?left c:referTo ?var.
+		?func c:call ?call.
+		?call rdf:type c:FunctionRef.
+		?call c:hasName ?fname.
+filter(?fname in (zz_st))
+
+?var pa:hasState ?vs  .
+	?vs pa:hasValue ?val .
+	?vs pa:atProgramPoint ?pp .
+		?exp2_1 c:hasParent* ?st .
+	?pp pa:afterStatement ?st .
+	?pp pa:timeStamp ?time .
+
+	}
+    </query>
+
+
+  <query id="spanForFunctionCallParameters">
+        SELECT DISTINCT ?var ?val ?st ?time
+        WHERE {
+	
+ <!--            ?st rdf:type c:ExpressionStatement.
+		?st c:hasExpression ?func.
+-->
+		?func c:call ?call.
+		?call rdf:type c:FunctionRef.
+		?call c:hasName ?fname.
+		?func c:hasArgumentExpr ?y.
+		?y c:NthArg ?pos.
+		?y c:referTo ?var.
+
+filter(?fname in (zz_st)  &amp;&amp; ?pos in (zz_pos))
+
+
+		?func c:hasParent* ?st .
+	?pp pa:afterStatement ?st .
+	?pp pa:timeStamp ?time .
+
+optional{
+?var pa:hasState ?vs  .
+	?vs pa:hasValue ?val .
+	?vs pa:atProgramPoint ?pp .
+}
+
+	}
+    </query>
+
+<!--
+  <query id="spanForFunctionCallParameters_backup">
+        SELECT DISTINCT ?var ?val ?st ?time
+        WHERE {
+	
+
+		?func c:call ?call.
+		?call rdf:type c:FunctionRef.
+		?call c:hasName ?fname.
+		?func c:hasArgumentExpr ?y.
+		?y c:NthArg ?pos.
+		?y c:referTo ?var.
+
+filter(?fname in (zz_st)  &amp;&amp; ?pos in (zz_pos))
+
+?var pa:hasState ?vs  .
+	?vs pa:hasValue ?val .
+	?vs pa:atProgramPoint ?pp .
+		?func c:hasParent* ?st .
+	?pp pa:afterStatement ?st .
+	?pp pa:timeStamp ?time .
+
+	}
+    </query>
+
+
+
+
+
+<query id="progStateInSpan_backup">
+        SELECT DISTINCT ?var ?val ?time
+        WHERE {
+	?var pa:hasState ?vs  .
+	?vs pa:hasValue ?val .
+	?vs pa:atProgramPoint ?pp .
+	?pp pa:timeStamp ?time .
+	FILTER (?time &gt;= zz_fromTime &amp;&amp; ?time &lt;= zz_toTime)
+	}
+    </query>
+
+  -->
+    <!-- Select the program conditions that reach the query statement -->  
+    
+  <query id="2">
+        SELECT DISTINCT ?qp ?pred (?o as ?condition) (?cond as ?pathId) ?iter (count(?temp) as ?order)
+        WHERE {
+<!--	 ?st (pa:nextFalseStatement|pa:nextTrueStatement|pa:nextStatement) ?qp. -->
+         ?pp pa:afterStatement ?qp.
+	 ?pp pa:iteration ?iter.
+         ?pp pa:hasProgramConditions ?cond.
+         ?cond (rdf:item)* ?temp.
+	 ?temp ?tempPred ?o.
+	 optional {?temp pa:sameState ?cond4. }
+	FILTER(!isBlank(?o) &amp;&amp; ?o != "true"  &amp;&amp; (?tempPred = rdf:item || ?tempPred = pa:negItem)).
+	bind(if(bound(?cond4),"*" ,?tempPred) as ?pred).
+        }
+	group by ?qp ?pred ?o ?cond ?iter
+	order by ?qp
+    </query>
+
+
+  
+    
+</queries>

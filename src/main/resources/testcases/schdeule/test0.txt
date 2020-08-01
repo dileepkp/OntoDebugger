@@ -1,0 +1,11 @@
+break /home/aidb/Dropbox/testcases/schdeule/schdeule_single_original.c:233
+commands
+ silent
+ printf "%d \n",n
+ continue 
+end
+
+run 7 10 5 < /home/aidb/SIRprograms/formatted/schedule/input/inp.84
+
+
+

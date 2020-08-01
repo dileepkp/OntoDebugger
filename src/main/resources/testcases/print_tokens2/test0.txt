@@ -1,0 +1,18 @@
+break /home/aidb/Dropbox/testcases/print_tokens2/print_tokens2_single_original.c:165
+commands
+ silent
+ printf "%d \n",ch
+ continue 
+end
+
+break /home/aidb/Dropbox/testcases/print_tokens2/print_tokens2_single_original.c:173
+commands
+ silent
+ printf "%d \n",ch
+ continue 
+end
+
+
+run < /home/aidb/SIRprograms/formatted/printtokens2/inputs/ts527
+
+

@@ -1,0 +1,17 @@
+rdf	http://www.w3.org/1999/02/22-rdf-syntax-ns#
+
+rdf:List(?l1) ^ rdf:rest(?l1,rdf:nil) -> IncreasingList(?l1)
+rdf:List(?l1) ^ rdf:first(?l1, ?a) ^ rdf:rest(?l1, ?l2) ^ IncreasingList(?l2) ^ rdf:first(?l2, ?b) ^ swrlb:lessThan(?a, ?b) -> IncreasingList(?l2)
+
+rdf:List(?l1) ^ SLL(?l1) ^ rdf:rest(?l1,rdf:nil) -> Well-FormedSLL(?l1)
+rdf:List(?l1) ^ rdf:first(?l1, ?a) ^ rdf:rest(?l1, ?l2) ^ Well-FormedSLL(?l2) ^ rdf:first(?l2, ?b) ^ pa:hasNext(?a, ?b) -> Well-FormedSLL(?l2)
+Slice(?s) ^ hasFilteredItem(?s, ?fi) ^ correspondsTo(?fi, ?var) ^ SLL(?var) -> Well-FormedSLL(?s,?l1)
+
+
+
+SLL(?l1) ^ hasNext(?l1, ?l2) ^ Null(?l2) -> Well-FormedSLL(?l1)
+SLL(?l1) ^ hasNext(?l1, ?l2) ^ Well-FormedSLL(?l2) -> Well-FormedSLL(?l2)
+Slice(?s) ^ hasFilteredItem(?s, ?fi) ^ correspondsTo(?fi, ?var) ^ SLL(?var) -> Well-FormedSLL(?l1)
+
+CLL(?l1) ^ hasNext(?l1, ?l2) ^ CLL(?l2) ^ Variable(?l1) -> Well-FormedCLL(?l2)
+Slice(?s) ^ hasFilteredItem(?s, ?fi) ^ correspondsTo(?fi, ?var) ^ Well-FormedCLL(?var) -> Well-FormedCLL(?s,?var)

@@ -1,0 +1,13 @@
+A rich builtin functionality support is available in swrl. The built in functionalities is divided into different categories:
+
+swrlb: binary functions
+swrlm: mathematical functions
+swrlt: temporal functions
+swrlx: Exenstion functions
+
+There is a query language which allows the users to formulate queries like SWRL rules calles SQWRL. The predicates used are similar to sql operators.
+
+
+Side note: Java math expression parser (jep) is used to parse mathematical expresssions in java.
+
+One of the important points in writing is how many stateholder you are seeing during writing

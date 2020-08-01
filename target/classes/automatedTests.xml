@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<queries>
+
+<query id="FopenPrecedesFclose">
+CreateSpan(file0:so);st_var(file0:so,'fopen',c:return). 
+CreateSpan(file0:sc);st_var(file0:sc,'fclose',c:parameter,'0'). <!-- groupCreator(file0:sc, 'fclose',c:parameter, 0, 'fopen') ?accessedFunction, ?creatorFunction (hasGroupAccessor, hasGroupCreator) -->
+anyExistsBeforeTime(file0:sc,file0:so).
+</query>
+
+<query id="FcloseFollowsFopen">
+CreateSpan(file0:so);st_var(file0:so,'fopen',c:return).
+CreateSpan(file0:sc);st_var(file0:sc,'fclose',c:parameter,'0').
+anyExistsAfterTime(file0:so,file0:sc).
+</query>
+    
+<query id="FopenPrecedesFread">
+CreateSpan(file0:so);st_var(file0:so,'fopen',c:return).
+CreateSpan(file0:sr);st_var(file0:sr,'_IO_getc',c:parameter,'0').
+anyExistsBeforeTime(file0:sr,file0:so).
+</query>
+
+<query id="FreadFollowsFopen">
+CreateSpan(file0:so);st_var(file0:so,'fopen',c:return).
+CreateSpan(file0:sr);st_var(file0:sr,_IO_getc',c:parameter,'0').
+anyExistsAfterTime(file0:so,file0:sr).
+</query>
+
+<query id="FreadPrecedesFclose">
+CreateSpan(file0:sr);st_var(file0:sr,'_IO_getc',c:parameter,'0').
+CreateSpan(file0:sc);st_var(file0:sc,'fclose',c:parameter,'0').
+anyExistsBeforeTime(file0:sc,file0:sr).
+</query>
+
+<query id="FcloseFollowsFread">
+CreateSpan(file0:sr);st_var(file0:sr,'_IO_getc',c:parameter,'0').
+CreateSpan(file0:sc);st_var(file0:sc,'fclose',c:parameter,'0').
+anyExistsAfterTime(file0:sr,file0:sc).
+</query>    
+  
+
+<query id="DoubleFopen">
+CreateSpan(file0:so);st_var(file0:so,'fopen',c:return).
+CreateSpan(file0:sc);st_var(file0:sc,'fclose',c:parameter,'0').
+interleaved(file0:so,file0:sc).
+</query>
+
+<query id="DoubleFclose">
+CreateSpan(file0:so);st_var(file0:so,'fopen',c:return).
+CreateSpan(file0:sc);st_var(file0:sc,'fclose',c:parameter,'0').
+interleaved(file0:sc,file0:so).
+</query>
+    
+</queries>

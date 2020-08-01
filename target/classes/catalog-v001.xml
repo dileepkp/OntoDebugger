@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/aidb/ontologies/ProgramAnalysisOntology" uri="PAOntology.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/aidb/ontologies/ProgramAnalysisOntology" uri="PAOntology.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/2002/07/owl#" uri="file:/home/aidb/Dropbox/testcases/temp2.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/aidb/ontologies/ProgramAnalysisOntology" uri="file:/home/aidb/Dropbox/BugFinderJena/src/main/resources/PAOntology.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/aidb/ontologies/ProgramAnalysisOntology" uri="PAOntology.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c/1.0.0" uri="c.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.openk.org/ontologies/c" uri="file:/home/aidb/Dropbox/BugFinderJena/src/main/resources/c.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c/1.0.0" uri="file:/home/aidb/Dropbox/BugFinderJena/src/main/resources/c.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/aidb/ontologies/ProgramAnalysisOntology" uri="file:/home/aidb/Dropbox/BugFinderJena/src/main/resources/PAOntology.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1571641756583" name="http://www.semanticweb.org/aidb/ontologies/ProgramAnalysisOntology" uri="PAOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1571641756583" name="duplicate:http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology" uri="ProgramDebuggingOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1571641756583" name="duplicate:http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology" uri="ProgramProperties_SetModel.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1571641756583" name="duplicate:http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology" uri="ProgramProperties_RDFRules.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1571641756583" name="duplicate:http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology" uri="ProgramProperties.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1571641756583" name="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c" uri="c.owl"/>
+    </group>
+</catalog>

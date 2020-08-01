@@ -1,0 +1,18 @@
+break /home/aidb/Dropbox/testcases/print_tokens/print_tokens_single_original.c:224
+commands
+ silent
+ printf "%d \n",tstream_ptr->ch_stream->stream_ind
+ continue 
+end
+
+break /home/aidb/Dropbox/testcases/print_tokens/print_tokens_single_original.c:233
+commands
+ silent
+ printf "%d \n",tstream_ptr->ch_stream->stream_ind
+ continue 
+end
+
+
+run < /home/aidb/SIRprograms/formatted/printtokens/inputs/newtst171.tst
+
+

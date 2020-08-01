@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<inputs>
+
+ <queryFile id="count">src/main/resources/analysis/count.ttl</queryFile> 
+
+    <inputgroup>
+<!--
+  <input id="maxSubArraySum">
+        <cFile>src/main/resources/ontology/shares/maxSubArraySum.c</cFile>
+	<executableFile>src/main/resources/ontology/shares/maxSubArraySum</executableFile>
+        <dataFile>src/main/resources/ontology/shares/maxSubArraySum.ttl</dataFile>
+	<cfgFile>src/main/resources/ontology/shares/maxSubArraySum_cfg.ttl</cfgFile> 
+	<prefix>ftp://home/demo/Dropbox/ontology/shares/maxSubArraySum.c</prefix>
+<gdbDebugCommandsFile>src/main/resources/testcases/rate/test0.txt</gdbDebugCommandsFile>
+<instrumentationHeader>4</instrumentationHeader> 
+    </input>
+-->
+   <input id="rate">
+        <cFile>src/main/resources/testcases/rate.c</cFile>
+	<executableFile>src/main/resources/testcases/rate</executableFile>
+        <dataFile>src/main/resources/testcases/rate.ttl</dataFile>
+	<cfgFile>src/main/resources/testcases/rate_cfg.ttl</cfgFile> 
+	<prefix>ftp://home/demo/Dropbox/testcases/rate.c</prefix>
+<gdbDebugCommandsFile>src/main/resources/testcases/rate/test0.txt</gdbDebugCommandsFile>
+<instrumentationHeader>2</instrumentationHeader> <!-- main function line number -->
+    </input>
+  
+ <input id="bin_tree">
+        <cFile>src/main/resources/testcases/bin_tree.c</cFile>
+	<executableFile>src/main/resources/testcases/bin_tree</executableFile>
+        <dataFile>src/main/resources/testcases/bin_tree.ttl</dataFile>
+	<cfgFile>src/main/resources/testcases/bin_tree_cfg.ttl</cfgFile> 
+	<prefix>ftp://home/demo/Dropbox/testcases/bin_tree.c</prefix>
+	<inputFile>src/main/resources/testcases/bin_tree_input.txt</inputFile> 
+<gdbDebugCommandsFile>src/main/resources/testcases/rate/test0.txt</gdbDebugCommandsFile>
+<instrumentationHeader>9</instrumentationHeader> 
+    </input>
+
+ <input id="tot_info">
+        <cFile>src/main/resources/testcases/tot_info/tot_info_single.c</cFile>
+	<executableFile>src/main/resources/testcases/tot_info/tot_info_single</executableFile>
+        <dataFile>src/main/resources/testcases/tot_info/tot_info_single.ttl</dataFile>
+	<cfgFile>src/main/resources/testcases/tot_info/tot_info_single_cfg.ttl</cfgFile> 
+	<prefix>ftp://home/demo/Dropbox/testcases/tot_info/tot_info_single.c</prefix>
+	<inputFile>/home/aidb/SIRprograms/formatted/totinfo/inputs/test5</inputFile> 
+<gdbDebugCommandsFile>src/main/resources/testcases/tot_info/test0.txt</gdbDebugCommandsFile>
+<gdbTime>time gdb -x test0.txt -batch --args /home/aidb/Dropbox/testcases/tot_info/tot_info_single</gdbTime>
+<exeCommandLine> ./a.out &lt; /home/aidb/SIRprograms/formatted/totinfo/inputs/test5
+ </exeCommandLine>
+<instrumentationHeaderDecl>123</instrumentationHeaderDecl> <!-- the line number where decl information should be coded -->
+<instrumentationHeaderInit>132</instrumentationHeaderInit> 
+    </input>
+
+
+ <input id="space">
+        <cFile>src/main/resources/testcases/space/space_single.c</cFile>
+	<executableFile>src/main/resources/testcases/space/space_single gr27</executableFile>
+        <dataFile>src/main/resources/testcases/space/space_single.ttl</dataFile>
+	<cfgFile>src/main/resources/testcases/space/space_single_cfg.ttl</cfgFile> 
+	<prefix>ftp://home/demo/Dropbox/testcases/space/space_single.c</prefix>
+<gdbDebugCommandsFile>src/main/resources/testcases/space/test0.txt</gdbDebugCommandsFile>
+<gdbTime>time gdb -x test0.txt -batch --args /home/aidb/Dropbox/testcases/space/space_single gr27</gdbTime>
+<instrumentationHeaderDecl>833</instrumentationHeaderDecl>
+<instrumentationHeaderInit>835</instrumentationHeaderInit>
+    </input> 
+
+
+ <input id="sed">
+        <cFile>src/main/resources/testcases/sed/sed_single_rose.c</cFile>
+	<executableFile>src/main/resources/testcases/sed/sed_single -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in </executableFile>
+        <dataFile>src/main/resources/testcases/sed/sed_single_rose.ttl</dataFile>
+	<cfgFile>src/main/resources/testcases/sed/sed_single_rose_cfg.ttl</cfgFile> 
+	<prefix>ftp://home/demo/Dropbox/testcases/sed/sed_single_rose.c</prefix>
+<gdbDebugCommandsFile>src/main/resources/testcases/sed/test0.txt</gdbDebugCommandsFile>
+<gdbTime>time gdb -x test0.txt -batch --args /home/aidb/Dropbox/testcases/sed/sed_single -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in</gdbTime>
+<instrumentationHeaderDecl>2558</instrumentationHeaderDecl> <!-- the line number where decl information should be coded -->
+<instrumentationHeaderInit>2560</instrumentationHeaderInit> 
+
+    </input>
+
+<input id="schdeule">
+        <cFile>src/main/resources/testcases/schdeule/schdeule_single.c</cFile>
+	<dataFile>src/main/resources/testcases/schdeule/schdeule_single.ttl</dataFile>
+	<cfgFile>src/main/resources/testcases/schdeule/schdeule_single_cfg.ttl</cfgFile> 
+	<prefix>ftp://home/demo/Dropbox/testcases/schdeule/schdeule_single.c</prefix>
+<inputFile>/home/aidb/SIRprograms/formatted/totinfo/inputs/test5</inputFile> 
+
+<gdbTime>time gdb -x test0.txt -batch --args a.out</gdbTime>
+
+<instrumentationHeaderDecl>123</instrumentationHeaderDecl> <!-- the line number where decl information should be coded -->
+<instrumentationHeaderInit>132</instrumentationHeaderInit> 
+    </input>
+
+
+<input id="schdeule_ontology">
+        <cFile>src/main/resources/testcases/schdeule_ontology/schdeule_single.c</cFile>
+	<dataFile>src/main/resources/testcases/schdeule_ontology/schdeule_single.ttl</dataFile>
+	<cfgFile>src/main/resources/testcases/schdeule_ontology/schdeule_single_cfg.ttl</cfgFile> 
+	<prefix>ftp://home/demo/Dropbox/testcases/schdeule/schdeule_single.c</prefix>
+<inputFile>/home/aidb/SIRprograms/formatted/totinfo/inputs/test5</inputFile> 
+
+<gdbTime>time gdb -x test0.txt -batch --args a.out</gdbTime>
+
+<instrumentationHeaderDecl>123</instrumentationHeaderDecl> <!-- the line number where decl information should be coded -->
+<instrumentationHeaderInit>132</instrumentationHeaderInit> 
+    </input>
+
+
+
+<input id="print_tokens">
+        <cFile>src/main/resources/testcases/print_tokens/print_tokens_single.c</cFile>
+	<dataFile>src/main/resources/testcases/print_tokens/print_tokens_single.ttl</dataFile>
+	<cfgFile>src/main/resources/testcases/print_tokens/print_tokens_single_cfg.ttl</cfgFile> 
+	<prefix>ftp://home/demo/Dropbox/testcases/print_tokens/print_tokens_single.c</prefix>
+<inputFile>/home/aidb/SIRprograms/formatted/totinfo/inputs/test5</inputFile> 
+
+<gdbTime>time gdb -x test0.txt -batch --args a.out</gdbTime>
+
+<instrumentationHeaderDecl>828</instrumentationHeaderDecl> <!-- the line number where decl information should be coded -->
+<instrumentationHeaderInit>848</instrumentationHeaderInit> 
+    </input>
+
+
+<input id="print_tokens2">
+        <cFile>src/main/resources/testcases/print_tokens2/print_tokens2_single.c</cFile>
+	<dataFile>src/main/resources/testcases/print_tokens2/print_tokens2_single.ttl</dataFile>
+	<cfgFile>src/main/resources/testcases/print_tokens2/print_tokens2_single_cfg.ttl</cfgFile> 
+	<prefix>ftp://home/demo/Dropbox/testcases/print_tokens2/print_tokens2_single.c</prefix>
+<inputFile>/home/aidb/SIRprograms/formatted/totinfo/inputs/test5</inputFile> 
+
+<gdbTime>time gdb -x test0.txt -batch --args a.out</gdbTime>
+
+<instrumentationHeaderDecl>123</instrumentationHeaderDecl> <!-- the line number where decl information should be coded -->
+<instrumentationHeaderInit>132</instrumentationHeaderInit> 
+    </input>
+
+
+
+<input id="grep">
+        <cFile>src/main/resources/testcases/grep/grep_single.c</cFile>
+	<dataFile>src/main/resources/testcases/grep/grep_single.ttl</dataFile>
+	<cfgFile>src/main/resources/testcases/grep/grep_single_cfg.ttl</cfgFile> 
+	<prefix>ftp://home/demo/Dropbox/testcases/grep/grep_single.c</prefix>
+<inputFile>/home/aidb/SIRprograms/formatted/totinfo/inputs/test5</inputFile> 
+
+<gdbTime>time gdb -x test0.txt -batch --args a.out</gdbTime>
+
+<instrumentationHeaderDecl>1</instrumentationHeaderDecl> <!-- the line number where decl information should be coded -->
+<instrumentationHeaderInit>1</instrumentationHeaderInit> 
+    </input>
+
+<input id="flex">
+        <cFile>src/main/resources/testcases/flex/flex_single.c</cFile>
+	<executableFile>src/main/resources/testcases/flex/flex_single gr27</executableFile>
+        <dataFile>src/main/resources/testcases/flex/flex_single.ttl</dataFile>
+	<cfgFile>src/main/resources/testcases/flex/flex_single_cfg.ttl</cfgFile> 
+	<prefix>ftp://home/demo/Dropbox/testcases/flex/flex_single.c</prefix>
+<gdbDebugCommandsFile>src/main/resources/testcases/flex/test0.txt</gdbDebugCommandsFile>
+<gdbTime>time gdb -x test0.txt -batch --args /home/aidb/Dropbox/testcases/flex/flex_single gr27</gdbTime>
+<instrumentationHeaderDecl>2287</instrumentationHeaderDecl>
+<instrumentationHeaderInit>2293</instrumentationHeaderInit>
+ </input>
+
+<input id="sed_scale">
+        <cFile>src/main/resources/testcases/sed/sed_single_rose.c</cFile>
+	<executableFile>src/main/resources/testcases/sed/sed_single -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in </executableFile>
+        <dataFile>src/main/resources/testcases/sed/sed_single_rose.ttl</dataFile>
+	<cfgFile>src/main/resources/testcases/sed/sed_single_rose_cfg.ttl</cfgFile> 
+	<prefix>ftp://home/demo/Dropbox/testcases/sed/sed_single_rose.c</prefix>
+<gdbDebugCommandsFile>src/main/resources/testcases/sed/test0.txt</gdbDebugCommandsFile>
+<gdbTime>time gdb -x test0.txt -batch --args /home/aidb/Dropbox/testcases/sed/sed_single -e 's/dog/cat/' -e '/cat$/d' /home/aidb/SIRprograms/formatted/sed/inputs/default.in</gdbTime>
+<instrumentationHeaderDecl>2558</instrumentationHeaderDecl> <!-- the line number where decl information should be coded -->
+<instrumentationHeaderInit>2560</instrumentationHeaderInit> 
+
+    </input>
+
+     </inputgroup>
+
+
+
+</inputs>

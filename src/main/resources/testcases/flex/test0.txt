@@ -1,0 +1,11 @@
+break /home/aidb/Dropbox/testcases/flex/flex_single_original.c:3389
+commands
+ silent
+ continue 
+end
+
+
+
+run error -B /home/aidb/SIRprograms/formatted/flex/inputs/in.eof
+
+

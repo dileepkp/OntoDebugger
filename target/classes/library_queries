@@ -1,0 +1,14 @@
+"CreateSpan(file0:S1);
+VarsInSpan(file0:S1,filePointerVars);
+StsInSpan(file0:S1,fopenStatements)." +
+"CreateSpan(file0:S2);
+SpanTimeInstant(file0:S2, pa:after, t2);
+timeInstantForAGivenState(t2, (?st, ?var) in (fopenSts));
+VarsInSpan(file0:S2,fpVars);
+StsInSpan(file0:S2,fcloseSts)." +
+"IsEqualSpanOf(file0:S1,file0:S2).
+
+
+
+CreateSpansOfSpan(S1);
+IndividualSpanQuery(S1, Q1)//Each row of the result will form a span

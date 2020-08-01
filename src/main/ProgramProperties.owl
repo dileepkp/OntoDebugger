@@ -1,0 +1,1652 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#"
+     xml:base="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#correspondsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#correspondsTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#hasFilteredItem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#hasFilteredItem">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#beforeListOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#beforeListOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#beforeSpanOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#beforeSpanOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#beforeListOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#distinctListOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#distinctListOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#distinctSpanOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#distinctSpanOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#distinctListOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfrest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfrest">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DebugProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#elementAtTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#elementAtTime"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#filteredItemBeginsAtTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#filteredItemBeginsAtTime"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#filteredItemEndsAtTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#filteredItemEndsAtTime"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdffirst -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdffirst"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllDistinctList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllDistinctList">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithoutDuplicates"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllDistinctSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllDistinctSpan">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithoutDuplicates"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllDistinctList"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNonNegativeList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNonNegativeList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNonNegativeSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNonNegativeSpan">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNonNegativeList"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNonZeroList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNonZeroList">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ZeroList"/>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNonZeroSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNonZeroSpan">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNonZeroList"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllSameList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllSameList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllSameSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllSameSpan">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllSameList"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Debug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Debug"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DecreasingList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DecreasingList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DecreasingSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DecreasingSpan">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#DecreasingList"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#IncreasingList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#IncreasingList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#IncreasingSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#IncreasingSpan">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#IncreasingList"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithDuplicates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithDuplicates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithoutDuplicates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithoutDuplicates">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithDuplicates"/>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#NegativeList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#NegativeList">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNonNegativeList"/>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#NegativeSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#NegativeSpan">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#NegativeList"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNonNegativeSpan"/>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#NonDecreasingList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#NonDecreasingList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#NonDecreasingSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#NonDecreasingSpan">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#NonDecreasingList"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#NonIncreasingList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#NonIncreasingList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#NonIncreasingSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#NonIncreasingSpan">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#NonIncreasingList"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Debug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithDuplicates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithDuplicates">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithDuplicates"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithoutDuplicates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithoutDuplicates">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithoutDuplicates"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#SpanWithDuplicates"/>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ZeroList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ZeroList">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNonZeroList"/>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ZeroSpan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ZeroSpan">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ZeroList"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#AllNonZeroSpan"/>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Debug"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfnil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfnil"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#b">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#s1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#s2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#r1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#r2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#t1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#t2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#t11">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beforeList2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfrest"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#r1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfrest"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#r2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#beforeListOf"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#r1"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#r2"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#elementAtTime"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#t1"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#elementAtTime"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#t2"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#elementAtTime"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#r1"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#t11"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#t1"/>
+                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#t2"/>
+                                                                                        </swrl:arguments>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#t2"/>
+                                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#t11"/>
+                                                                                                </swrl:arguments>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#beforeListOf"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">distinctList2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfrest"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#r1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfrest"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#r2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#distinctListOf"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#r1"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#r2"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#distinctListOf"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beforeList1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfrest"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfnil"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfrest"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfnil"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#elementAtTime"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#t1"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#elementAtTime"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#t2"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#t1"/>
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#t2"/>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#beforeListOf"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">distinctList1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdffirst"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#t1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdffirst"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#t2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#notEqual"/>
+                                                        <swrl:arguments rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#t1"/>
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#t2"/>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#distinctListOf"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfrest"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdffirst"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdffirst"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                                        <swrl:arguments rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#a"/>
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#b"/>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithDuplicates"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfrest"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfnil"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#IncreasingList"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdffirst"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#a"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ZeroList"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S7</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdffirst"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#a"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#NegativeList"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfrest"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#IncreasingList"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdffirst"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#a"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdffirst"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#b"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#a"/>
+                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#b"/>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#IncreasingList"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfrest"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithDuplicates"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ListWithDuplicates"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S8</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfrest"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#NegativeList"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#NegativeList"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beforeList3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#s1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#s2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#beforeListOf"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#s1"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#s2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#beforeSpanOf"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#s1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#s2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">distinctList3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#s1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#Span"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#s2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#distinctListOf"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#s1"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#s2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#distinctSpanOf"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#s1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#s2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S6</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfrest"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#rdfList"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ZeroList"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#ZeroList"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/aidb/ontologies/ProgramDebuggingOntology#l1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

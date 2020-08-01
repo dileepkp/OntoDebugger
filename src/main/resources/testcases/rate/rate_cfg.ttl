@@ -1,0 +1,28 @@
+@prefix c: <http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#> .
+@prefix file0: <ftp://home/demo/Dropbox/testcases/rate.c#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pa: <http://www.semanticweb.org/aidb/ontologies/BugFindingOntology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+file0:3_1_3_5 pa:beginExecutionInFunction file0:2_11_13_1 .
+file0:3_1_3_5 pa:firstStatementInFunction file0:2_11_13_1 .
+file0:3_1_3_5 pa:nextStatement file0:4_1_4_9 .
+file0:4_1_4_9 pa:nextStatement file0:5_1_5_9 .
+file0:5_1_5_9 pa:nextStatement file0:6_1_6_9 .
+file0:8_5_8_10 pa:nextStatement file0:8_12_8_15 .
+file0:8_12_8_15 pa:nextTrueStatement file0:9_1_9_108 .
+file0:8_1_9_108_exit c:hasParent file0:8_1_9_108 .
+file0:8_12_8_15 pa:nextFalseStatement file0:8_1_9_108_exit .
+file0:9_1_9_108 pa:nextStatement file0:8_18_8_20 .
+file0:8_18_8_20 pa:nextStatement file0:8_12_8_15 .
+file0:6_1_6_9 pa:nextStatement file0:8_5_8_10 .
+file0:8_1_9_108_exit c:hasParent file0:8_1_9_108 .
+file0:8_1_9_108_exit pa:nextStatement file0:11_1_11_15 .
+file0:11_1_11_15 pa:nextStatement file0:12_1_12_9 .
+file0:2_11_13_1_exit c:hasParent file0:2_11_13_1 .
+
+
+file0:2_11_13_1_exit pa:endExecutionInFunction file0:2_11_13_1 .
